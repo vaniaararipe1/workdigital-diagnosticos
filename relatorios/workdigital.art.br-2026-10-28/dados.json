@@ -1,0 +1,2329 @@
+{
+  "versao": "1.0.0",
+  "gerado_em": "2026-10-28T19:07:51",
+  "empresa": "Work Digital (teste)",
+  "url_informada": "https://workdigital.art.br/",
+  "url_final": "https://workdigital.art.br/",
+  "data": "2026-10-28",
+  "data_extenso": "28 de outubro de 2026",
+  "pasta": "/home/runner/work/workdigital-diagnosticos/workdigital-diagnosticos/dados/relatorios/workdigital.art.br-2026-10-28",
+  "avisos": [],
+  "achados": [
+    {
+      "id": "perf-lcp",
+      "categoria": "performance",
+      "titulo": "O site leva 2,7 s para mostrar o conteúdo principal no celular",
+      "tipo": "medido",
+      "situacao": "atencao",
+      "o_que_vimos": "O conteúdo principal da página inicial só fica visível depois de 2,7 s. O recomendado pelo Google é até 2,5 s.",
+      "evidencia": "",
+      "significado": "",
+      "correcao": "Reduzir o peso da primeira tela (imagens, scripts e fontes).",
+      "impacto": "o visitante espera mais que o ideal na primeira impressão.",
+      "prioridade": "media",
+      "esforco": "médio (dias)",
+      "peso": 0,
+      "area": "Performance",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": false
+    },
+    {
+      "id": "perf-cls",
+      "categoria": "performance",
+      "titulo": "Elementos pulam de lugar enquanto a página carrega",
+      "tipo": "medido",
+      "situacao": "problema",
+      "o_que_vimos": "O índice de estabilidade visual ficou em 0,43. O recomendado é até 0,1.",
+      "evidencia": "",
+      "significado": "",
+      "correcao": "Reservar espaço fixo para imagens, banners e fontes antes de carregarem.",
+      "impacto": "o visitante pode tocar no botão errado ou perder o que estava lendo, o que passa sensação de site mal feito.",
+      "prioridade": "media",
+      "esforco": "rápido (horas)",
+      "peso": 0,
+      "area": "Performance",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": false
+    },
+    {
+      "id": "perf-op-render-blocking-insight",
+      "categoria": "performance",
+      "titulo": "Arquivos que travam o início do carregamento",
+      "tipo": "medido",
+      "situacao": "problema",
+      "o_que_vimos": "A ferramenta de medição apontou este item na versão para celular.",
+      "evidencia": "economia estimada de <code>1,9 s</code>.",
+      "significado": "A tela fica em branco enquanto o navegador espera alguns arquivos de estilo e código.",
+      "correcao": "Adiar ou carregar de forma assíncrona os arquivos que não são essenciais para a primeira tela.",
+      "impacto": "",
+      "prioridade": "alta",
+      "esforco": "médio (dias)",
+      "peso": 0,
+      "area": "Performance",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "perf-op-unused-javascript",
+      "categoria": "performance",
+      "titulo": "Código que é baixado mas não é usado",
+      "tipo": "medido",
+      "situacao": "problema",
+      "o_que_vimos": "A ferramenta de medição apontou este item na versão para celular.",
+      "evidencia": "redução estimada de <code>0,3 MB</code>.",
+      "significado": "O visitante baixa programação que a página não utiliza, geralmente de plugins e ferramentas externas.",
+      "correcao": "Remover plugins sem uso e carregar scripts só nas páginas que precisam deles.",
+      "impacto": "",
+      "prioridade": "baixa",
+      "esforco": "médio (dias)",
+      "peso": 0,
+      "area": "Performance",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-cta-mobile",
+      "categoria": "ux",
+      "titulo": "Chamada para ação na primeira tela (celular)",
+      "tipo": "medido",
+      "situacao": "problema",
+      "o_que_vimos": "No celular, nenhum botão de ação aparece antes de rolar a página.",
+      "evidencia": "primeiro botão de ação (<code>SOLICITE UMA PROPOSTA</code>) a 1399 px do topo; a tela tem 844 px de altura.",
+      "significado": "O visitante não recebe um convite claro para agir na primeira impressão.",
+      "correcao": "Colocar um botão de destaque (por exemplo, \"Falar no WhatsApp\" ou \"Pedir orçamento\") logo abaixo do título.",
+      "impacto": "quem chega com intenção de compra precisa procurar como falar com você, e parte desiste.",
+      "prioridade": "alta",
+      "esforco": "rápido (horas)",
+      "peso": 3,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-cta-desktop",
+      "categoria": "ux",
+      "titulo": "Chamada para ação na primeira tela (computador)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Há um botão de ação visível sem precisar rolar a página no computador.",
+      "evidencia": "<code>SOLICITAR PROPOSTA ↗</code> a 32 px do topo; a tela tem 768 px de altura.",
+      "significado": "O visitante recebe um convite claro para dar o próximo passo.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 2,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-whatsapp",
+      "categoria": "ux",
+      "titulo": "Link de WhatsApp",
+      "tipo": "medido",
+      "situacao": "atencao",
+      "o_que_vimos": "Há link de WhatsApp no site, mas não na página inicial do celular.",
+      "evidencia": "encontrado em <code>/contato/</code>.",
+      "significado": "A página inicial é a mais visitada; o contato direto deveria estar nela.",
+      "correcao": "Adicionar botão de WhatsApp na página inicial, de preferência fixo no canto da tela.",
+      "impacto": "quem está no celular precisa navegar por outras páginas para encontrar como falar com você.",
+      "prioridade": "alta",
+      "esforco": "rápido (horas)",
+      "peso": 3,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-tel-email",
+      "categoria": "ux",
+      "titulo": "Telefone e e-mail clicáveis",
+      "tipo": "medido",
+      "situacao": "problema",
+      "o_que_vimos": "Não encontramos telefone nem e-mail clicáveis.",
+      "evidencia": "nenhum link <code>tel:</code> ou <code>mailto:</code> nas 5 páginas analisadas.",
+      "significado": "Quem quer ligar ou mandar e-mail precisa copiar os dados à mão.",
+      "correcao": "Transformar telefone e e-mail em links clicáveis no rodapé e na página de contato.",
+      "impacto": "",
+      "prioridade": "baixa",
+      "esforco": "rápido (horas)",
+      "peso": 1,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-form",
+      "categoria": "ux",
+      "titulo": "Formulário de contato",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O formulário de contato abre numa janela ao clicar em “SOLICITAR PROPOSTA” e tem 5 campos, todos com rótulo.",
+      "evidencia": "encontrado na janela aberta pelo botão <code>SOLICITAR PROPOSTA</code> na página <code>/contato/</code>: 5 campos, 5 com rótulo identificável.",
+      "significado": "Curto e claro. Bom para quem prefere escrever.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 2,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-viewport",
+      "categoria": "ux",
+      "titulo": "Site adaptado ao celular",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "A página se ajusta à largura do celular, sem rolagem lateral.",
+      "evidencia": "meta viewport <code>width=device-width, initial-scale=1</code>; conteúdo com 390 px em tela de 390 px.",
+      "significado": "",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 2,
+      "area": "Experiência",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-toque",
+      "categoria": "ux",
+      "titulo": "Botões e links fáceis de tocar",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Os botões e links têm tamanho adequado para o toque.",
+      "evidencia": "0 de 17 elementos clicáveis com menos de <code>24×24 px</code>.",
+      "significado": "",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "Experiência",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-leitura",
+      "categoria": "ux",
+      "titulo": "Leitura confortável no celular",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "0% do texto da página inicial no celular está com letra menor que 12 px.",
+      "evidencia": "0 de 3.594 caracteres visíveis abaixo de <code>12px</code>.",
+      "significado": "O tamanho do texto é confortável para leitura no celular.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "Experiência",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-social",
+      "categoria": "ux",
+      "titulo": "Prova social visível",
+      "tipo": "avaliacao",
+      "situacao": "ok",
+      "o_que_vimos": "Encontramos sinais de prova social, como depoimentos, avaliações ou clientes atendidos.",
+      "evidencia": "<code>/</code>: “VIRTUAIS VER TODOS OS ARTIGOS CONFIANÇA O que nossos clientes dizem O time da Work Digital”; <code>/</code>: “IS VER TODOS OS ARTIGOS CONFIANÇA O que nossos clientes dizem O time da Work Digital sempr”",
+      "significado": "Mostrar quem já confia na empresa ajuda o visitante a decidir. Vale conferir se esses elementos aparecem logo na página inicial.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "Sinal detectado por palavras-chave. Confira se é prova social de fato (e não só a palavra 'clientes' num menu).",
+      "secao": true
+    },
+    {
+      "id": "ux-proposta",
+      "categoria": "ux",
+      "titulo": "Clareza da proposta de valor no título principal",
+      "tipo": "avaliacao",
+      "situacao": "ok",
+      "o_que_vimos": "O título principal é “Criação de sites profissionais”.",
+      "evidencia": "",
+      "significado": "Parece descrever a oferta. Vale confirmar se deixa claro para quem é e qual o diferencial.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "Leia o título e decida se a proposta de valor está clara. Ajuste o texto do relatório se discordar.",
+      "secao": true
+    },
+    {
+      "id": "seo-noindex",
+      "categoria": "seo",
+      "titulo": "Páginas liberadas para o Google",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Nenhuma página analisada pede ao Google para não aparecer nas buscas.",
+      "evidencia": "",
+      "significado": "",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 3,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-title",
+      "categoria": "seo",
+      "titulo": "Título das páginas no Google",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Todas as 5 páginas analisadas têm título com tamanho adequado.",
+      "evidencia": "<code>/</code>: <code>Work Digital - Criação de Sites Profissionais</code> (45 caracteres); <code>/contato/</code>: <code>Contato - Work Digital</code> (22 caracteres); <code>/solucoes/</code>: <code>Work Digital - Soluções para o seu negócio</code> (42 caracteres)",
+      "significado": "O título é o texto azul que aparece no Google. Ele precisa dizer o que a página oferece em até cerca de 60 caracteres.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 2,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-title-dup",
+      "categoria": "seo",
+      "titulo": "Títulos repetidos entre páginas",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Cada uma das 5 páginas tem um título diferente.",
+      "evidencia": "",
+      "significado": "",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-desc",
+      "categoria": "seo",
+      "titulo": "Descrição das páginas (meta description)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Todas as páginas analisadas têm descrição própria e de tamanho adequado.",
+      "evidencia": "",
+      "significado": "É o texto que costuma aparecer abaixo do título no Google. Sem ela, o Google escolhe um trecho qualquer da página.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-h1",
+      "categoria": "seo",
+      "titulo": "Título principal único em cada página (H1)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Todas as 5 páginas têm exatamente um título principal (H1).",
+      "evidencia": "",
+      "significado": "O H1 é o título de destaque dentro da página. O Google usa esse título para entender o assunto principal.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-hierarquia",
+      "categoria": "seo",
+      "titulo": "Hierarquia de títulos",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Os títulos e subtítulos seguem uma ordem lógica.",
+      "evidencia": "",
+      "significado": "Uma estrutura de títulos organizada ajuda o Google, as IAs e leitores de tela a entender o conteúdo.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-canonical",
+      "categoria": "seo",
+      "titulo": "Endereço oficial das páginas (canonical)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Todas as páginas indicam o próprio endereço oficial (canonical).",
+      "evidencia": "",
+      "significado": "A marcação canonical evita que o Google veja versões repetidas da mesma página como conteúdo duplicado.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-https",
+      "categoria": "seo",
+      "titulo": "Endereço seguro (HTTPS)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O site usa HTTPS e redireciona a versão sem segurança para a segura.",
+      "evidencia": "<code>http://workdigital.art.br/</code> → <code>https://workdigital.art.br/</code>.",
+      "significado": "O navegador mostra o cadeado e não exibe alerta de site inseguro.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 2,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-redirect",
+      "categoria": "seo",
+      "titulo": "Redirecionamentos até a página inicial",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O endereço informado abre direto, sem redirecionamentos.",
+      "evidencia": "",
+      "significado": "Cada redirecionamento adiciona espera antes de a página começar a carregar.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-robots",
+      "categoria": "seo",
+      "titulo": "Arquivo de instruções para buscadores (robots.txt)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O arquivo robots.txt existe e permite o acesso dos buscadores.",
+      "evidencia": "<code>https://workdigital.art.br/robots.txt</code>.",
+      "significado": "",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-sitemap",
+      "categoria": "seo",
+      "titulo": "Mapa do site (sitemap.xml)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O mapa do site existe e lista 44 endereços.",
+      "evidencia": "<code>https://workdigital.art.br/sitemap_index.xml</code>.",
+      "significado": "Ajuda o Google a encontrar todas as páginas.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-urls",
+      "categoria": "seo",
+      "titulo": "Endereços das páginas legíveis",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Os endereços das páginas são curtos e legíveis.",
+      "evidencia": "",
+      "significado": "Endereços legíveis (como /servicos/consultoria) ajudam o Google e passam confiança no compartilhamento.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-alt",
+      "categoria": "seo",
+      "titulo": "Imagens com texto alternativo",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Todas as 99 imagens têm texto alternativo.",
+      "evidencia": "",
+      "significado": "O texto alternativo descreve a imagem para o Google e para pessoas com deficiência visual que usam leitores de tela.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-links",
+      "categoria": "seo",
+      "titulo": "Links internos quebrados",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Verificamos 40 links internos e todos funcionam.",
+      "evidencia": "",
+      "significado": "Links quebrados frustram o visitante e desperdiçam a atenção do Google.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-og",
+      "categoria": "seo",
+      "titulo": "Prévia ao compartilhar o link (Open Graph)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "A página inicial tem título, descrição e imagem para a prévia de compartilhamento.",
+      "evidencia": "imagem: <code>https://workdigital.art.br/wp-content/themes/workdigital/assets/media/servico-s…</code>.",
+      "significado": "As marcações Open Graph definem o título, o texto e a imagem que aparecem quando alguém compartilha o link do site no WhatsApp, Instagram ou LinkedIn.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-schema",
+      "categoria": "seo",
+      "titulo": "Dados estruturados (schema.org)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O site usa dados estruturados: BreadcrumbList, CollectionPage, FAQPage, ImageObject, Organization, Question.",
+      "evidencia": "",
+      "significado": "Dados estruturados ajudam o Google a entender informações como empresa, endereço e produtos.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "geo-org",
+      "categoria": "seo",
+      "titulo": "Identificação da empresa para buscas com IA",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "A empresa está identificada com dados estruturados do tipo Organization.",
+      "evidencia": "",
+      "significado": "Assistentes como ChatGPT, Gemini e a busca com IA do Google usam essas informações para citar e recomendar empresas.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "SEO e IA",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "geo-faq",
+      "categoria": "seo",
+      "titulo": "Conteúdo que responde perguntas diretas",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Há perguntas frequentes marcadas com dados estruturados.",
+      "evidencia": "exemplos: <code>Onde você está quando seu cliente NÃO procura por você?</code>, <code>Landing page ou site institucional: qual é a escolha certa …</code>.",
+      "significado": "Buscas com IA priorizam conteúdo que responde perguntas de forma direta, como \"quanto custa\" ou \"como funciona\".",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0.5,
+      "area": "SEO e IA",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "geo-llms",
+      "categoria": "seo",
+      "titulo": "Arquivo de orientação para IAs (llms.txt)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O site tem arquivo llms.txt.",
+      "evidencia": "<code>https://workdigital.art.br/llms.txt</code>.",
+      "significado": "O llms.txt é um padrão recente que resume o site para assistentes de IA. Ainda é pouco adotado, por isso tem peso baixo.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0.25,
+      "area": "SEO e IA",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    }
+  ],
+  "notas": {
+    "performance": {
+      "categoria": "Performance",
+      "nota": 72,
+      "criterios_medidos": 2,
+      "criterios_total": 2,
+      "detalhe": [
+        {
+          "criterio": "Nota Lighthouse (Celular)",
+          "valor": 70,
+          "peso": 0.7
+        },
+        {
+          "criterio": "Nota Lighthouse (Computador)",
+          "valor": 76,
+          "peso": 0.3
+        }
+      ]
+    },
+    "ux": {
+      "categoria": "Experiência e conversão",
+      "nota": 63,
+      "criterios_medidos": 8,
+      "criterios_total": 8,
+      "detalhe": [
+        {
+          "criterio": "Chamada para ação na primeira tela (celular)",
+          "situacao": "problema",
+          "peso": 3,
+          "pontos": 0.0
+        },
+        {
+          "criterio": "Chamada para ação na primeira tela (computador)",
+          "situacao": "ok",
+          "peso": 2,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Link de WhatsApp",
+          "situacao": "atencao",
+          "peso": 3,
+          "pontos": 0.5
+        },
+        {
+          "criterio": "Telefone e e-mail clicáveis",
+          "situacao": "problema",
+          "peso": 1,
+          "pontos": 0.0
+        },
+        {
+          "criterio": "Formulário de contato",
+          "situacao": "ok",
+          "peso": 2,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Site adaptado ao celular",
+          "situacao": "ok",
+          "peso": 2,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Botões e links fáceis de tocar",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Leitura confortável no celular",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        }
+      ]
+    },
+    "seo": {
+      "categoria": "SEO e visibilidade",
+      "nota": 100,
+      "criterios_medidos": 19,
+      "criterios_total": 19,
+      "detalhe": [
+        {
+          "criterio": "Páginas liberadas para o Google",
+          "situacao": "ok",
+          "peso": 3,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Título das páginas no Google",
+          "situacao": "ok",
+          "peso": 2,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Títulos repetidos entre páginas",
+          "situacao": "ok",
+          "peso": 1.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Descrição das páginas (meta description)",
+          "situacao": "ok",
+          "peso": 1.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Título principal único em cada página (H1)",
+          "situacao": "ok",
+          "peso": 1.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Hierarquia de títulos",
+          "situacao": "ok",
+          "peso": 0.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Endereço oficial das páginas (canonical)",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Endereço seguro (HTTPS)",
+          "situacao": "ok",
+          "peso": 2,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Redirecionamentos até a página inicial",
+          "situacao": "ok",
+          "peso": 0.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Arquivo de instruções para buscadores (robots.txt)",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Mapa do site (sitemap.xml)",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Endereços das páginas legíveis",
+          "situacao": "ok",
+          "peso": 0.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Imagens com texto alternativo",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Links internos quebrados",
+          "situacao": "ok",
+          "peso": 1.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Prévia ao compartilhar o link (Open Graph)",
+          "situacao": "ok",
+          "peso": 0.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Dados estruturados (schema.org)",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Identificação da empresa para buscas com IA",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Conteúdo que responde perguntas diretas",
+          "situacao": "ok",
+          "peso": 0.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Arquivo de orientação para IAs (llms.txt)",
+          "situacao": "ok",
+          "peso": 0.25,
+          "pontos": 1.0
+        }
+      ]
+    }
+  },
+  "metricas": [
+    {
+      "id": "lcp",
+      "nome": "Tempo até o conteúdo principal aparecer",
+      "explicacao": "Maior elemento visível carregado (LCP)",
+      "valor": "2,7",
+      "unidade": "s",
+      "status": "medio",
+      "tipo": "medido",
+      "referencia": "Bom: até 2,5 s · Ruim: acima de 4 s",
+      "frase": "No celular: Aceitável, mas acima do recomendado. Parte dos visitantes começa a perder a paciência.",
+      "valor_bruto": 2707.7003501966587
+    },
+    {
+      "id": "cls",
+      "nome": "Estabilidade da página enquanto carrega",
+      "explicacao": "Mudança inesperada de layout (CLS)",
+      "valor": "0,43",
+      "unidade": "",
+      "status": "ruim",
+      "tipo": "medido",
+      "referencia": "Bom: até 0,1 · Ruim: acima de 0,25",
+      "frase": "Botões e textos pulam de lugar enquanto a página carrega. O visitante perde o ponto de leitura ou toca no lugar errado.",
+      "valor_bruto": 0.4253113608748481
+    },
+    {
+      "id": "bytes",
+      "nome": "Peso da página inicial",
+      "explicacao": "Total transferido para abrir a página",
+      "valor": "1,3",
+      "unidade": "MB",
+      "status": "bom",
+      "tipo": "medido",
+      "referencia": "Referência: até 2 MB",
+      "frase": "Página leve: carrega bem mesmo em conexão móvel.",
+      "valor_bruto": 1313477
+    }
+  ],
+  "tecnologias": [
+    {
+      "nome": "WordPress",
+      "categoria": "Gerenciador de conteúdo",
+      "evidencia": "/wp-content/"
+    },
+    {
+      "nome": "Google Analytics 4",
+      "categoria": "Análise de visitas",
+      "evidencia": "googletagmanager.com/gtag/js?id=G-"
+    },
+    {
+      "nome": "Google Tag Manager",
+      "categoria": "Gerenciador de tags",
+      "evidencia": "googletagmanager.com/gtm.js"
+    },
+    {
+      "nome": "RD Station",
+      "categoria": "Automação de marketing",
+      "evidencia": "<script type=\"text/javascript\" async=\"\" src=\"https://d335luupugsy2.cloudfront.ne"
+    },
+    {
+      "nome": "Yoast SEO",
+      "categoria": "Plugin de SEO",
+      "evidencia": "Yoast SEO plugin"
+    },
+    {
+      "nome": "LiteSpeed",
+      "categoria": "Servidor",
+      "evidencia": "server: LiteSpeed"
+    }
+  ],
+  "performance": {
+    "mobile": {
+      "ok": true,
+      "fonte": "pagespeed",
+      "estrategia": "mobile",
+      "versao_lighthouse": "13.5.0",
+      "data": "2026-10-28T19:07:25.369Z",
+      "url_final": "https://workdigital.art.br/",
+      "nota": 70,
+      "lcp_ms": 2707.7003501966587,
+      "fcp_ms": 2707.7003501966587,
+      "cls": 0.4253113608748481,
+      "tbt_ms": 33.5,
+      "bytes_total": 1313477,
+      "inp_ms_campo": null,
+      "lcp_ms_campo": null,
+      "cls_campo": null,
+      "tem_dados_campo": false,
+      "oportunidades": [
+        {
+          "id": "render-blocking-insight",
+          "titulo": "Render-blocking requests",
+          "economia_ms": 1900,
+          "economia_bytes": 0
+        },
+        {
+          "id": "unused-javascript",
+          "titulo": "Reduce unused JavaScript",
+          "economia_ms": 0,
+          "economia_bytes": 262468
+        }
+      ],
+      "tentativas": [
+        {
+          "fonte": "pagespeed",
+          "erro": null
+        }
+      ]
+    },
+    "desktop": {
+      "ok": true,
+      "fonte": "pagespeed",
+      "estrategia": "desktop",
+      "versao_lighthouse": "13.5.0",
+      "data": "2026-10-28T19:07:38.745Z",
+      "url_final": "https://workdigital.art.br/",
+      "nota": 76,
+      "lcp_ms": 951.011453252007,
+      "fcp_ms": 725.7003560417478,
+      "cls": 0.02739094169395296,
+      "tbt_ms": 482.50000000000045,
+      "bytes_total": 1312781,
+      "inp_ms_campo": null,
+      "lcp_ms_campo": null,
+      "cls_campo": null,
+      "tem_dados_campo": false,
+      "oportunidades": [
+        {
+          "id": "render-blocking-insight",
+          "titulo": "Render-blocking requests",
+          "economia_ms": 450,
+          "economia_bytes": 0
+        },
+        {
+          "id": "unused-javascript",
+          "titulo": "Reduce unused JavaScript",
+          "economia_ms": 0,
+          "economia_bytes": 262492
+        }
+      ],
+      "tentativas": [
+        {
+          "fonte": "pagespeed",
+          "erro": null
+        }
+      ]
+    },
+    "fonte_texto": "Fonte: Google PageSpeed Insights, em 28/10/2026. Condições simuladas: celular com conexão 4G lenta."
+  },
+  "paginas_resumo": [
+    {
+      "url": "https://workdigital.art.br/",
+      "origem": "página inicial",
+      "situacao": "aberta (código 200)"
+    },
+    {
+      "url": "https://workdigital.art.br/contato/",
+      "origem": "sitemap",
+      "situacao": "aberta (código 200)"
+    },
+    {
+      "url": "https://workdigital.art.br/solucoes/",
+      "origem": "menu, sitemap",
+      "situacao": "aberta (código 200)"
+    },
+    {
+      "url": "https://workdigital.art.br/cases/",
+      "origem": "link, menu, sitemap",
+      "situacao": "aberta (código 200)"
+    },
+    {
+      "url": "https://workdigital.art.br/blog/",
+      "origem": "link, menu, sitemap",
+      "situacao": "aberta (código 200)"
+    }
+  ],
+  "captura_mobile": "/home/runner/work/workdigital-diagnosticos/workdigital-diagnosticos/dados/relatorios/workdigital.art.br-2026-10-28/capturas/home-celular.jpg",
+  "coleta": {
+    "requisicao_inicial": {
+      "status": 200,
+      "erro": null,
+      "redirecionamentos": [],
+      "cabecalhos": {
+        "connection": "Keep-Alive",
+        "keep-alive": "timeout=5, max=100",
+        "content-type": "text/html; charset=UTF-8",
+        "link": "<https://workdigital.art.br/wp-json/>; rel=\"https://api.w.org/\", <https://workdigital.art.br/wp-json/wp/v2/pages/7>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://workdigital.art.br/>; rel=shortlink",
+        "etag": "\"131-1793179815;gz\"",
+        "x-litespeed-cache": "hit",
+        "transfer-encoding": "chunked",
+        "content-encoding": "gzip",
+        "vary": "Accept-Encoding,User-Agent",
+        "date": "Wed, 28 Oct 2026 19:05:43 GMT",
+        "server": "LiteSpeed",
+        "alt-svc": "h3=\":443\"; ma=2592000, h3-29=\":443\"; ma=2592000"
+      }
+    },
+    "robots": {
+      "url": "https://workdigital.art.br/robots.txt",
+      "status": 200,
+      "erro": null,
+      "existe": true,
+      "sitemaps_declarados": [
+        "https://workdigital.art.br/sitemap_index.xml"
+      ],
+      "bloqueia_buscadores": false,
+      "permite_home": true,
+      "conteudo": "# START YOAST BLOCK\n# ---------------------------\nUser-agent: *\nDisallow:\n\nSitemap: https://workdigital.art.br/sitemap_index.xml\n# ---------------------------\n# END YOAST BLOCK"
+    },
+    "sitemap": {
+      "existe": true,
+      "url": "https://workdigital.art.br/sitemap_index.xml",
+      "total_urls": 44,
+      "urls": [
+        "https://workdigital.art.br/blog/",
+        "https://workdigital.art.br/blog/como-potencializar-a-sua-marca-com-o-blog-marketing/",
+        "https://workdigital.art.br/blog/6-motivos-que-mostram-a-importancia-de-ter-um-site-para-o-seu-negocio/",
+        "https://workdigital.art.br/blog/site-lento-custa-caro/",
+        "https://workdigital.art.br/blog/landing-page-ou-site-institucional/",
+        "https://workdigital.art.br/blog/erros-checkout-loja-virtual/",
+        "https://workdigital.art.br/blog/seo-2026-o-que-funciona/",
+        "https://workdigital.art.br/blog/plataforma-loja-virtual/",
+        "https://workdigital.art.br/blog/design-que-converte/",
+        "https://workdigital.art.br/blog/trafego-pago-sem-bom-site/",
+        "https://workdigital.art.br/blog/metricas-do-site/",
+        "https://workdigital.art.br/blog/whatsapp-no-site/",
+        "https://workdigital.art.br/blog/quanto-custa-um-site-profissional/",
+        "https://workdigital.art.br/blog/perfil-da-empresa-no-google/",
+        "https://workdigital.art.br/blog/site-responsivo-celular/",
+        "https://workdigital.art.br/blog/fotos-de-produto-loja-virtual/",
+        "https://workdigital.art.br/blog/site-por-assinatura-ou-personalizado/",
+        "https://workdigital.art.br/blog/palavras-chave-o-que-seu-cliente-pesquisa/",
+        "https://workdigital.art.br/blog/instagram-e-site-juntos/",
+        "https://workdigital.art.br/blog/frete-prazo-confianca-compra-online/",
+        "https://workdigital.art.br/blog/hospedagem-e-manutencao-de-site/",
+        "https://workdigital.art.br/blog/checklist-site-antes-de-ir-ao-ar/",
+        "https://workdigital.art.br/blog/lgpd-no-site/",
+        "https://workdigital.art.br/",
+        "https://workdigital.art.br/solucoes/",
+        "https://workdigital.art.br/contato/",
+        "https://workdigital.art.br/bio/",
+        "https://workdigital.art.br/cases/",
+        "https://workdigital.art.br/cases/bacio-di-latte/",
+        "https://workdigital.art.br/cases/linea-alimentos/",
+        "https://workdigital.art.br/cases/cbpq/",
+        "https://workdigital.art.br/cases/stw-brasil/",
+        "https://workdigital.art.br/cases/agencia-jaya/",
+        "https://workdigital.art.br/cases/genera/",
+        "https://workdigital.art.br/cases/instituto-ricco-porto/",
+        "https://workdigital.art.br/cases/instituto-long-tao/",
+        "https://workdigital.art.br/cases/ideale-treinamentos/",
+        "https://workdigital.art.br/cases/droneng/",
+        "https://workdigital.art.br/cases/loren-andrade/",
+        "https://workdigital.art.br/cases/ogg/",
+        "https://workdigital.art.br/cases/oliva-pizzaria/",
+        "https://workdigital.art.br/cases/marka-contabilidade/",
+        "https://workdigital.art.br/cases/berti-promocional/",
+        "https://workdigital.art.br/cases/instituto-nossa-senhora-da-vitoria/"
+      ],
+      "erro": null
+    },
+    "llms": {
+      "url": "https://workdigital.art.br/llms.txt",
+      "existe": true,
+      "status": 200,
+      "erro": null
+    },
+    "https": {
+      "url_testada": "http://workdigital.art.br/",
+      "redireciona_para_https": true,
+      "destino": "https://workdigital.art.br/",
+      "redirecionamentos": [
+        [
+          301,
+          "http://workdigital.art.br/",
+          "https://workdigital.art.br/"
+        ]
+      ],
+      "erro": null
+    },
+    "links": {
+      "total_encontrados": 41,
+      "verificados": 40,
+      "quebrados": [],
+      "falhas": []
+    },
+    "paginas": [
+      {
+        "url": "https://workdigital.art.br/",
+        "dispositivo": "desktop",
+        "erro": null,
+        "status": 200,
+        "url_final": "https://workdigital.art.br/",
+        "tempo_carregamento_ms": 5966,
+        "titulo": "Work Digital - Criação de Sites Profissionais",
+        "medidas": {
+          "viewport": {
+            "largura": 1366,
+            "altura": 768
+          },
+          "meta_viewport": "width=device-width, initial-scale=1",
+          "largura_documento": 1351,
+          "altura_documento": 8492,
+          "ctas_total": 3,
+          "ctas_dobra": [
+            {
+              "texto": "SOLICITAR PROPOSTA ↗",
+              "href": "",
+              "topo": 32,
+              "largura": 228,
+              "altura": 46,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            }
+          ],
+          "ctas_fortes_dobra": [
+            {
+              "texto": "SOLICITAR PROPOSTA ↗",
+              "href": "",
+              "topo": 32,
+              "largura": 228,
+              "altura": 46,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            }
+          ],
+          "primeiro_cta": {
+            "texto": "SOLICITAR PROPOSTA ↗",
+            "href": "",
+            "topo": 32,
+            "largura": 228,
+            "altura": 46,
+            "botao": true,
+            "palavra_chave": true,
+            "contato": false,
+            "fixo": true
+          },
+          "contato_direto": [],
+          "formularios": [],
+          "formularios_externos": [],
+          "botoes_modal": [
+            "SOLICITAR PROPOSTA ↗"
+          ],
+          "texto_total_chars": 3777,
+          "texto_pequeno_chars": 0,
+          "alvos_total": 19,
+          "alvos_pequenos": [],
+          "alvos_pequenos_total": 0,
+          "h1s": [
+            {
+              "texto": "Criação de sites profissionais",
+              "visivel": true,
+              "topo": 184
+            }
+          ],
+          "primeiro_titulo": {
+            "tag": "h1",
+            "texto": "Criação de sites profissionais",
+            "topo": 184
+          },
+          "sinais_prova_social": [
+            "VIRTUAIS VER TODOS OS ARTIGOS CONFIANÇA O que nossos clientes dizem O time da Work Digital sempre foram exc",
+            "IS VER TODOS OS ARTIGOS CONFIANÇA O que nossos clientes dizem O time da Work Digital sempre for"
+          ],
+          "widgets_prova_social": 0
+        },
+        "captura": "/home/runner/work/workdigital-diagnosticos/workdigital-diagnosticos/dados/relatorios/workdigital.art.br-2026-10-28/capturas/home-computador.jpg"
+      },
+      {
+        "url": "https://workdigital.art.br/contato/",
+        "dispositivo": "desktop",
+        "erro": null,
+        "status": 200,
+        "url_final": "https://workdigital.art.br/contato/",
+        "tempo_carregamento_ms": 5524,
+        "titulo": "Contato - Work Digital",
+        "medidas": {
+          "viewport": {
+            "largura": 1366,
+            "altura": 768
+          },
+          "meta_viewport": "width=device-width, initial-scale=1",
+          "largura_documento": 1351,
+          "altura_documento": 1284,
+          "ctas_total": 3,
+          "ctas_dobra": [
+            {
+              "texto": "SOLICITAR PROPOSTA ↗",
+              "href": "",
+              "topo": 32,
+              "largura": 238,
+              "altura": 46,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "Solicitar proposta",
+              "href": "",
+              "topo": 347,
+              "largura": 178,
+              "altura": 30,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": false
+            },
+            {
+              "texto": "(11) 99391-6363",
+              "href": "https://wa.me/5511993916363",
+              "topo": 397,
+              "largura": 131,
+              "altura": 23,
+              "botao": false,
+              "palavra_chave": true,
+              "contato": true,
+              "fixo": false
+            }
+          ],
+          "ctas_fortes_dobra": [
+            {
+              "texto": "SOLICITAR PROPOSTA ↗",
+              "href": "",
+              "topo": 32,
+              "largura": 238,
+              "altura": 46,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "Solicitar proposta",
+              "href": "",
+              "topo": 347,
+              "largura": 178,
+              "altura": 30,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": false
+            },
+            {
+              "texto": "(11) 99391-6363",
+              "href": "https://wa.me/5511993916363",
+              "topo": 397,
+              "largura": 131,
+              "altura": 23,
+              "botao": false,
+              "palavra_chave": true,
+              "contato": true,
+              "fixo": false
+            }
+          ],
+          "primeiro_cta": {
+            "texto": "SOLICITAR PROPOSTA ↗",
+            "href": "",
+            "topo": 32,
+            "largura": 238,
+            "altura": 46,
+            "botao": true,
+            "palavra_chave": true,
+            "contato": false,
+            "fixo": true
+          },
+          "contato_direto": [
+            {
+              "tipo": "whatsapp",
+              "href": "https://wa.me/5511993916363",
+              "visivel": true,
+              "fixo": false,
+              "topo": 397,
+              "texto": "(11) 99391-6363"
+            }
+          ],
+          "formularios": [],
+          "formularios_externos": [],
+          "botoes_modal": [
+            "SOLICITAR PROPOSTA ↗",
+            "Solicitar proposta"
+          ],
+          "texto_total_chars": 347,
+          "texto_pequeno_chars": 0,
+          "alvos_total": 10,
+          "alvos_pequenos": [],
+          "alvos_pequenos_total": 0,
+          "h1s": [
+            {
+              "texto": "Contato",
+              "visivel": true,
+              "topo": 208
+            }
+          ],
+          "primeiro_titulo": {
+            "tag": "h1",
+            "texto": "Contato",
+            "topo": 208
+          },
+          "sinais_prova_social": [],
+          "widgets_prova_social": 0
+        }
+      },
+      {
+        "url": "https://workdigital.art.br/solucoes/",
+        "dispositivo": "desktop",
+        "erro": null,
+        "status": 200,
+        "url_final": "https://workdigital.art.br/solucoes/",
+        "tempo_carregamento_ms": 5933,
+        "titulo": "Work Digital - Soluções para o seu negócio",
+        "medidas": {
+          "viewport": {
+            "largura": 1366,
+            "altura": 768
+          },
+          "meta_viewport": "width=device-width, initial-scale=1",
+          "largura_documento": 1351,
+          "altura_documento": 4091,
+          "ctas_total": 12,
+          "ctas_dobra": [
+            {
+              "texto": "SOLICITAR PROPOSTA ↗",
+              "href": "",
+              "topo": 32,
+              "largura": 238,
+              "altura": 46,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "+",
+              "href": "",
+              "topo": 478,
+              "largura": 79,
+              "altura": 79,
+              "botao": true,
+              "palavra_chave": false,
+              "contato": false,
+              "fixo": false
+            },
+            {
+              "texto": "+",
+              "href": "",
+              "topo": 489,
+              "largura": 56,
+              "altura": 56,
+              "botao": true,
+              "palavra_chave": false,
+              "contato": false,
+              "fixo": false
+            },
+            {
+              "texto": "+",
+              "href": "",
+              "topo": 720,
+              "largura": 56,
+              "altura": 56,
+              "botao": true,
+              "palavra_chave": false,
+              "contato": false,
+              "fixo": false
+            }
+          ],
+          "ctas_fortes_dobra": [
+            {
+              "texto": "SOLICITAR PROPOSTA ↗",
+              "href": "",
+              "topo": 32,
+              "largura": 238,
+              "altura": 46,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            }
+          ],
+          "primeiro_cta": {
+            "texto": "SOLICITAR PROPOSTA ↗",
+            "href": "",
+            "topo": 32,
+            "largura": 238,
+            "altura": 46,
+            "botao": true,
+            "palavra_chave": true,
+            "contato": false,
+            "fixo": true
+          },
+          "contato_direto": [],
+          "formularios": [],
+          "formularios_externos": [],
+          "botoes_modal": [
+            "SOLICITAR PROPOSTA ↗"
+          ],
+          "texto_total_chars": 5534,
+          "texto_pequeno_chars": 0,
+          "alvos_total": 20,
+          "alvos_pequenos": [],
+          "alvos_pequenos_total": 0,
+          "h1s": [
+            {
+              "texto": "Soluções Work Digital",
+              "visivel": false,
+              "topo": 21
+            }
+          ],
+          "primeiro_titulo": {
+            "tag": "h2",
+            "texto": "CRIAÇÃO DE BLOGS",
+            "topo": 497
+          },
+          "sinais_prova_social": [],
+          "widgets_prova_social": 0
+        }
+      },
+      {
+        "url": "https://workdigital.art.br/cases/",
+        "dispositivo": "desktop",
+        "erro": null,
+        "status": 200,
+        "url_final": "https://workdigital.art.br/cases/",
+        "tempo_carregamento_ms": 5643,
+        "titulo": "Work Digital - Cases da Work",
+        "medidas": {
+          "viewport": {
+            "largura": 1366,
+            "altura": 768
+          },
+          "meta_viewport": "width=device-width, initial-scale=1",
+          "largura_documento": 1351,
+          "altura_documento": 8764,
+          "ctas_total": 3,
+          "ctas_dobra": [
+            {
+              "texto": "SOLICITAR PROPOSTA ↗",
+              "href": "",
+              "topo": 32,
+              "largura": 238,
+              "altura": 46,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "GRID",
+              "href": "",
+              "topo": 671,
+              "largura": 58,
+              "altura": 34,
+              "botao": true,
+              "palavra_chave": false,
+              "contato": false,
+              "fixo": false
+            },
+            {
+              "texto": "LISTA",
+              "href": "",
+              "topo": 671,
+              "largura": 63,
+              "altura": 34,
+              "botao": true,
+              "palavra_chave": false,
+              "contato": false,
+              "fixo": false
+            }
+          ],
+          "ctas_fortes_dobra": [
+            {
+              "texto": "SOLICITAR PROPOSTA ↗",
+              "href": "",
+              "topo": 32,
+              "largura": 238,
+              "altura": 46,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            }
+          ],
+          "primeiro_cta": {
+            "texto": "SOLICITAR PROPOSTA ↗",
+            "href": "",
+            "topo": 32,
+            "largura": 238,
+            "altura": 46,
+            "botao": true,
+            "palavra_chave": true,
+            "contato": false,
+            "fixo": true
+          },
+          "contato_direto": [],
+          "formularios": [],
+          "formularios_externos": [],
+          "botoes_modal": [
+            "SOLICITAR PROPOSTA ↗"
+          ],
+          "texto_total_chars": 2257,
+          "texto_pequeno_chars": 0,
+          "alvos_total": 27,
+          "alvos_pequenos": [],
+          "alvos_pequenos_total": 0,
+          "h1s": [
+            {
+              "texto": "Works(16) — cases de criação de sites da Work Digital",
+              "visivel": true,
+              "topo": 191
+            }
+          ],
+          "primeiro_titulo": {
+            "tag": "h1",
+            "texto": "Works(16) — cases de criação de sites da Work Digital",
+            "topo": 191
+          },
+          "sinais_prova_social": [
+            "S BLOG SOLICITAR PROPOSTA ↗ Works(16) — cases de criação de sites da Work Digital Uma"
+          ],
+          "widgets_prova_social": 0
+        }
+      },
+      {
+        "url": "https://workdigital.art.br/blog/",
+        "dispositivo": "desktop",
+        "erro": null,
+        "status": 200,
+        "url_final": "https://workdigital.art.br/blog/",
+        "tempo_carregamento_ms": 5505,
+        "titulo": "Work Digital - Blog da Work",
+        "medidas": {
+          "viewport": {
+            "largura": 1366,
+            "altura": 768
+          },
+          "meta_viewport": "width=device-width, initial-scale=1",
+          "largura_documento": 1351,
+          "altura_documento": 3676,
+          "ctas_total": 14,
+          "ctas_dobra": [
+            {
+              "texto": "SOLICITAR PROPOSTA ↗",
+              "href": "",
+              "topo": 32,
+              "largura": 238,
+              "altura": 46,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "Todos",
+              "href": "",
+              "topo": 460,
+              "largura": 77,
+              "altura": 40,
+              "botao": true,
+              "palavra_chave": false,
+              "contato": false,
+              "fixo": false
+            },
+            {
+              "texto": "Criação de sites",
+              "href": "",
+              "topo": 460,
+              "largura": 152,
+              "altura": 40,
+              "botao": true,
+              "palavra_chave": false,
+              "contato": false,
+              "fixo": false
+            },
+            {
+              "texto": "Lojas virtuais",
+              "href": "",
+              "topo": 460,
+              "largura": 133,
+              "altura": 40,
+              "botao": true,
+              "palavra_chave": false,
+              "contato": false,
+              "fixo": false
+            },
+            {
+              "texto": "SEO",
+              "href": "",
+              "topo": 460,
+              "largura": 62,
+              "altura": 40,
+              "botao": true,
+              "palavra_chave": false,
+              "contato": false,
+              "fixo": false
+            },
+            {
+              "texto": "Performance",
+              "href": "",
+              "topo": 460,
+              "largura": 131,
+              "altura": 40,
+              "botao": true,
+              "palavra_chave": false,
+              "contato": false,
+              "fixo": false
+            },
+            {
+              "texto": "Tráfego",
+              "href": "",
+              "topo": 460,
+              "largura": 90,
+              "altura": 40,
+              "botao": true,
+              "palavra_chave": false,
+              "contato": false,
+              "fixo": false
+            },
+            {
+              "texto": "Negócios",
+              "href": "",
+              "topo": 460,
+              "largura": 103,
+              "altura": 40,
+              "botao": true,
+              "palavra_chave": false,
+              "contato": false,
+              "fixo": false
+            }
+          ],
+          "ctas_fortes_dobra": [
+            {
+              "texto": "SOLICITAR PROPOSTA ↗",
+              "href": "",
+              "topo": 32,
+              "largura": 238,
+              "altura": 46,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            }
+          ],
+          "primeiro_cta": {
+            "texto": "SOLICITAR PROPOSTA ↗",
+            "href": "",
+            "topo": 32,
+            "largura": 238,
+            "altura": 46,
+            "botao": true,
+            "palavra_chave": true,
+            "contato": false,
+            "fixo": true
+          },
+          "contato_direto": [],
+          "formularios": [],
+          "formularios_externos": [],
+          "botoes_modal": [
+            "SOLICITAR PROPOSTA ↗"
+          ],
+          "texto_total_chars": 1470,
+          "texto_pequeno_chars": 0,
+          "alvos_total": 32,
+          "alvos_pequenos": [
+            {
+              "texto": "Ler artigo",
+              "largura": 98,
+              "altura": 16
+            }
+          ],
+          "alvos_pequenos_total": 1,
+          "h1s": [
+            {
+              "texto": "Blog da Work",
+              "visivel": true,
+              "topo": 225
+            }
+          ],
+          "primeiro_titulo": {
+            "tag": "h1",
+            "texto": "Blog da Work",
+            "topo": 225
+          },
+          "sinais_prova_social": [],
+          "widgets_prova_social": 0
+        }
+      }
+    ],
+    "seo_paginas": [
+      {
+        "url": "https://workdigital.art.br/",
+        "titulo": "Work Digital - Criação de Sites Profissionais",
+        "descricao": "Criação de sites profissionais, blogs, landing pages e lojas virtuais sob medida. A Work Digital cria sites rápidos, bonitos e prontos para vender.",
+        "meta_robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "canonical": "https://workdigital.art.br/",
+        "h1": [
+          "Criação de sites profissionais"
+        ],
+        "saltos_hierarquia": [],
+        "imagens": 34,
+        "imagens_sem_alt": [],
+        "schema_tipos": [
+          "BreadcrumbList",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_invalido": 0,
+        "links_internos": [
+          "https://workdigital.art.br/blog/",
+          "https://workdigital.art.br/blog/erros-checkout-loja-virtual/",
+          "https://workdigital.art.br/blog/landing-page-ou-site-institucional/",
+          "https://workdigital.art.br/blog/site-lento-custa-caro/",
+          "https://workdigital.art.br/cases/",
+          "https://workdigital.art.br/cases/bacio-di-latte/",
+          "https://workdigital.art.br/cases/cbpq/",
+          "https://workdigital.art.br/cases/linea-alimentos/",
+          "https://workdigital.art.br/cases/stw-brasil/",
+          "https://workdigital.art.br/criacao-de-blog/",
+          "https://workdigital.art.br/criacao-de-landing-pages/",
+          "https://workdigital.art.br/criacao-de-site/",
+          "https://workdigital.art.br/solucoes/"
+        ],
+        "perguntas_em_titulos": [
+          "Onde você está quando seu cliente NÃO procura por você?",
+          "Landing page ou site institucional: qual é a escolha certa para o seu momento?"
+        ],
+        "open_graph": {
+          "og:title": "Work Digital - Criação de Sites Profissionais",
+          "og:description": "Criação de sites profissionais, blogs, landing pages e lojas virtuais sob medida. A Work Digital cria sites rápidos, bonitos e prontos para vender.",
+          "og:image": "https://workdigital.art.br/wp-content/themes/workdigital/assets/media/servico-sites.jpg"
+        }
+      },
+      {
+        "url": "https://workdigital.art.br/contato/",
+        "titulo": "Contato - Work Digital",
+        "descricao": "Fale com a Work Digital e peça uma proposta para o seu site, blog, landing page ou loja virtual.",
+        "meta_robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "canonical": "https://workdigital.art.br/contato/",
+        "h1": [
+          "Contato"
+        ],
+        "saltos_hierarquia": [],
+        "imagens": 1,
+        "imagens_sem_alt": [],
+        "schema_tipos": [
+          "BreadcrumbList",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_invalido": 0,
+        "links_internos": [
+          "https://workdigital.art.br/",
+          "https://workdigital.art.br/cases/",
+          "https://workdigital.art.br/solucoes/"
+        ],
+        "perguntas_em_titulos": [],
+        "open_graph": {
+          "og:title": "Contato - Work Digital",
+          "og:description": "Fale com a Work Digital e peça uma proposta para o seu site, blog, landing page ou loja virtual.",
+          "og:image": "https://workdigital.art.br/wp-content/themes/workdigital/assets/media/servico-sites.jpg"
+        }
+      },
+      {
+        "url": "https://workdigital.art.br/solucoes/",
+        "titulo": "Work Digital - Soluções para o seu negócio",
+        "descricao": "Sites, blogs, landing pages e lojas virtuais sob medida. Conheça os planos da Work Digital: blog de conteúdo, site por assinatura e site personalizado.",
+        "meta_robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "canonical": "https://workdigital.art.br/solucoes/",
+        "h1": [
+          "Soluções Work Digital"
+        ],
+        "saltos_hierarquia": [],
+        "imagens": 1,
+        "imagens_sem_alt": [],
+        "schema_tipos": [
+          "BreadcrumbList",
+          "FAQPage",
+          "Organization",
+          "Question",
+          "Service",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_invalido": 0,
+        "links_internos": [
+          "https://workdigital.art.br/",
+          "https://workdigital.art.br/blog/",
+          "https://workdigital.art.br/cases/"
+        ],
+        "perguntas_em_titulos": [],
+        "open_graph": {
+          "og:title": "Work Digital - Soluções para o seu negócio",
+          "og:description": "Sites, blogs, landing pages e lojas virtuais sob medida. Conheça os planos da Work Digital: blog de conteúdo, site por assinatura e site personalizado.",
+          "og:image": "https://workdigital.art.br/wp-content/themes/workdigital/assets/media/servico-sites.jpg"
+        }
+      },
+      {
+        "url": "https://workdigital.art.br/cases/",
+        "titulo": "Work Digital - Cases da Work",
+        "descricao": "Cases da Work Digital: sites, portais, lojas virtuais e blogs criados para marcas como Bacio di Latte, Linea Alimentos e CBPq.",
+        "meta_robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "canonical": "https://workdigital.art.br/cases/",
+        "h1": [
+          "Works (16) — cases de criação de sites da Work Digital"
+        ],
+        "saltos_hierarquia": [],
+        "imagens": 40,
+        "imagens_sem_alt": [],
+        "schema_tipos": [
+          "BreadcrumbList",
+          "CollectionPage",
+          "ImageObject",
+          "WebSite"
+        ],
+        "jsonld_invalido": 0,
+        "links_internos": [
+          "https://workdigital.art.br/",
+          "https://workdigital.art.br/blog/",
+          "https://workdigital.art.br/cases/",
+          "https://workdigital.art.br/cases/agencia-jaya/",
+          "https://workdigital.art.br/cases/bacio-di-latte/",
+          "https://workdigital.art.br/cases/berti-promocional/",
+          "https://workdigital.art.br/cases/cbpq/",
+          "https://workdigital.art.br/cases/droneng/",
+          "https://workdigital.art.br/cases/genera/",
+          "https://workdigital.art.br/cases/ideale-treinamentos/",
+          "https://workdigital.art.br/cases/instituto-long-tao/",
+          "https://workdigital.art.br/cases/instituto-nossa-senhora-da-vitoria/",
+          "https://workdigital.art.br/cases/instituto-ricco-porto/",
+          "https://workdigital.art.br/cases/linea-alimentos/",
+          "https://workdigital.art.br/cases/loren-andrade/",
+          "https://workdigital.art.br/cases/marka-contabilidade/",
+          "https://workdigital.art.br/cases/ogg/",
+          "https://workdigital.art.br/cases/oliva-pizzaria/",
+          "https://workdigital.art.br/cases/stw-brasil/",
+          "https://workdigital.art.br/solucoes/"
+        ],
+        "perguntas_em_titulos": [],
+        "open_graph": {
+          "og:title": "Work Digital - Cases da Work",
+          "og:description": "Cases da Work Digital: sites, portais, lojas virtuais e blogs criados para marcas como Bacio di Latte, Linea Alimentos e CBPq.",
+          "og:image": "https://workdigital.art.br/wp-content/themes/workdigital/assets/media/servico-sites.jpg"
+        }
+      },
+      {
+        "url": "https://workdigital.art.br/blog/",
+        "titulo": "Work Digital - Blog da Work",
+        "descricao": "Blog da Work: ideias práticas sobre criação de sites, lojas virtuais, SEO, performance e tráfego para quem quer vender mais na internet.",
+        "meta_robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "canonical": "https://workdigital.art.br/blog/",
+        "h1": [
+          "Blog da Work"
+        ],
+        "saltos_hierarquia": [],
+        "imagens": 23,
+        "imagens_sem_alt": [],
+        "schema_tipos": [
+          "BreadcrumbList",
+          "CollectionPage",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_invalido": 0,
+        "links_internos": [
+          "https://workdigital.art.br/",
+          "https://workdigital.art.br/blog/6-motivos-que-mostram-a-importancia-de-ter-um-site-para-o-seu-negocio/",
+          "https://workdigital.art.br/blog/checklist-site-antes-de-ir-ao-ar/",
+          "https://workdigital.art.br/blog/como-potencializar-a-sua-marca-com-o-blog-marketing/",
+          "https://workdigital.art.br/blog/design-que-converte/",
+          "https://workdigital.art.br/blog/erros-checkout-loja-virtual/",
+          "https://workdigital.art.br/blog/fotos-de-produto-loja-virtual/",
+          "https://workdigital.art.br/blog/frete-prazo-confianca-compra-online/",
+          "https://workdigital.art.br/blog/hospedagem-e-manutencao-de-site/",
+          "https://workdigital.art.br/blog/instagram-e-site-juntos/",
+          "https://workdigital.art.br/blog/landing-page-ou-site-institucional/",
+          "https://workdigital.art.br/blog/lgpd-no-site/",
+          "https://workdigital.art.br/blog/metricas-do-site/",
+          "https://workdigital.art.br/blog/palavras-chave-o-que-seu-cliente-pesquisa/",
+          "https://workdigital.art.br/blog/perfil-da-empresa-no-google/",
+          "https://workdigital.art.br/blog/plataforma-loja-virtual/",
+          "https://workdigital.art.br/blog/quanto-custa-um-site-profissional/",
+          "https://workdigital.art.br/blog/seo-2026-o-que-funciona/",
+          "https://workdigital.art.br/blog/site-lento-custa-caro/",
+          "https://workdigital.art.br/blog/site-por-assinatura-ou-personalizado/",
+          "https://workdigital.art.br/blog/site-responsivo-celular/",
+          "https://workdigital.art.br/blog/trafego-pago-sem-bom-site/",
+          "https://workdigital.art.br/blog/whatsapp-no-site/",
+          "https://workdigital.art.br/cases/",
+          "https://workdigital.art.br/solucoes/"
+        ],
+        "perguntas_em_titulos": [
+          "Landing page ou site institucional: qual é a escolha certa para o seu momento?"
+        ],
+        "open_graph": {
+          "og:title": "Work Digital - Blog da Work",
+          "og:description": "Blog da Work: ideias práticas sobre criação de sites, lojas virtuais, SEO, performance e tráfego para quem quer vender mais na internet.",
+          "og:image": "https://workdigital.art.br/wp-content/themes/workdigital/assets/media/servico-sites.jpg"
+        }
+      }
+    ],
+    "requisicoes_bloqueadas": [],
+    "busca_contato": {
+      "url": "https://workdigital.art.br/contato/",
+      "tentativas": [
+        "/fale-conosco/",
+        "/contact/"
+      ],
+      "erro": null,
+      "janela": {
+        "url": "https://workdigital.art.br/contato/",
+        "botao": "SOLICITAR PROPOSTA",
+        "formularios": [
+          {
+            "campos": 5,
+            "com_rotulo": 5,
+            "com_placeholder": 5,
+            "busca": false,
+            "login": false,
+            "visivel": true,
+            "topo": 193,
+            "nomes": [
+              "nome",
+              "email",
+              "empresa",
+              "ideia",
+              "origem"
+            ]
+          }
+        ],
+        "navegou": false,
+        "erro": null,
+        "formularios_externos": []
+      }
+    },
+    "log_http": [
+      {
+        "url": "https://workdigital.art.br/",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 1030
+      },
+      {
+        "url": "https://workdigital.art.br/robots.txt",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 145
+      },
+      {
+        "url": "https://workdigital.art.br/sitemap_index.xml",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 1624
+      },
+      {
+        "url": "https://workdigital.art.br/post-sitemap.xml",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 760
+      },
+      {
+        "url": "https://workdigital.art.br/page-sitemap.xml",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 995
+      },
+      {
+        "url": "https://workdigital.art.br/case-sitemap.xml",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 1022
+      },
+      {
+        "url": "https://workdigital.art.br/fale-conosco/",
+        "metodo": "GET",
+        "status": 404,
+        "erro": null,
+        "ms": 1094
+      },
+      {
+        "url": "https://workdigital.art.br/contact/",
+        "metodo": "GET",
+        "status": 404,
+        "erro": null,
+        "ms": 908
+      },
+      {
+        "url": "https://workdigital.art.br/llms.txt",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 467
+      },
+      {
+        "url": "http://workdigital.art.br/",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 1961
+      },
+      {
+        "url": "https://workdigital.art.br/blog/erros-checkout-loja-virtual/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 515
+      },
+      {
+        "url": "https://workdigital.art.br/blog/landing-page-ou-site-institucional/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1319
+      },
+      {
+        "url": "https://workdigital.art.br/blog/site-lento-custa-caro/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 991
+      },
+      {
+        "url": "https://workdigital.art.br/cases/bacio-di-latte/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1279
+      },
+      {
+        "url": "https://workdigital.art.br/cases/cbpq/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 969
+      },
+      {
+        "url": "https://workdigital.art.br/cases/linea-alimentos/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1042
+      },
+      {
+        "url": "https://workdigital.art.br/cases/stw-brasil/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 958
+      },
+      {
+        "url": "https://workdigital.art.br/criacao-de-blog/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1868
+      },
+      {
+        "url": "https://workdigital.art.br/criacao-de-landing-pages/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 2078
+      },
+      {
+        "url": "https://workdigital.art.br/criacao-de-site/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 2038
+      },
+      {
+        "url": "https://workdigital.art.br/cases/agencia-jaya/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1320
+      },
+      {
+        "url": "https://workdigital.art.br/cases/berti-promocional/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1236
+      },
+      {
+        "url": "https://workdigital.art.br/cases/droneng/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1417
+      },
+      {
+        "url": "https://workdigital.art.br/cases/genera/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 464
+      },
+      {
+        "url": "https://workdigital.art.br/cases/ideale-treinamentos/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1602
+      },
+      {
+        "url": "https://workdigital.art.br/cases/instituto-long-tao/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1305
+      },
+      {
+        "url": "https://workdigital.art.br/cases/instituto-nossa-senhora-da-vitoria/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1306
+      },
+      {
+        "url": "https://workdigital.art.br/cases/instituto-ricco-porto/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 724
+      },
+      {
+        "url": "https://workdigital.art.br/cases/loren-andrade/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 729
+      },
+      {
+        "url": "https://workdigital.art.br/cases/marka-contabilidade/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1672
+      },
+      {
+        "url": "https://workdigital.art.br/cases/ogg/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 456
+      },
+      {
+        "url": "https://workdigital.art.br/cases/oliva-pizzaria/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1581
+      },
+      {
+        "url": "https://workdigital.art.br/blog/6-motivos-que-mostram-a-importancia-de-ter-um-site-para-o-seu-negocio/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1030
+      },
+      {
+        "url": "https://workdigital.art.br/blog/checklist-site-antes-de-ir-ao-ar/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1116
+      },
+      {
+        "url": "https://workdigital.art.br/blog/como-potencializar-a-sua-marca-com-o-blog-marketing/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1011
+      },
+      {
+        "url": "https://workdigital.art.br/blog/design-que-converte/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1118
+      },
+      {
+        "url": "https://workdigital.art.br/blog/fotos-de-produto-loja-virtual/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1086
+      },
+      {
+        "url": "https://workdigital.art.br/blog/frete-prazo-confianca-compra-online/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1046
+      },
+      {
+        "url": "https://workdigital.art.br/blog/hospedagem-e-manutencao-de-site/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1011
+      },
+      {
+        "url": "https://workdigital.art.br/blog/instagram-e-site-juntos/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1024
+      },
+      {
+        "url": "https://workdigital.art.br/blog/lgpd-no-site/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 993
+      },
+      {
+        "url": "https://workdigital.art.br/blog/metricas-do-site/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1032
+      },
+      {
+        "url": "https://workdigital.art.br/blog/palavras-chave-o-que-seu-cliente-pesquisa/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1010
+      },
+      {
+        "url": "https://workdigital.art.br/blog/perfil-da-empresa-no-google/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1018
+      },
+      {
+        "url": "https://workdigital.art.br/blog/plataforma-loja-virtual/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1492
+      },
+      {
+        "url": "https://workdigital.art.br/blog/quanto-custa-um-site-profissional/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 454
+      },
+      {
+        "url": "https://workdigital.art.br/blog/seo-2026-o-que-funciona/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1581
+      },
+      {
+        "url": "https://workdigital.art.br/blog/site-por-assinatura-ou-personalizado/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 460
+      },
+      {
+        "url": "https://workdigital.art.br/blog/site-responsivo-celular/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1619
+      },
+      {
+        "url": "https://workdigital.art.br/blog/trafego-pago-sem-bom-site/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1044
+      }
+    ]
+  },
+  "revisao_rascunho_criado": true
+}
