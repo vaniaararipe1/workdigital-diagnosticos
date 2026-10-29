@@ -1,0 +1,2704 @@
+{
+  "versao": "1.0.0",
+  "gerado_em": "2026-10-29T17:39:37",
+  "empresa": "time.ly",
+  "url_informada": "https://time.ly/",
+  "url_final": "https://time.ly/",
+  "data": "2026-10-29",
+  "data_extenso": "29 de outubro de 2026",
+  "pasta": "/home/runner/work/workdigital-diagnosticos/workdigital-diagnosticos/dados/relatorios/time.ly-2026-10-29",
+  "avisos": [],
+  "achados": [
+    {
+      "id": "perf-op-unused-css-rules",
+      "categoria": "performance",
+      "titulo": "Estilos que são baixados mas não são usados",
+      "tipo": "medido",
+      "situacao": "problema",
+      "o_que_vimos": "A ferramenta de medição apontou este item na versão para celular.",
+      "evidencia": "economia estimada de <code>0,1 s</code>; redução estimada de <code>0,0 MB</code>.",
+      "significado": "Arquivos de estilo maiores que o necessário atrasam a exibição.",
+      "correcao": "Remover estilos sem uso, comuns em temas e construtores de página.",
+      "impacto": "",
+      "prioridade": "baixa",
+      "esforco": "médio (dias)",
+      "peso": 0,
+      "area": "Performance",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "perf-op-render-blocking-insight",
+      "categoria": "performance",
+      "titulo": "Arquivos que travam o início do carregamento",
+      "tipo": "medido",
+      "situacao": "problema",
+      "o_que_vimos": "A ferramenta de medição apontou este item na versão para celular.",
+      "evidencia": "economia estimada de <code>0,1 s</code>.",
+      "significado": "A tela fica em branco enquanto o navegador espera alguns arquivos de estilo e código.",
+      "correcao": "Adiar ou carregar de forma assíncrona os arquivos que não são essenciais para a primeira tela.",
+      "impacto": "",
+      "prioridade": "baixa",
+      "esforco": "médio (dias)",
+      "peso": 0,
+      "area": "Performance",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-cta-mobile",
+      "categoria": "ux",
+      "titulo": "Chamada para ação na primeira tela (celular)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Há um botão de ação visível sem precisar rolar a página no celular.",
+      "evidencia": "<code>BOOK A DEMO</code> a 592 px do topo; a tela tem 844 px de altura.",
+      "significado": "O visitante recebe um convite claro para dar o próximo passo.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 3,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-cta-desktop",
+      "categoria": "ux",
+      "titulo": "Chamada para ação na primeira tela (computador)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Há um botão de ação visível sem precisar rolar a página no computador.",
+      "evidencia": "<code>BOOK A DEMO</code> a 50 px do topo, <code>BOOK A DEMO</code> a 476 px do topo; a tela tem 768 px de altura.",
+      "significado": "O visitante recebe um convite claro para dar o próximo passo.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 2,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-whatsapp",
+      "categoria": "ux",
+      "titulo": "Link de WhatsApp",
+      "tipo": "medido",
+      "situacao": "problema",
+      "o_que_vimos": "Não encontramos link de WhatsApp.",
+      "evidencia": "nenhum link <code>wa.me</code> ou <code>api.whatsapp.com</code> nas 5 páginas analisadas.",
+      "significado": "Para quem está no celular, falar com você exige copiar e colar o número.",
+      "correcao": "Transformar o número em link de WhatsApp e adicionar um botão fixo no canto da tela.",
+      "impacto": "cada passo extra até a conversa reduz o número de pedidos de contato.",
+      "prioridade": "alta",
+      "esforco": "rápido (horas)",
+      "peso": 3,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "Confira se há widget de chat que abre o WhatsApp sem link direto (a ferramenta não clica).",
+      "secao": true
+    },
+    {
+      "id": "ux-tel-email",
+      "categoria": "ux",
+      "titulo": "Telefone e e-mail clicáveis",
+      "tipo": "medido",
+      "situacao": "problema",
+      "o_que_vimos": "Não encontramos telefone nem e-mail clicáveis.",
+      "evidencia": "nenhum link <code>tel:</code> ou <code>mailto:</code> nas 5 páginas analisadas.",
+      "significado": "Quem quer ligar ou mandar e-mail precisa copiar os dados à mão.",
+      "correcao": "Transformar telefone e e-mail em links clicáveis no rodapé e na página de contato.",
+      "impacto": "",
+      "prioridade": "baixa",
+      "esforco": "rápido (horas)",
+      "peso": 1,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-form",
+      "categoria": "ux",
+      "titulo": "Formulário de contato",
+      "tipo": "nao_confirmado",
+      "situacao": "na",
+      "o_que_vimos": "Não encontramos um formulário visível sem interação, mas há sinais de que ele existe.",
+      "evidencia": "sinais encontrados: código de formulário de HubSpot.",
+      "significado": "O formulário pode aparecer só depois de um clique ou carregar de forma que a análise automática não alcança.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 2,
+      "area": "Conversão",
+      "confianca": "baixa",
+      "nota_interna": "Abra o site, clique no botão de contato e confira o formulário (campos, rótulos, se funciona no celular).",
+      "secao": true
+    },
+    {
+      "id": "ux-viewport",
+      "categoria": "ux",
+      "titulo": "Site adaptado ao celular",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "A página se ajusta à largura do celular, sem rolagem lateral.",
+      "evidencia": "meta viewport <code>width=device-width, initial-scale=1.0</code>; conteúdo com 390 px em tela de 390 px.",
+      "significado": "",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 2,
+      "area": "Experiência",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-toque",
+      "categoria": "ux",
+      "titulo": "Botões e links fáceis de tocar",
+      "tipo": "medido",
+      "situacao": "atencao",
+      "o_que_vimos": "21% dos botões e links da página inicial são pequenos demais para tocar com o dedo.",
+      "evidencia": "8 de 38 elementos clicáveis com menos de <code>24×24 px</code>, por exemplo <code>Contact Us</code>, <code>knowledge base</code>, <code>Legal</code>.",
+      "significado": "Alvos pequenos causam toques errados, principalmente para pessoas com mais idade.",
+      "correcao": "Aumentar a área de toque de ícones e links para pelo menos 44 px.",
+      "impacto": "",
+      "prioridade": "baixa",
+      "esforco": "rápido (horas)",
+      "peso": 1,
+      "area": "Experiência",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-leitura",
+      "categoria": "ux",
+      "titulo": "Leitura confortável no celular",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "0% do texto da página inicial no celular está com letra menor que 12 px.",
+      "evidencia": "0 de 13.808 caracteres visíveis abaixo de <code>12px</code>.",
+      "significado": "O tamanho do texto é confortável para leitura no celular.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "Experiência",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-social",
+      "categoria": "ux",
+      "titulo": "Prova social visível",
+      "tipo": "avaliacao",
+      "situacao": "ok",
+      "o_que_vimos": "Encontramos sinais de prova social, como depoimentos, avaliações ou clientes atendidos.",
+      "evidencia": "<code>/</code>: “Health Sciences and Pharmacy READ MORE CASE STUDIES READ MORE TESTIMONIALS As Seen”; <code>/contact/</code>: “tailored for various industries and use cases. Schedule a demo to see Timely in actio”",
+      "significado": "Mostrar quem já confia na empresa ajuda o visitante a decidir. Vale conferir se esses elementos aparecem logo na página inicial.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "Sinal detectado por palavras-chave. Confira se é prova social de fato (e não só a palavra 'clientes' num menu).",
+      "secao": true
+    },
+    {
+      "id": "ux-proposta",
+      "categoria": "ux",
+      "titulo": "Clareza da proposta de valor no título principal",
+      "tipo": "avaliacao",
+      "situacao": "ok",
+      "o_que_vimos": "O título principal é “COMMUNITY MANAGEMENT SOFTWARE”.",
+      "evidencia": "",
+      "significado": "Parece descrever a oferta. Vale confirmar se deixa claro para quem é e qual o diferencial.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "Leia o título e decida se a proposta de valor está clara. Ajuste o texto do relatório se discordar.",
+      "secao": true
+    },
+    {
+      "id": "seo-noindex",
+      "categoria": "seo",
+      "titulo": "Páginas liberadas para o Google",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Nenhuma página analisada pede ao Google para não aparecer nas buscas.",
+      "evidencia": "",
+      "significado": "",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 3,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-title",
+      "categoria": "seo",
+      "titulo": "Título das páginas no Google",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Todas as 5 páginas analisadas têm título com tamanho adequado.",
+      "evidencia": "<code>/</code>: <code>Timely All-in-One Community Management Software</code> (47 caracteres); <code>/contact/</code>: <code>Contact Us. We Are Here to Help and Support You | Timely</code> (56 caracteres); <code>/blog/</code>: <code>Event Planning &amp; Management Blog, Tips &amp; Insights | Timely</code> (58 caracteres)",
+      "significado": "O título é o texto azul que aparece no Google. Ele precisa dizer o que a página oferece em até cerca de 60 caracteres.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 2,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-title-dup",
+      "categoria": "seo",
+      "titulo": "Títulos repetidos entre páginas",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Cada uma das 5 páginas tem um título diferente.",
+      "evidencia": "",
+      "significado": "",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-desc",
+      "categoria": "seo",
+      "titulo": "Descrição das páginas (meta description)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Todas as páginas analisadas têm descrição própria e de tamanho adequado.",
+      "evidencia": "",
+      "significado": "É o texto que costuma aparecer abaixo do título no Google. Sem ela, o Google escolhe um trecho qualquer da página.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-h1",
+      "categoria": "seo",
+      "titulo": "Título principal único em cada página (H1)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Todas as 5 páginas têm exatamente um título principal (H1).",
+      "evidencia": "",
+      "significado": "O H1 é o título de destaque dentro da página. O Google usa esse título para entender o assunto principal.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-hierarquia",
+      "categoria": "seo",
+      "titulo": "Hierarquia de títulos",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Os títulos e subtítulos seguem uma ordem lógica.",
+      "evidencia": "",
+      "significado": "Uma estrutura de títulos organizada ajuda o Google, as IAs e leitores de tela a entender o conteúdo.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-canonical",
+      "categoria": "seo",
+      "titulo": "Endereço oficial das páginas (canonical)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Todas as páginas indicam o próprio endereço oficial (canonical).",
+      "evidencia": "",
+      "significado": "A marcação canonical evita que o Google veja versões repetidas da mesma página como conteúdo duplicado.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-https",
+      "categoria": "seo",
+      "titulo": "Endereço seguro (HTTPS)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O site usa HTTPS e redireciona a versão sem segurança para a segura.",
+      "evidencia": "<code>http://time.ly/</code> → <code>https://time.ly/</code>.",
+      "significado": "O navegador mostra o cadeado e não exibe alerta de site inseguro.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 2,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-redirect",
+      "categoria": "seo",
+      "titulo": "Redirecionamentos até a página inicial",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O endereço informado abre direto, sem redirecionamentos.",
+      "evidencia": "",
+      "significado": "Cada redirecionamento adiciona espera antes de a página começar a carregar.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-robots",
+      "categoria": "seo",
+      "titulo": "Arquivo de instruções para buscadores (robots.txt)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O arquivo robots.txt existe e permite o acesso dos buscadores.",
+      "evidencia": "<code>https://time.ly/robots.txt</code>.",
+      "significado": "",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-sitemap",
+      "categoria": "seo",
+      "titulo": "Mapa do site (sitemap.xml)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O mapa do site existe e lista 190 endereços.",
+      "evidencia": "<code>https://time.ly/sitemap_index.xml</code>.",
+      "significado": "Ajuda o Google a encontrar todas as páginas.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-urls",
+      "categoria": "seo",
+      "titulo": "Endereços das páginas legíveis",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Os endereços das páginas são curtos e legíveis.",
+      "evidencia": "",
+      "significado": "Endereços legíveis (como /servicos/consultoria) ajudam o Google e passam confiança no compartilhamento.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-alt",
+      "categoria": "seo",
+      "titulo": "Imagens com texto alternativo",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Todas as 63 imagens têm texto alternativo.",
+      "evidencia": "",
+      "significado": "O texto alternativo descreve a imagem para o Google e para pessoas com deficiência visual que usam leitores de tela.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-links",
+      "categoria": "seo",
+      "titulo": "Links internos quebrados",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Verificamos 40 links internos e todos funcionam.",
+      "evidencia": "",
+      "significado": "Links quebrados frustram o visitante e desperdiçam a atenção do Google.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-og",
+      "categoria": "seo",
+      "titulo": "Prévia ao compartilhar o link (Open Graph)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "A página inicial tem título, descrição e imagem para a prévia de compartilhamento.",
+      "evidencia": "imagem: <code>https://time.ly/wp-content/uploads/2026/03/timely-home-page.jpg</code>.",
+      "significado": "As marcações Open Graph definem o título, o texto e a imagem que aparecem quando alguém compartilha o link do site no WhatsApp, Instagram ou LinkedIn.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-schema",
+      "categoria": "seo",
+      "titulo": "Dados estruturados (schema.org)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O site usa dados estruturados: Article, BreadcrumbList, ContactPage, FAQPage, ImageObject, Organization.",
+      "evidencia": "",
+      "significado": "Dados estruturados ajudam o Google a entender informações como empresa, endereço e produtos.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "geo-org",
+      "categoria": "seo",
+      "titulo": "Identificação da empresa para buscas com IA",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "A empresa está identificada com dados estruturados do tipo Organization.",
+      "evidencia": "",
+      "significado": "Assistentes como ChatGPT, Gemini e a busca com IA do Google usam essas informações para citar e recomendar empresas.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "SEO e IA",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "geo-faq",
+      "categoria": "seo",
+      "titulo": "Conteúdo que responde perguntas diretas",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Há perguntas frequentes marcadas com dados estruturados.",
+      "evidencia": "exemplos: <code>Why Communities Choose Timely Software?</code>, <code>What Our Clients Say About Timely?</code>.",
+      "significado": "Buscas com IA priorizam conteúdo que responde perguntas de forma direta, como \"quanto custa\" ou \"como funciona\".",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0.5,
+      "area": "SEO e IA",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "geo-llms",
+      "categoria": "seo",
+      "titulo": "Arquivo de orientação para IAs (llms.txt)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O site tem arquivo llms.txt.",
+      "evidencia": "<code>https://time.ly/llms.txt</code>.",
+      "significado": "O llms.txt é um padrão recente que resume o site para assistentes de IA. Ainda é pouco adotado, por isso tem peso baixo.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0.25,
+      "area": "SEO e IA",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    }
+  ],
+  "notas": {
+    "performance": {
+      "categoria": "Performance",
+      "nota": 100,
+      "criterios_medidos": 2,
+      "criterios_total": 2,
+      "detalhe": [
+        {
+          "criterio": "Nota Lighthouse (Celular)",
+          "valor": 100,
+          "peso": 0.7
+        },
+        {
+          "criterio": "Nota Lighthouse (Computador)",
+          "valor": 100,
+          "peso": 0.3
+        }
+      ]
+    },
+    "ux": {
+      "categoria": "Experiência e conversão",
+      "nota": 65,
+      "criterios_medidos": 7,
+      "criterios_total": 8,
+      "detalhe": [
+        {
+          "criterio": "Chamada para ação na primeira tela (celular)",
+          "situacao": "ok",
+          "peso": 3,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Chamada para ação na primeira tela (computador)",
+          "situacao": "ok",
+          "peso": 2,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Link de WhatsApp",
+          "situacao": "problema",
+          "peso": 3,
+          "pontos": 0.0
+        },
+        {
+          "criterio": "Telefone e e-mail clicáveis",
+          "situacao": "problema",
+          "peso": 1,
+          "pontos": 0.0
+        },
+        {
+          "criterio": "Formulário de contato",
+          "situacao": "na",
+          "peso": 2,
+          "pontos": null
+        },
+        {
+          "criterio": "Site adaptado ao celular",
+          "situacao": "ok",
+          "peso": 2,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Botões e links fáceis de tocar",
+          "situacao": "atencao",
+          "peso": 1,
+          "pontos": 0.5
+        },
+        {
+          "criterio": "Leitura confortável no celular",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        }
+      ]
+    },
+    "seo": {
+      "categoria": "SEO e visibilidade",
+      "nota": 100,
+      "criterios_medidos": 19,
+      "criterios_total": 19,
+      "detalhe": [
+        {
+          "criterio": "Páginas liberadas para o Google",
+          "situacao": "ok",
+          "peso": 3,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Título das páginas no Google",
+          "situacao": "ok",
+          "peso": 2,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Títulos repetidos entre páginas",
+          "situacao": "ok",
+          "peso": 1.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Descrição das páginas (meta description)",
+          "situacao": "ok",
+          "peso": 1.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Título principal único em cada página (H1)",
+          "situacao": "ok",
+          "peso": 1.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Hierarquia de títulos",
+          "situacao": "ok",
+          "peso": 0.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Endereço oficial das páginas (canonical)",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Endereço seguro (HTTPS)",
+          "situacao": "ok",
+          "peso": 2,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Redirecionamentos até a página inicial",
+          "situacao": "ok",
+          "peso": 0.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Arquivo de instruções para buscadores (robots.txt)",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Mapa do site (sitemap.xml)",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Endereços das páginas legíveis",
+          "situacao": "ok",
+          "peso": 0.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Imagens com texto alternativo",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Links internos quebrados",
+          "situacao": "ok",
+          "peso": 1.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Prévia ao compartilhar o link (Open Graph)",
+          "situacao": "ok",
+          "peso": 0.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Dados estruturados (schema.org)",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Identificação da empresa para buscas com IA",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Conteúdo que responde perguntas diretas",
+          "situacao": "ok",
+          "peso": 0.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Arquivo de orientação para IAs (llms.txt)",
+          "situacao": "ok",
+          "peso": 0.25,
+          "pontos": 1.0
+        }
+      ]
+    }
+  },
+  "metricas": [
+    {
+      "id": "lcp",
+      "nome": "Tempo até o conteúdo principal aparecer",
+      "explicacao": "Maior elemento visível carregado (LCP)",
+      "valor": "1,4",
+      "unidade": "s",
+      "status": "bom",
+      "tipo": "medido",
+      "referencia": "Bom: até 2,5 s · Ruim: acima de 4 s",
+      "frase": "No celular: Rápido: o visitante vê o que procura quase de imediato.",
+      "valor_bruto": 1351
+    },
+    {
+      "id": "cls",
+      "nome": "Estabilidade da página enquanto carrega",
+      "explicacao": "Mudança inesperada de layout (CLS)",
+      "valor": "0,00",
+      "unidade": "",
+      "status": "bom",
+      "tipo": "medido",
+      "referencia": "Bom: até 0,1 · Ruim: acima de 0,25",
+      "frase": "Os elementos ficam no lugar enquanto a página carrega. Ponto positivo.",
+      "valor_bruto": 0
+    },
+    {
+      "id": "bytes",
+      "nome": "Peso da página inicial",
+      "explicacao": "Total transferido para abrir a página",
+      "valor": "0,2",
+      "unidade": "MB",
+      "status": "bom",
+      "tipo": "medido",
+      "referencia": "Referência: até 2 MB",
+      "frase": "Página leve: carrega bem mesmo em conexão móvel.",
+      "valor_bruto": 180926
+    }
+  ],
+  "tecnologias": [
+    {
+      "nome": "WordPress",
+      "categoria": "Gerenciador de conteúdo",
+      "evidencia": "/wp-content/"
+    },
+    {
+      "nome": "Google Tag Manager",
+      "categoria": "Gerenciador de tags",
+      "evidencia": "gtm-iframe"
+    },
+    {
+      "nome": "HubSpot",
+      "categoria": "Automação de marketing",
+      "evidencia": "js.hsforms.net"
+    },
+    {
+      "nome": "Yoast SEO",
+      "categoria": "Plugin de SEO",
+      "evidencia": "yoast-schema-graph"
+    }
+  ],
+  "performance": {
+    "mobile": {
+      "ok": true,
+      "fonte": "pagespeed",
+      "estrategia": "mobile",
+      "versao_lighthouse": "13.5.0",
+      "data": "2026-10-29T17:39:19.282Z",
+      "url_final": "https://time.ly/",
+      "nota": 100,
+      "lcp_ms": 1351,
+      "fcp_ms": 1096,
+      "cls": 0,
+      "tbt_ms": 0,
+      "bytes_total": 180926,
+      "inp_ms_campo": null,
+      "lcp_ms_campo": 875,
+      "cls_campo": 0.0,
+      "tem_dados_campo": true,
+      "oportunidades": [
+        {
+          "id": "unused-css-rules",
+          "titulo": "Reduce unused CSS",
+          "economia_ms": 150,
+          "economia_bytes": 19928
+        },
+        {
+          "id": "render-blocking-insight",
+          "titulo": "Render-blocking requests",
+          "economia_ms": 100,
+          "economia_bytes": 0
+        }
+      ],
+      "tentativas": [
+        {
+          "fonte": "pagespeed",
+          "erro": null
+        }
+      ]
+    },
+    "desktop": {
+      "ok": true,
+      "fonte": "pagespeed",
+      "estrategia": "desktop",
+      "versao_lighthouse": "13.5.0",
+      "data": "2026-10-29T17:39:28.559Z",
+      "url_final": "https://time.ly/",
+      "nota": 100,
+      "lcp_ms": 383,
+      "fcp_ms": 345,
+      "cls": 0,
+      "tbt_ms": 1,
+      "bytes_total": 181074,
+      "inp_ms_campo": 56,
+      "lcp_ms_campo": 1290,
+      "cls_campo": 0.01,
+      "tem_dados_campo": true,
+      "oportunidades": [],
+      "tentativas": [
+        {
+          "fonte": "pagespeed",
+          "erro": null
+        }
+      ]
+    },
+    "fonte_texto": "Fonte: Google PageSpeed Insights, em 29/10/2026. Condições simuladas: celular com conexão 4G lenta."
+  },
+  "paginas_resumo": [
+    {
+      "url": "https://time.ly/",
+      "origem": "página inicial",
+      "situacao": "aberta (código 200)"
+    },
+    {
+      "url": "https://time.ly/contact/",
+      "origem": "link, menu, sitemap",
+      "situacao": "aberta (código 200)"
+    },
+    {
+      "url": "https://time.ly/blog/",
+      "origem": "menu, sitemap",
+      "situacao": "aberta (código 200)"
+    },
+    {
+      "url": "https://time.ly/blog/case-study-love-burlington/",
+      "origem": "menu, sitemap",
+      "situacao": "aberta (código 200)"
+    },
+    {
+      "url": "https://time.ly/blog/case-study-the-university-of-bristol/",
+      "origem": "menu, sitemap",
+      "situacao": "aberta (código 200)"
+    }
+  ],
+  "captura_mobile": "/home/runner/work/workdigital-diagnosticos/workdigital-diagnosticos/dados/relatorios/time.ly-2026-10-29/capturas/home-celular.jpg",
+  "coleta": {
+    "requisicao_inicial": {
+      "status": 200,
+      "erro": null,
+      "redirecionamentos": [],
+      "cabecalhos": {
+        "content-type": "text/html; charset=UTF-8",
+        "transfer-encoding": "chunked",
+        "connection": "keep-alive",
+        "date": "Thu, 29 Oct 2026 17:35:13 GMT",
+        "content-security-policy": "default-src * data: blob: ws: wss: 'unsafe-inline' 'unsafe-eval'; script-src * data: blob: 'unsafe-inline' 'unsafe-eval'; connect-src * data: blob: 'unsafe-inline'; img-src * data: blob: 'unsafe-inline'; style-src * data: blob: 'unsafe-inline'; font-src * data: blob: 'unsafe-inline'; frame-src * data: blob: ;",
+        "content-encoding": "gzip",
+        "server": "nginx",
+        "link": "<https://cdn.gtranslate.net/>; rel=dns-prefetch",
+        "cf-edge-cache": "no-cache",
+        "cache-control": "no-cache",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "vary": "Accept-Encoding",
+        "x-cache": "Hit from cloudfront",
+        "via": "1.1 ced159cf6139bc70eb5089a450122800.cloudfront.net (CloudFront)",
+        "x-amz-cf-pop": "PHX52-P2",
+        "alt-svc": "h3=\":443\"; ma=86400",
+        "x-amz-cf-id": "5iLjKuCJo5v-b_2oyLx84nxwuoEF7rPa2WYFaLPHZl5P7FUcFJ75hA==",
+        "age": "167"
+      }
+    },
+    "robots": {
+      "url": "https://time.ly/robots.txt",
+      "status": 200,
+      "erro": null,
+      "existe": true,
+      "sitemaps_declarados": [
+        "https://time.ly/sitemap_index.xml"
+      ],
+      "bloqueia_buscadores": false,
+      "permite_home": true,
+      "conteudo": "# -------------------------------------------------------------\r\n# 1. All crawlers (incl. Googlebot and Bingbot)\r\n# -------------------------------------------------------------\r\n\r\nUser-agent: *\r\n\r\nDisallow: /wp-admin/\r\nDisallow: /*/wp-admin/\r\nDisallow: /wp-login.php\r\nDisallow: /*/wp-login.php\r\nDisallow: /*?s=\r\nDisallow: /feed/\r\nDisallow: /*/feed/\r\nDisallow: /*/trackback/\r\nDisallow: /wp-admin/admin-ajax.php\r\n\r\n# -------------------------------------------------------------\r\n# 2. AI / LLM crawlers\r\n# -------------------------------------------------------------\r\n\r\n# OpenAI\r\nUser-agent: GPTBot\r\nUser-agent: OAI-SearchBot\r\nUser-agent: ChatGPT-User\r\n\r\n# Anthropic\r\nUser-agent: ClaudeBot\r\nUser-agent: Claude-SearchBot\r\nUser-agent: Claude-User\r\n\r\n# Perplexity\r\nUser-agent: PerplexityBot\r\nUser-agent: Perplexity-User\r\n\r\n# Google (Gemini training/grounding only; AI Overviews and AI Mode use Googlebot)\r\nUser-agent: Google-Extended\r\n\r\n# Apple\r\nUser-agent: Applebot-Extended\r\n\r\n# Others\r\nUser-agent: CCBot\r\nUser-agent: Amazonbot\r\nUser-agent: Meta-ExternalAgent\r\nUser-agent: DuckAssistBot\r\nUser-agent: cohere-ai\r\n\r\nDisallow: /wp-admin/\r\nDisallow: /*/wp-admin/\r\nDisallow: /wp-login.php\r\nDisallow: /*/wp-login.php\r\nDisallow: /*?s=\r\nDisallow: /feed/\r\nDisallow: /*/feed/\r\nDisallow: /*/trackback/\r\nDisallow: /wp-admin/admin-ajax.php\r\n\r\n# -------------------------------------------------------------\r\n# 3. Sitemap\r\n# -------------------------------------------------------------\r\n\r\nSitemap: https://time.ly/sitemap_index.xml\r\n\r\n# AI content guide: https://time.ly/llms.txt"
+    },
+    "sitemap": {
+      "existe": true,
+      "url": "https://time.ly/sitemap_index.xml",
+      "total_urls": 190,
+      "urls": [
+        "https://time.ly/blog/unique-venues-for-parties-that-wow-clients-and-guests/",
+        "https://time.ly/blog/the-ultimate-guide-to-creating-effective-membership-levels/",
+        "https://time.ly/blog/10-best-training-certifications-for-corporate-trainers/",
+        "https://time.ly/blog/case-study-love-burlington/",
+        "https://time.ly/blog/case-study-the-avon-company-canada/",
+        "https://time.ly/blog/case-study-lillooet-area-library-association/",
+        "https://time.ly/blog/case-study-the-university-of-bristol/",
+        "https://time.ly/blog/case-study-jewish-federation-of-southern-arizona/",
+        "https://time.ly/blog/case-study-city-of-winter-park/",
+        "https://time.ly/blog/case-study-tulsakids-magazine/",
+        "https://time.ly/blog/templates-for-vision-board-best-tools-for-event-planners/",
+        "https://time.ly/blog/selling-courses-online-ultimate-guide-success/",
+        "https://time.ly/blog/what-is-instructor-led-training-ilt/",
+        "https://time.ly/blog/engagement-event-ideas-to-impress-your-audience/",
+        "https://time.ly/blog/the-ultimate-guide-to-renting-a-venue-for-your-event/",
+        "https://time.ly/blog/how-to-start-an-event-space-business-with-no-money/",
+        "https://time.ly/blog/how-to-make-your-events-calendar-more-engaging/",
+        "https://time.ly/blog/high-paying-event-planning-careers-in-the-event-industry/",
+        "https://time.ly/blog/the-70-20-10-rule-for-learning-and-development/",
+        "https://time.ly/blog/the-training-function-in-human-resources-management-hrm/",
+        "https://time.ly/blog/dei-training-what-is-diversity-equity-inclusion-at-work/",
+        "https://time.ly/blog/how-to-sell-online-courses-from-your-own-website/",
+        "https://time.ly/blog/how-to-sell-training-courses-online-and-maximize-profits/",
+        "https://time.ly/blog/expert-tips-for-hosting-events-successfully/",
+        "https://time.ly/blog/how-to-make-an-online-calendar-for-your-website-steps/",
+        "https://time.ly/blog/tips-for-attracting-tourists-to-your-destination/",
+        "https://time.ly/blog/tips-to-enhance-website-event-calendar-design/",
+        "https://time.ly/blog/selling-event-tickets-best-ways-to-sell-tickets-online-for-events/",
+        "https://time.ly/blog/how-to-get-sponsors-for-events-a-guide-to-event-sponsorship/",
+        "https://time.ly/blog/tips-to-writing-the-perfect-email-reminder-for-events/",
+        "https://time.ly/blog/fun-ideas-for-entertainment-at-corporate-events/",
+        "https://time.ly/blog/event-marketing-guide-benefits-ideas-examples/",
+        "https://time.ly/blog/cloud-vs-on-premise-pros-and-cons-for-event-platforms/",
+        "https://time.ly/blog/top-free-event-calendars-for-wordpress-websites/",
+        "https://time.ly/blog/why-is-training-important-to-employees-benefits/",
+        "https://time.ly/blog/examples-of-employee-training-programs/",
+        "https://time.ly/blog/how-a-museum-event-planner-will-boost-your-events-attendance/",
+        "https://time.ly/blog/event-management-software-for-festivals/",
+        "https://time.ly/blog/the-advanced-guide-to-the-event-planning-process/",
+        "https://time.ly/blog/how-to-promote-an-event-successfully/",
+        "https://time.ly/blog/how-to-plan-an-event-the-completely-wrong-way/",
+        "https://time.ly/blog/signs-its-time-to-upgrade-to-an-event-management-platform/",
+        "https://time.ly/blog/how-to-increase-revenue-selling-event-tickets-online/",
+        "https://time.ly/blog/guide-to-becoming-a-successful-corporate-event-planner/",
+        "https://time.ly/blog/what-is-training-management-definition-benefits-examples/",
+        "https://time.ly/blog/corporate-event-planning-courses/",
+        "https://time.ly/blog/event-marketing-planning-expert-tips-plus-free-template/",
+        "https://time.ly/blog/unique-corporate-workshop-ideas-for-memorable-events/",
+        "https://time.ly/blog/event-venue-description-sample-and-best-practices/",
+        "https://time.ly/blog/event-planning-checklist-free-template-for-planners/"
+      ],
+      "erro": null
+    },
+    "llms": {
+      "url": "https://time.ly/llms.txt",
+      "existe": true,
+      "status": 200,
+      "erro": null
+    },
+    "https": {
+      "url_testada": "http://time.ly/",
+      "redireciona_para_https": true,
+      "destino": "https://time.ly/",
+      "redirecionamentos": [
+        [
+          301,
+          "http://time.ly/",
+          "https://time.ly/"
+        ]
+      ],
+      "erro": null
+    },
+    "links": {
+      "total_encontrados": 86,
+      "verificados": 40,
+      "quebrados": [],
+      "falhas": []
+    },
+    "paginas": [
+      {
+        "url": "https://time.ly/",
+        "dispositivo": "desktop",
+        "erro": null,
+        "status": 200,
+        "url_final": "https://time.ly/",
+        "tempo_carregamento_ms": 3789,
+        "titulo": "Timely All-in-One Community Management Software",
+        "medidas": {
+          "viewport": {
+            "largura": 1366,
+            "altura": 768
+          },
+          "meta_viewport": "width=device-width, initial-scale=1.0",
+          "largura_documento": 1366,
+          "altura_documento": 10672,
+          "ctas_total": 18,
+          "ctas_dobra": [
+            {
+              "texto": "Contact Us",
+              "href": "https://time.ly/contact/",
+              "topo": 6,
+              "largura": 64,
+              "altura": 23,
+              "botao": false,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "BOOK A DEMO",
+              "href": "https://time.ly/book-a-demo/",
+              "topo": 50,
+              "largura": 113,
+              "altura": 25,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "BOOK A DEMO",
+              "href": "https://time.ly/book-a-demo/",
+              "topo": 476,
+              "largura": 210,
+              "altura": 50,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": false
+            }
+          ],
+          "ctas_fortes_dobra": [
+            {
+              "texto": "BOOK A DEMO",
+              "href": "https://time.ly/book-a-demo/",
+              "topo": 50,
+              "largura": 113,
+              "altura": 25,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "BOOK A DEMO",
+              "href": "https://time.ly/book-a-demo/",
+              "topo": 476,
+              "largura": 210,
+              "altura": 50,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": false
+            }
+          ],
+          "primeiro_cta": {
+            "texto": "Contact Us",
+            "href": "https://time.ly/contact/",
+            "topo": 6,
+            "largura": 64,
+            "altura": 23,
+            "botao": false,
+            "palavra_chave": true,
+            "contato": false,
+            "fixo": true
+          },
+          "contato_direto": [],
+          "formularios": [],
+          "formularios_externos": [],
+          "botoes_modal": [],
+          "texto_total_chars": 13859,
+          "texto_pequeno_chars": 0,
+          "alvos_total": 43,
+          "alvos_pequenos": [
+            {
+              "texto": "Contact Us",
+              "largura": 64,
+              "altura": 23
+            },
+            {
+              "texto": "Login",
+              "largura": 32,
+              "altura": 21
+            },
+            {
+              "texto": "Legal",
+              "largura": 42,
+              "altura": 23
+            },
+            {
+              "texto": "Terms of Service",
+              "largura": 118,
+              "altura": 23
+            },
+            {
+              "texto": "Ticketing Terms of Service",
+              "largura": 173,
+              "altura": 23
+            },
+            {
+              "texto": "Privacy Policy",
+              "largura": 102,
+              "altura": 23
+            },
+            {
+              "texto": "Cookies Policy",
+              "largura": 106,
+              "altura": 23
+            },
+            {
+              "texto": "Web Accessibility Statement",
+              "largura": 183,
+              "altura": 23
+            }
+          ],
+          "alvos_pequenos_total": 8,
+          "h1s": [
+            {
+              "texto": "COMMUNITY MANAGEMENT SOFTWARE",
+              "visivel": true,
+              "topo": 153
+            }
+          ],
+          "primeiro_titulo": {
+            "tag": "h1",
+            "texto": "COMMUNITY MANAGEMENT SOFTWARE",
+            "topo": 153
+          },
+          "sinais_prova_social": [
+            "Health Sciences and Pharmacy READ MORE CASE STUDIES READ MORE TESTIMONIALS As Seen"
+          ],
+          "widgets_prova_social": 0
+        },
+        "captura": "/home/runner/work/workdigital-diagnosticos/workdigital-diagnosticos/dados/relatorios/time.ly-2026-10-29/capturas/home-computador.jpg"
+      },
+      {
+        "url": "https://time.ly/contact/",
+        "dispositivo": "desktop",
+        "erro": null,
+        "status": 200,
+        "url_final": "https://time.ly/contact/",
+        "tempo_carregamento_ms": 4493,
+        "titulo": "Contact Us. We Are Here to Help and Support You | Timely",
+        "medidas": {
+          "viewport": {
+            "largura": 1366,
+            "altura": 768
+          },
+          "meta_viewport": "width=device-width, initial-scale=1.0",
+          "largura_documento": 1366,
+          "altura_documento": 4639,
+          "ctas_total": 11,
+          "ctas_dobra": [
+            {
+              "texto": "Contact Us",
+              "href": "https://time.ly/contact/",
+              "topo": 6,
+              "largura": 64,
+              "altura": 23,
+              "botao": false,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "BOOK A DEMO",
+              "href": "https://time.ly/book-a-demo/",
+              "topo": 50,
+              "largura": 113,
+              "altura": 25,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "CONTACT US",
+              "href": "#section-59-351947",
+              "topo": 442,
+              "largura": 240,
+              "altura": 50,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": false
+            }
+          ],
+          "ctas_fortes_dobra": [
+            {
+              "texto": "BOOK A DEMO",
+              "href": "https://time.ly/book-a-demo/",
+              "topo": 50,
+              "largura": 113,
+              "altura": 25,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "CONTACT US",
+              "href": "#section-59-351947",
+              "topo": 442,
+              "largura": 240,
+              "altura": 50,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": false
+            }
+          ],
+          "primeiro_cta": {
+            "texto": "Contact Us",
+            "href": "https://time.ly/contact/",
+            "topo": 6,
+            "largura": 64,
+            "altura": 23,
+            "botao": false,
+            "palavra_chave": true,
+            "contato": false,
+            "fixo": true
+          },
+          "contato_direto": [],
+          "formularios": [],
+          "formularios_externos": [],
+          "botoes_modal": [],
+          "texto_total_chars": 4533,
+          "texto_pequeno_chars": 0,
+          "alvos_total": 40,
+          "alvos_pequenos": [
+            {
+              "texto": "Contact Us",
+              "largura": 64,
+              "altura": 23
+            },
+            {
+              "texto": "Login",
+              "largura": 32,
+              "altura": 21
+            },
+            {
+              "texto": "Home",
+              "largura": 32,
+              "altura": 14
+            },
+            {
+              "texto": "Read FAQs",
+              "largura": 69,
+              "altura": 23
+            },
+            {
+              "texto": "Helpful Guides",
+              "largura": 92,
+              "altura": 23
+            },
+            {
+              "texto": "Explore all Services",
+              "largura": 123,
+              "altura": 23
+            },
+            {
+              "texto": "Review our terms and policies",
+              "largura": 187,
+              "altura": 23
+            },
+            {
+              "texto": "Legal",
+              "largura": 42,
+              "altura": 23
+            },
+            {
+              "texto": "Terms of Service",
+              "largura": 118,
+              "altura": 23
+            },
+            {
+              "texto": "Ticketing Terms of Service",
+              "largura": 173,
+              "altura": 23
+            },
+            {
+              "texto": "Privacy Policy",
+              "largura": 102,
+              "altura": 23
+            },
+            {
+              "texto": "Cookies Policy",
+              "largura": 106,
+              "altura": 23
+            },
+            {
+              "texto": "Web Accessibility Statement",
+              "largura": 183,
+              "altura": 23
+            }
+          ],
+          "alvos_pequenos_total": 13,
+          "h1s": [
+            {
+              "texto": "Contact Us",
+              "visivel": true,
+              "topo": 164
+            }
+          ],
+          "primeiro_titulo": {
+            "tag": "h1",
+            "texto": "Contact Us",
+            "topo": 164
+          },
+          "sinais_prova_social": [
+            "tailored for various industries and use cases. Schedule a demo to see Timely in actio"
+          ],
+          "widgets_prova_social": 0
+        }
+      },
+      {
+        "url": "https://time.ly/blog/",
+        "dispositivo": "desktop",
+        "erro": null,
+        "status": 200,
+        "url_final": "https://time.ly/blog/",
+        "tempo_carregamento_ms": 4575,
+        "titulo": "Event Planning & Management Blog, Tips & Insights | Timely",
+        "medidas": {
+          "viewport": {
+            "largura": 1366,
+            "altura": 768
+          },
+          "meta_viewport": "width=device-width, initial-scale=1.0",
+          "largura_documento": 1366,
+          "altura_documento": 3611,
+          "ctas_total": 11,
+          "ctas_dobra": [
+            {
+              "texto": "Contact Us",
+              "href": "https://time.ly/contact/",
+              "topo": 6,
+              "largura": 64,
+              "altura": 23,
+              "botao": false,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "BOOK A DEMO",
+              "href": "https://time.ly/book-a-demo/",
+              "topo": 50,
+              "largura": 113,
+              "altura": 25,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "How to Start an Event Planning Business in 2026 July 20, 2026",
+              "href": "https://time.ly/blog/how-to-start-an-event-planning-business/",
+              "topo": 588,
+              "largura": 449,
+              "altura": 79,
+              "botao": false,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": false
+            }
+          ],
+          "ctas_fortes_dobra": [
+            {
+              "texto": "BOOK A DEMO",
+              "href": "https://time.ly/book-a-demo/",
+              "topo": 50,
+              "largura": 113,
+              "altura": 25,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            }
+          ],
+          "primeiro_cta": {
+            "texto": "Contact Us",
+            "href": "https://time.ly/contact/",
+            "topo": 6,
+            "largura": 64,
+            "altura": 23,
+            "botao": false,
+            "palavra_chave": true,
+            "contato": false,
+            "fixo": true
+          },
+          "contato_direto": [],
+          "formularios": [],
+          "formularios_externos": [],
+          "botoes_modal": [],
+          "texto_total_chars": 3045,
+          "texto_pequeno_chars": 0,
+          "alvos_total": 57,
+          "alvos_pequenos": [
+            {
+              "texto": "Contact Us",
+              "largura": 64,
+              "altura": 23
+            },
+            {
+              "texto": "Login",
+              "largura": 32,
+              "altura": 21
+            },
+            {
+              "texto": "Home",
+              "largura": 32,
+              "altura": 14
+            },
+            {
+              "texto": "Legal",
+              "largura": 42,
+              "altura": 23
+            },
+            {
+              "texto": "Terms of Service",
+              "largura": 118,
+              "altura": 23
+            },
+            {
+              "texto": "Ticketing Terms of Service",
+              "largura": 173,
+              "altura": 23
+            },
+            {
+              "texto": "Privacy Policy",
+              "largura": 102,
+              "altura": 23
+            },
+            {
+              "texto": "Cookies Policy",
+              "largura": 106,
+              "altura": 23
+            },
+            {
+              "texto": "Web Accessibility Statement",
+              "largura": 183,
+              "altura": 23
+            }
+          ],
+          "alvos_pequenos_total": 9,
+          "h1s": [
+            {
+              "texto": "Timely Event Planning & Management Blog",
+              "visivel": true,
+              "topo": 179
+            }
+          ],
+          "primeiro_titulo": {
+            "tag": "h1",
+            "texto": "Timely Event Planning & Management Blog",
+            "topo": 179
+          },
+          "sinais_prova_social": [
+            "Membership Management Venue Management Case Study Product Update Latest Posts 2026"
+          ],
+          "widgets_prova_social": 0
+        }
+      },
+      {
+        "url": "https://time.ly/blog/case-study-love-burlington/",
+        "dispositivo": "desktop",
+        "erro": null,
+        "status": 200,
+        "url_final": "https://time.ly/blog/case-study-love-burlington/",
+        "tempo_carregamento_ms": 4545,
+        "titulo": "Case Study: Love Burlington | Timely",
+        "medidas": {
+          "viewport": {
+            "largura": 1366,
+            "altura": 768
+          },
+          "meta_viewport": "width=device-width, initial-scale=1.0",
+          "largura_documento": 1366,
+          "altura_documento": 5832,
+          "ctas_total": 5,
+          "ctas_dobra": [
+            {
+              "texto": "Contact Us",
+              "href": "https://time.ly/contact/",
+              "topo": 6,
+              "largura": 64,
+              "altura": 23,
+              "botao": false,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "BOOK A DEMO",
+              "href": "https://time.ly/book-a-demo/",
+              "topo": 50,
+              "largura": 113,
+              "altura": 25,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            }
+          ],
+          "ctas_fortes_dobra": [
+            {
+              "texto": "BOOK A DEMO",
+              "href": "https://time.ly/book-a-demo/",
+              "topo": 50,
+              "largura": 113,
+              "altura": 25,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            }
+          ],
+          "primeiro_cta": {
+            "texto": "Contact Us",
+            "href": "https://time.ly/contact/",
+            "topo": 6,
+            "largura": 64,
+            "altura": 23,
+            "botao": false,
+            "palavra_chave": true,
+            "contato": false,
+            "fixo": true
+          },
+          "contato_direto": [],
+          "formularios": [],
+          "formularios_externos": [],
+          "botoes_modal": [],
+          "texto_total_chars": 7493,
+          "texto_pequeno_chars": 0,
+          "alvos_total": 43,
+          "alvos_pequenos": [
+            {
+              "texto": "Contact Us",
+              "largura": 64,
+              "altura": 23
+            },
+            {
+              "texto": "Login",
+              "largura": 32,
+              "altura": 21
+            },
+            {
+              "texto": "Love Burlington",
+              "largura": 138,
+              "altura": 20
+            },
+            {
+              "texto": "Case Study: Awin Group",
+              "largura": 210,
+              "altura": 20
+            },
+            {
+              "texto": "Legal",
+              "largura": 42,
+              "altura": 23
+            },
+            {
+              "texto": "Terms of Service",
+              "largura": 118,
+              "altura": 23
+            },
+            {
+              "texto": "Ticketing Terms of Service",
+              "largura": 173,
+              "altura": 23
+            },
+            {
+              "texto": "Privacy Policy",
+              "largura": 102,
+              "altura": 23
+            },
+            {
+              "texto": "Cookies Policy",
+              "largura": 106,
+              "altura": 23
+            },
+            {
+              "texto": "Web Accessibility Statement",
+              "largura": 183,
+              "altura": 23
+            }
+          ],
+          "alvos_pequenos_total": 10,
+          "h1s": [
+            {
+              "texto": "Case Study: Love Burlington",
+              "visivel": true,
+              "topo": 153
+            }
+          ],
+          "primeiro_titulo": {
+            "tag": "h1",
+            "texto": "Case Study: Love Burlington",
+            "topo": 153
+          },
+          "sinais_prova_social": [
+            "Preview Pricing Why Timely BOOK A DEMO Case Study: Love Burlington Discover how Tim"
+          ],
+          "widgets_prova_social": 0
+        }
+      },
+      {
+        "url": "https://time.ly/blog/case-study-the-university-of-bristol/",
+        "dispositivo": "desktop",
+        "erro": null,
+        "status": 200,
+        "url_final": "https://time.ly/blog/case-study-the-university-of-bristol/",
+        "tempo_carregamento_ms": 4557,
+        "titulo": "Case Study: The University of Bristol, England | Timely",
+        "medidas": {
+          "viewport": {
+            "largura": 1366,
+            "altura": 768
+          },
+          "meta_viewport": "width=device-width, initial-scale=1.0",
+          "largura_documento": 1366,
+          "altura_documento": 5469,
+          "ctas_total": 4,
+          "ctas_dobra": [
+            {
+              "texto": "Contact Us",
+              "href": "https://time.ly/contact/",
+              "topo": 6,
+              "largura": 64,
+              "altura": 23,
+              "botao": false,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "BOOK A DEMO",
+              "href": "https://time.ly/book-a-demo/",
+              "topo": 50,
+              "largura": 113,
+              "altura": 25,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            }
+          ],
+          "ctas_fortes_dobra": [
+            {
+              "texto": "BOOK A DEMO",
+              "href": "https://time.ly/book-a-demo/",
+              "topo": 50,
+              "largura": 113,
+              "altura": 25,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            }
+          ],
+          "primeiro_cta": {
+            "texto": "Contact Us",
+            "href": "https://time.ly/contact/",
+            "topo": 6,
+            "largura": 64,
+            "altura": 23,
+            "botao": false,
+            "palavra_chave": true,
+            "contato": false,
+            "fixo": true
+          },
+          "contato_direto": [],
+          "formularios": [],
+          "formularios_externos": [],
+          "botoes_modal": [],
+          "texto_total_chars": 6161,
+          "texto_pequeno_chars": 0,
+          "alvos_total": 45,
+          "alvos_pequenos": [
+            {
+              "texto": "Contact Us",
+              "largura": 64,
+              "altura": 23
+            },
+            {
+              "texto": "Login",
+              "largura": 32,
+              "altura": 21
+            },
+            {
+              "texto": "University of Bristol",
+              "largura": 171,
+              "altura": 20
+            },
+            {
+              "texto": "event management",
+              "largura": 154,
+              "altura": 20
+            },
+            {
+              "texto": "attendance",
+              "largura": 89,
+              "altura": 20
+            },
+            {
+              "texto": "keep posting and promoting events",
+              "largura": 304,
+              "altura": 20
+            },
+            {
+              "texto": "Case Study: Awin Group",
+              "largura": 210,
+              "altura": 20
+            },
+            {
+              "texto": "Legal",
+              "largura": 42,
+              "altura": 23
+            },
+            {
+              "texto": "Terms of Service",
+              "largura": 118,
+              "altura": 23
+            },
+            {
+              "texto": "Ticketing Terms of Service",
+              "largura": 173,
+              "altura": 23
+            },
+            {
+              "texto": "Privacy Policy",
+              "largura": 102,
+              "altura": 23
+            },
+            {
+              "texto": "Cookies Policy",
+              "largura": 106,
+              "altura": 23
+            },
+            {
+              "texto": "Web Accessibility Statement",
+              "largura": 183,
+              "altura": 23
+            }
+          ],
+          "alvos_pequenos_total": 13,
+          "h1s": [
+            {
+              "texto": "Case Study: The University of Bristol",
+              "visivel": true,
+              "topo": 157
+            }
+          ],
+          "primeiro_titulo": {
+            "tag": "h1",
+            "texto": "Case Study: The University of Bristol",
+            "topo": 157
+          },
+          "sinais_prova_social": [
+            "Preview Pricing Why Timely BOOK A DEMO Case Study: The University of Bristol Find o"
+          ],
+          "widgets_prova_social": 0
+        }
+      }
+    ],
+    "seo_paginas": [
+      {
+        "url": "https://time.ly/",
+        "titulo": "Timely All-in-One Community Management Software",
+        "descricao": "Timely community management software helps organizations manage events, registrations, bookings, memberships, and payments in one platform.",
+        "meta_robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "canonical": "https://time.ly/",
+        "h1": [
+          "COMMUNITY MANAGEMENT SOFTWARE"
+        ],
+        "saltos_hierarquia": [],
+        "imagens": 12,
+        "imagens_sem_alt": [],
+        "schema_tipos": [
+          "BreadcrumbList",
+          "FAQPage",
+          "ImageObject",
+          "Organization",
+          "Question",
+          "SoftwareApplication",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_invalido": 0,
+        "links_internos": [
+          "https://time.ly/",
+          "https://time.ly/about-us/",
+          "https://time.ly/awards-recognitions/",
+          "https://time.ly/blog/",
+          "https://time.ly/blog/case-study-love-burlington/",
+          "https://time.ly/blog/case-study-the-university-of-bristol/",
+          "https://time.ly/blog/category/case-study/",
+          "https://time.ly/blog/category/product-update/",
+          "https://time.ly/book-a-demo/",
+          "https://time.ly/client-login/",
+          "https://time.ly/contact/",
+          "https://time.ly/demo/",
+          "https://time.ly/demo/college-university-events-calendar/",
+          "https://time.ly/demo/corporate-training-calendar/",
+          "https://time.ly/demo/dmo-destination-events-calendar/",
+          "https://time.ly/demo/room-booking-calendar/",
+          "https://time.ly/demo/sports-events-calendar-demo/",
+          "https://time.ly/legal/",
+          "https://time.ly/legal/cookies-policy/",
+          "https://time.ly/legal/privacy-policy/",
+          "https://time.ly/legal/terms-of-service/",
+          "https://time.ly/legal/ticketing-terms-of-service/",
+          "https://time.ly/legal/web-accessibility-statement/",
+          "https://time.ly/markets",
+          "https://time.ly/markets/",
+          "https://time.ly/markets/corporate-learning/",
+          "https://time.ly/markets/destination-marketing-organizations/",
+          "https://time.ly/markets/event-management-software-for-corporate-events/",
+          "https://time.ly/markets/nonprofits-charities/",
+          "https://time.ly/markets/parks-recreation-software/",
+          "https://time.ly/markets/performing-arts-management-software-theatre-music-events-venues/",
+          "https://time.ly/markets/venue-event-management-software-for-associations/",
+          "https://time.ly/markets/venue-event-management-software-for-k-12-schools/",
+          "https://time.ly/markets/venue-event-management-software-for-universities-colleges/",
+          "https://time.ly/newsroom/",
+          "https://time.ly/pricing/",
+          "https://time.ly/professional-managed-event-services-solutions/",
+          "https://time.ly/request-pricing/",
+          "https://time.ly/solutions/",
+          "https://time.ly/solutions/course-training-management-software-system-tms/",
+          "https://time.ly/solutions/event-calendar-software/",
+          "https://time.ly/solutions/event-management-software/",
+          "https://time.ly/solutions/event-registration-software/",
+          "https://time.ly/solutions/event-ticketing-software/",
+          "https://time.ly/solutions/online-training-software/",
+          "https://time.ly/solutions/point-of-sales-pos-system-for-events-onsite-ticketing/",
+          "https://time.ly/solutions/space-management-software/",
+          "https://time.ly/solutions/training-scheduling-software-course-scheduler-registration-system/",
+          "https://time.ly/solutions/venue-management-software-system-vms/",
+          "https://time.ly/timely-npo-program-exclusive-discount-for-nonprofits/",
+          "https://time.ly/timely-partnership-program-application/",
+          "https://time.ly/why-timely/",
+          "https://time.ly/why-timely/customer-testimonials/"
+        ],
+        "perguntas_em_titulos": [
+          "Why Communities Choose Timely Software?",
+          "What Our Clients Say About Timely?",
+          "1. What is Timely community management software?",
+          "2. Who uses Timely?",
+          "3. Does Timely handle registration, bookings, and payments as well as calendars?",
+          "4. Can Timely manage events across multiple departments or locations?",
+          "5. Does Timely integrate with our existing systems?",
+          "6. Can Timely be embedded into an existing website?",
+          "7. Is Timely accessible?",
+          "8. How does Timely protect data and privacy?",
+          "9. Can Timely process payments securely?",
+          "10. Does Timely support multiple languages?",
+          "11. How much does Timely cost?",
+          "12. How long does it take to implement Timely?"
+        ],
+        "open_graph": {
+          "og:title": "All-in-One Community Management Software | Timely",
+          "og:description": "Timely community management software helps organizations manage events, registrations, bookings, memberships, and payments in one platform.",
+          "og:image": "https://time.ly/wp-content/uploads/2026/03/timely-home-page.jpg"
+        }
+      },
+      {
+        "url": "https://time.ly/contact/",
+        "titulo": "Contact Us. We Are Here to Help and Support You | Timely",
+        "descricao": "Contact Timely. We Are Here to Help And Answer Any Questions You Might Have. Please fill out our form and we will contact you shortly.",
+        "meta_robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "canonical": "https://time.ly/contact/",
+        "h1": [
+          "Contact Us"
+        ],
+        "saltos_hierarquia": [],
+        "imagens": 4,
+        "imagens_sem_alt": [],
+        "schema_tipos": [
+          "BreadcrumbList",
+          "ContactPage",
+          "FAQPage",
+          "Organization",
+          "Question",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_invalido": 0,
+        "links_internos": [
+          "https://time.ly/",
+          "https://time.ly/about-us/",
+          "https://time.ly/awards-recognitions/",
+          "https://time.ly/blog/",
+          "https://time.ly/blog/case-study-love-burlington/",
+          "https://time.ly/blog/case-study-the-university-of-bristol/",
+          "https://time.ly/blog/category/case-study/",
+          "https://time.ly/blog/category/product-update/",
+          "https://time.ly/book-a-demo/",
+          "https://time.ly/client-login/",
+          "https://time.ly/contact/",
+          "https://time.ly/demo/",
+          "https://time.ly/demo/college-university-events-calendar/",
+          "https://time.ly/demo/corporate-training-calendar/",
+          "https://time.ly/demo/dmo-destination-events-calendar/",
+          "https://time.ly/demo/room-booking-calendar/",
+          "https://time.ly/demo/sports-events-calendar-demo/",
+          "https://time.ly/legal/",
+          "https://time.ly/legal/cookies-policy/",
+          "https://time.ly/legal/privacy-policy/",
+          "https://time.ly/legal/terms-of-service/",
+          "https://time.ly/legal/ticketing-terms-of-service/",
+          "https://time.ly/legal/web-accessibility-statement/",
+          "https://time.ly/markets",
+          "https://time.ly/markets/",
+          "https://time.ly/markets/corporate-learning/",
+          "https://time.ly/markets/destination-marketing-organizations/",
+          "https://time.ly/markets/event-management-software-for-corporate-events/",
+          "https://time.ly/markets/nonprofits-charities/",
+          "https://time.ly/markets/parks-recreation-software/",
+          "https://time.ly/markets/venue-event-management-software-for-associations/",
+          "https://time.ly/markets/venue-event-management-software-for-k-12-schools/",
+          "https://time.ly/markets/venue-event-management-software-for-universities-colleges/",
+          "https://time.ly/newsroom/",
+          "https://time.ly/pricing/",
+          "https://time.ly/professional-managed-event-services-solutions/",
+          "https://time.ly/solutions/",
+          "https://time.ly/solutions/course-training-management-software-system-tms/",
+          "https://time.ly/solutions/event-calendar-software/",
+          "https://time.ly/solutions/event-management-software/",
+          "https://time.ly/solutions/event-registration-software/",
+          "https://time.ly/solutions/event-ticketing-software/",
+          "https://time.ly/solutions/online-training-software/",
+          "https://time.ly/solutions/point-of-sales-pos-system-for-events-onsite-ticketing/",
+          "https://time.ly/solutions/space-management-software/",
+          "https://time.ly/solutions/training-scheduling-software-course-scheduler-registration-system/",
+          "https://time.ly/solutions/venue-management-software-system-vms/",
+          "https://time.ly/timely-npo-program-exclusive-discount-for-nonprofits/",
+          "https://time.ly/timely-partnership-program-application/",
+          "https://time.ly/why-timely/",
+          "https://time.ly/why-timely/customer-testimonials/"
+        ],
+        "perguntas_em_titulos": [
+          "1. How can I purchase a subscription or inquire about Timely pricing?",
+          "2. Can I try Timely before subscribing?",
+          "3. Is a demo available?",
+          "4. How do I upgrade my account or purchase add-ons?",
+          "5. Do you offer discounts?",
+          "6. Can I request a customized quote?",
+          "7. How can I contact customer support?",
+          "8. How do I delete my account?"
+        ],
+        "open_graph": {
+          "og:title": "Contact Us",
+          "og:description": "Contact Timely. We Are Here to Help And Answer Any Questions You Might Have. Please fill out our form and we will contact you shortly."
+        }
+      },
+      {
+        "url": "https://time.ly/blog/",
+        "titulo": "Event Planning & Management Blog, Tips & Insights | Timely",
+        "descricao": "Discover expert tips, industry trends, and best practices for events, training, venues, and memberships with Timely’s event planning and management blog.",
+        "meta_robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "canonical": "https://time.ly/blog/",
+        "h1": [
+          "Timely Event Planning & Management Blog"
+        ],
+        "saltos_hierarquia": [],
+        "imagens": 14,
+        "imagens_sem_alt": [],
+        "schema_tipos": [
+          "BreadcrumbList",
+          "ImageObject",
+          "Organization",
+          "VideoObject",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_invalido": 0,
+        "links_internos": [
+          "https://time.ly/",
+          "https://time.ly/about-us/",
+          "https://time.ly/awards-recognitions/",
+          "https://time.ly/blog/",
+          "https://time.ly/blog/ai-in-higher-education-applications-examples/",
+          "https://time.ly/blog/ai-in-training-and-development-20-practical-applications/",
+          "https://time.ly/blog/best-ai-tools-for-event-planners-chatgpt-dall-e-more/",
+          "https://time.ly/blog/case-study-love-burlington/",
+          "https://time.ly/blog/case-study-the-university-of-bristol/",
+          "https://time.ly/blog/category/case-study/",
+          "https://time.ly/blog/category/community-management/",
+          "https://time.ly/blog/category/event-management/",
+          "https://time.ly/blog/category/membership-management/",
+          "https://time.ly/blog/category/product-update/",
+          "https://time.ly/blog/category/training-management/",
+          "https://time.ly/blog/category/venue-management/",
+          "https://time.ly/blog/clever-ways-to-use-artificial-intelligence-ai-in-events/",
+          "https://time.ly/blog/event-accessibility-guide-planning-accessible-events/",
+          "https://time.ly/blog/event-technology-top-new-trends-tools/",
+          "https://time.ly/blog/guide-to-incorporating-sustainability-in-events/",
+          "https://time.ly/blog/how-to-start-an-event-planning-business/",
+          "https://time.ly/blog/new-trends-in-the-events-industry-you-must-follow/",
+          "https://time.ly/blog/product-update-august-2026/",
+          "https://time.ly/blog/product-update-october-2026/",
+          "https://time.ly/blog/product-update-september-2026/",
+          "https://time.ly/blog/tag/artificial-intelligence/",
+          "https://time.ly/blog/tag/trends/",
+          "https://time.ly/blog/top-hr-technology-trends-every-company-should-follow/",
+          "https://time.ly/blog/venue-management-glossary-key-venue-definitions-terms/",
+          "https://time.ly/blog/virtual-event-trends-shaping-the-course/",
+          "https://time.ly/blog/what-is-community-management-definition-benefits-examples/",
+          "https://time.ly/blog/what-is-event-management-definition-benefits-examples/",
+          "https://time.ly/blog/what-is-membership-management-meaning-benefits-examples/",
+          "https://time.ly/blog/what-is-venue-management-definition-benefits-examples/",
+          "https://time.ly/book-a-demo/",
+          "https://time.ly/client-login/",
+          "https://time.ly/contact/",
+          "https://time.ly/demo/",
+          "https://time.ly/demo/college-university-events-calendar/",
+          "https://time.ly/demo/corporate-training-calendar/",
+          "https://time.ly/demo/dmo-destination-events-calendar/",
+          "https://time.ly/demo/room-booking-calendar/",
+          "https://time.ly/demo/sports-events-calendar-demo/",
+          "https://time.ly/legal/",
+          "https://time.ly/legal/cookies-policy/",
+          "https://time.ly/legal/privacy-policy/",
+          "https://time.ly/legal/terms-of-service/",
+          "https://time.ly/legal/ticketing-terms-of-service/",
+          "https://time.ly/legal/web-accessibility-statement/",
+          "https://time.ly/markets",
+          "https://time.ly/markets/",
+          "https://time.ly/markets/corporate-learning/",
+          "https://time.ly/markets/destination-marketing-organizations/",
+          "https://time.ly/markets/event-management-software-for-corporate-events/",
+          "https://time.ly/markets/nonprofits-charities/",
+          "https://time.ly/markets/parks-recreation-software/",
+          "https://time.ly/markets/venue-event-management-software-for-associations/",
+          "https://time.ly/markets/venue-event-management-software-for-k-12-schools/",
+          "https://time.ly/markets/venue-event-management-software-for-universities-colleges/",
+          "https://time.ly/newsroom/",
+          "https://time.ly/pricing/",
+          "https://time.ly/professional-managed-event-services-solutions/",
+          "https://time.ly/solutions/",
+          "https://time.ly/solutions/course-training-management-software-system-tms/",
+          "https://time.ly/solutions/event-calendar-software/",
+          "https://time.ly/solutions/event-management-software/",
+          "https://time.ly/solutions/event-registration-software/",
+          "https://time.ly/solutions/event-ticketing-software/",
+          "https://time.ly/solutions/online-training-software/",
+          "https://time.ly/solutions/point-of-sales-pos-system-for-events-onsite-ticketing/",
+          "https://time.ly/solutions/space-management-software/",
+          "https://time.ly/solutions/training-scheduling-software-course-scheduler-registration-system/",
+          "https://time.ly/solutions/venue-management-software-system-vms/",
+          "https://time.ly/timely-npo-program-exclusive-discount-for-nonprofits/",
+          "https://time.ly/timely-partnership-program-application/",
+          "https://time.ly/why-timely/",
+          "https://time.ly/why-timely/customer-testimonials/"
+        ],
+        "perguntas_em_titulos": [],
+        "open_graph": {
+          "og:title": "Blog",
+          "og:description": "Discover expert tips, industry trends, and best practices for events, training, venues, and memberships with Timely’s event planning and management blog.",
+          "og:image": "https://time.ly/wp-content/uploads/2024/07/blog-screenshot.jpg"
+        }
+      },
+      {
+        "url": "https://time.ly/blog/case-study-love-burlington/",
+        "titulo": "Case Study: Love Burlington | Timely",
+        "descricao": "Discover how Timely helped Love Burlington, the DMO for the City of Burlington in Vermont, build a successful destination events calendar.",
+        "meta_robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "canonical": "https://time.ly/blog/case-study-love-burlington/",
+        "h1": [
+          "Case Study: Love Burlington"
+        ],
+        "saltos_hierarquia": [],
+        "imagens": 16,
+        "imagens_sem_alt": [],
+        "schema_tipos": [
+          "Article",
+          "BreadcrumbList",
+          "ImageObject",
+          "Organization",
+          "Person",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_invalido": 0,
+        "links_internos": [
+          "https://time.ly/",
+          "https://time.ly/about-us/",
+          "https://time.ly/awards-recognitions/",
+          "https://time.ly/blog/",
+          "https://time.ly/blog/author/victoria/",
+          "https://time.ly/blog/case-study-awin-group/",
+          "https://time.ly/blog/case-study-jewish-federation-of-southern-arizona/",
+          "https://time.ly/blog/case-study-love-burlington/",
+          "https://time.ly/blog/case-study-the-university-of-bristol/",
+          "https://time.ly/blog/case-study-tulsakids-magazine/",
+          "https://time.ly/blog/case-study-university-of-health-sciences-and-pharmacy-uhsp/",
+          "https://time.ly/blog/category/case-study/",
+          "https://time.ly/blog/category/product-update/",
+          "https://time.ly/blog/unique-virtual-team-activities-for-hybrid-workplaces/",
+          "https://time.ly/book-a-demo/",
+          "https://time.ly/client-login/",
+          "https://time.ly/contact/",
+          "https://time.ly/demo/",
+          "https://time.ly/demo/college-university-events-calendar/",
+          "https://time.ly/demo/corporate-training-calendar/",
+          "https://time.ly/demo/dmo-destination-events-calendar/",
+          "https://time.ly/demo/room-booking-calendar/",
+          "https://time.ly/demo/sports-events-calendar-demo/",
+          "https://time.ly/legal/",
+          "https://time.ly/legal/cookies-policy/",
+          "https://time.ly/legal/privacy-policy/",
+          "https://time.ly/legal/terms-of-service/",
+          "https://time.ly/legal/ticketing-terms-of-service/",
+          "https://time.ly/legal/web-accessibility-statement/",
+          "https://time.ly/markets",
+          "https://time.ly/markets/",
+          "https://time.ly/markets/corporate-learning/",
+          "https://time.ly/markets/destination-marketing-organizations/",
+          "https://time.ly/markets/event-management-software-for-corporate-events/",
+          "https://time.ly/markets/nonprofits-charities/",
+          "https://time.ly/markets/parks-recreation-software/",
+          "https://time.ly/markets/venue-event-management-software-for-associations/",
+          "https://time.ly/markets/venue-event-management-software-for-k-12-schools/",
+          "https://time.ly/markets/venue-event-management-software-for-universities-colleges/",
+          "https://time.ly/newsroom/",
+          "https://time.ly/pricing/",
+          "https://time.ly/professional-managed-event-services-solutions/",
+          "https://time.ly/solutions/",
+          "https://time.ly/solutions/course-training-management-software-system-tms/",
+          "https://time.ly/solutions/event-calendar-software/",
+          "https://time.ly/solutions/event-management-software/",
+          "https://time.ly/solutions/event-registration-software/",
+          "https://time.ly/solutions/event-ticketing-software/",
+          "https://time.ly/solutions/online-training-software/",
+          "https://time.ly/solutions/point-of-sales-pos-system-for-events-onsite-ticketing/",
+          "https://time.ly/solutions/space-management-software/",
+          "https://time.ly/solutions/training-scheduling-software-course-scheduler-registration-system/",
+          "https://time.ly/solutions/venue-management-software-system-vms/",
+          "https://time.ly/timely-npo-program-exclusive-discount-for-nonprofits/",
+          "https://time.ly/timely-partnership-program-application/",
+          "https://time.ly/why-timely/",
+          "https://time.ly/why-timely/customer-testimonials/"
+        ],
+        "perguntas_em_titulos": [
+          "How Timely Helped the City of Burlington During the Covid-19 Pandemic?"
+        ],
+        "open_graph": {
+          "og:title": "Case Study: Love Burlington",
+          "og:description": "Discover how Timely helped Love Burlington, the DMO for the City of Burlington in Vermont, build a successful destination events calendar.",
+          "og:image": "https://time.ly/wp-content/uploads/2021/06/case-study.jpg"
+        }
+      },
+      {
+        "url": "https://time.ly/blog/case-study-the-university-of-bristol/",
+        "titulo": "Case Study: The University of Bristol, England | Timely",
+        "descricao": "Find how the University of Bristol used Timely Event Management Software to increase listings and engagement with its university calendar.",
+        "meta_robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+        "canonical": "https://time.ly/blog/case-study-the-university-of-bristol/",
+        "h1": [
+          "Case Study: The University of Bristol"
+        ],
+        "saltos_hierarquia": [],
+        "imagens": 17,
+        "imagens_sem_alt": [],
+        "schema_tipos": [
+          "Article",
+          "BreadcrumbList",
+          "ImageObject",
+          "Organization",
+          "Person",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_invalido": 0,
+        "links_internos": [
+          "https://time.ly/",
+          "https://time.ly/about-us/",
+          "https://time.ly/awards-recognitions/",
+          "https://time.ly/blog/",
+          "https://time.ly/blog/5-essential-skills-of-a-university-event-coordinator/",
+          "https://time.ly/blog/6-ways-to-supercharge-your-university-event-management/",
+          "https://time.ly/blog/author/victoria/",
+          "https://time.ly/blog/case-study-awin-group/",
+          "https://time.ly/blog/case-study-jewish-federation-of-southern-arizona/",
+          "https://time.ly/blog/case-study-love-burlington/",
+          "https://time.ly/blog/case-study-the-university-of-bristol/",
+          "https://time.ly/blog/case-study-tulsakids-magazine/",
+          "https://time.ly/blog/case-study-university-of-health-sciences-and-pharmacy-uhsp/",
+          "https://time.ly/blog/category/case-study/",
+          "https://time.ly/blog/category/product-update/",
+          "https://time.ly/blog/guide-to-building-your-university-event-calendar/",
+          "https://time.ly/blog/how-to-get-university-students-to-attend-on-campus-events/",
+          "https://time.ly/blog/unique-virtual-team-activities-for-hybrid-workplaces/",
+          "https://time.ly/book-a-demo/",
+          "https://time.ly/client-login/",
+          "https://time.ly/contact/",
+          "https://time.ly/demo/",
+          "https://time.ly/demo/college-university-events-calendar/",
+          "https://time.ly/demo/corporate-training-calendar/",
+          "https://time.ly/demo/dmo-destination-events-calendar/",
+          "https://time.ly/demo/room-booking-calendar/",
+          "https://time.ly/demo/sports-events-calendar-demo/",
+          "https://time.ly/guide-to-building-your-university-event-calendar/",
+          "https://time.ly/how-to-create-an-inspiring-look-for-your-timely-events-calendar/",
+          "https://time.ly/legal/",
+          "https://time.ly/legal/cookies-policy/",
+          "https://time.ly/legal/privacy-policy/",
+          "https://time.ly/legal/terms-of-service/",
+          "https://time.ly/legal/ticketing-terms-of-service/",
+          "https://time.ly/legal/web-accessibility-statement/",
+          "https://time.ly/markets",
+          "https://time.ly/markets/",
+          "https://time.ly/markets/corporate-learning/",
+          "https://time.ly/markets/destination-marketing-organizations/",
+          "https://time.ly/markets/event-management-software-for-corporate-events/",
+          "https://time.ly/markets/nonprofits-charities/",
+          "https://time.ly/markets/parks-recreation-software/",
+          "https://time.ly/markets/venue-event-management-software-for-associations/",
+          "https://time.ly/markets/venue-event-management-software-for-k-12-schools/",
+          "https://time.ly/markets/venue-event-management-software-for-universities-colleges/",
+          "https://time.ly/newsroom/",
+          "https://time.ly/pricing/",
+          "https://time.ly/professional-managed-event-services-solutions/",
+          "https://time.ly/solutions/",
+          "https://time.ly/solutions/course-training-management-software-system-tms/",
+          "https://time.ly/solutions/event-calendar-software/",
+          "https://time.ly/solutions/event-management-software/",
+          "https://time.ly/solutions/event-registration-software/",
+          "https://time.ly/solutions/event-ticketing-software/",
+          "https://time.ly/solutions/online-training-software/",
+          "https://time.ly/solutions/point-of-sales-pos-system-for-events-onsite-ticketing/",
+          "https://time.ly/solutions/space-management-software/",
+          "https://time.ly/solutions/training-scheduling-software-course-scheduler-registration-system/",
+          "https://time.ly/solutions/venue-management-software-system-vms/",
+          "https://time.ly/timely-npo-program-exclusive-discount-for-nonprofits/",
+          "https://time.ly/timely-partnership-program-application/",
+          "https://time.ly/why-timely/",
+          "https://time.ly/why-timely/customer-testimonials/"
+        ],
+        "perguntas_em_titulos": [
+          "How Timely Helped the University of Bristol During the Covid-19 Pandemic?"
+        ],
+        "open_graph": {
+          "og:title": "Case Study: The University of Bristol",
+          "og:description": "Find how the University of Bristol used Timely Event Management Software to increase listings and engagement with its university calendar.",
+          "og:image": "https://time.ly/wp-content/uploads/2021/06/case-study.jpg"
+        }
+      }
+    ],
+    "requisicoes_bloqueadas": [],
+    "busca_contato": {
+      "url": "https://time.ly/contact/",
+      "tentativas": [
+        "/contato/",
+        "/fale-conosco/"
+      ],
+      "erro": null
+    },
+    "log_http": [
+      {
+        "url": "https://time.ly/",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 26
+      },
+      {
+        "url": "https://time.ly/robots.txt",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 1025
+      },
+      {
+        "url": "https://time.ly/sitemap_index.xml",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 5
+      },
+      {
+        "url": "https://time.ly/post-sitemap.xml",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 999
+      },
+      {
+        "url": "https://time.ly/page-sitemap.xml",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 2282
+      },
+      {
+        "url": "https://time.ly/contato/",
+        "metodo": "GET",
+        "status": 404,
+        "erro": null,
+        "ms": 780
+      },
+      {
+        "url": "https://time.ly/fale-conosco/",
+        "metodo": "GET",
+        "status": 404,
+        "erro": null,
+        "ms": 1022
+      },
+      {
+        "url": "https://time.ly/llms.txt",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 51
+      },
+      {
+        "url": "http://time.ly/",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 1954
+      },
+      {
+        "url": "https://time.ly/about-us/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1490
+      },
+      {
+        "url": "https://time.ly/awards-recognitions/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1465
+      },
+      {
+        "url": "https://time.ly/blog/category/case-study/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 697
+      },
+      {
+        "url": "https://time.ly/blog/category/product-update/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 922
+      },
+      {
+        "url": "https://time.ly/book-a-demo/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1179
+      },
+      {
+        "url": "https://time.ly/client-login/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1069
+      },
+      {
+        "url": "https://time.ly/demo/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 755
+      },
+      {
+        "url": "https://time.ly/demo/college-university-events-calendar/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 988
+      },
+      {
+        "url": "https://time.ly/demo/corporate-training-calendar/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1192
+      },
+      {
+        "url": "https://time.ly/demo/dmo-destination-events-calendar/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 853
+      },
+      {
+        "url": "https://time.ly/demo/room-booking-calendar/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 990
+      },
+      {
+        "url": "https://time.ly/demo/sports-events-calendar-demo/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 980
+      },
+      {
+        "url": "https://time.ly/legal/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1039
+      },
+      {
+        "url": "https://time.ly/legal/cookies-policy/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 968
+      },
+      {
+        "url": "https://time.ly/legal/privacy-policy/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1032
+      },
+      {
+        "url": "https://time.ly/legal/terms-of-service/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 953
+      },
+      {
+        "url": "https://time.ly/legal/ticketing-terms-of-service/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1006
+      },
+      {
+        "url": "https://time.ly/legal/web-accessibility-statement/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1141
+      },
+      {
+        "url": "https://time.ly/markets",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1847
+      },
+      {
+        "url": "https://time.ly/markets/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 425
+      },
+      {
+        "url": "https://time.ly/markets/corporate-learning/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1580
+      },
+      {
+        "url": "https://time.ly/markets/destination-marketing-organizations/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1005
+      },
+      {
+        "url": "https://time.ly/markets/event-management-software-for-corporate-events/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1347
+      },
+      {
+        "url": "https://time.ly/markets/nonprofits-charities/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 829
+      },
+      {
+        "url": "https://time.ly/markets/parks-recreation-software/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 957
+      },
+      {
+        "url": "https://time.ly/markets/performing-arts-management-software-theatre-music-events-venues/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 867
+      },
+      {
+        "url": "https://time.ly/markets/venue-event-management-software-for-associations/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 984
+      },
+      {
+        "url": "https://time.ly/markets/venue-event-management-software-for-k-12-schools/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1024
+      },
+      {
+        "url": "https://time.ly/markets/venue-event-management-software-for-universities-colleges/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1357
+      },
+      {
+        "url": "https://time.ly/newsroom/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 631
+      },
+      {
+        "url": "https://time.ly/pricing/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 436
+      },
+      {
+        "url": "https://time.ly/professional-managed-event-services-solutions/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1715
+      },
+      {
+        "url": "https://time.ly/request-pricing/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 838
+      },
+      {
+        "url": "https://time.ly/solutions/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1035
+      },
+      {
+        "url": "https://time.ly/solutions/course-training-management-software-system-tms/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1144
+      },
+      {
+        "url": "https://time.ly/solutions/event-calendar-software/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 890
+      },
+      {
+        "url": "https://time.ly/solutions/event-management-software/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 938
+      },
+      {
+        "url": "https://time.ly/solutions/event-registration-software/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1060
+      },
+      {
+        "url": "https://time.ly/solutions/event-ticketing-software/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 935
+      },
+      {
+        "url": "https://time.ly/solutions/online-training-software/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 992
+      }
+    ]
+  },
+  "revisao_rascunho_criado": true
+}

@@ -1,0 +1,73 @@
+{
+  "_instrucoes": "Edite os textos abaixo. Para cada bloco revisado, troque o status para \"revisado\". A versão revisada só é gerada quando TODOS os blocos estiverem \"revisado\" e com texto. Campo 'situacao' aceita: ok, atencao, problema. 'prioridade': alta, media, baixa. Textos marcados com [RASCUNHO] são sugestões da ferramenta: reescreva ou apague a marcação para aceitar. O campo 'sinais_coletados' é só referência e não aparece no relatório. Depois rode: python diagnostico.py URL --nome \"Empresa\" --versao revisada. Na automação (Fase 2), salvar este arquivo já gera a versão revisada; para enviá-la ao lead, troque 'enviar_ao_lead' para true.",
+  "empresa": "time.ly",
+  "url": "https://time.ly/",
+  "data_analise": "2026-10-29",
+  "demonstracao": false,
+  "enviar_ao_lead": false,
+  "nota_pessoal": {
+    "status": "pendente de revisão",
+    "texto": "[RASCUNHO] Olá! Analisei o site da time.ly com atenção. O ponto que eu atacaria primeiro é: link de whatsapp. É uma melhoria que costuma trazer resultado rápido. Separei abaixo um plano em ordem de impacto. Se quiser, a gente conversa e eu te mostro como colocar em prática."
+  },
+  "avaliacoes": [
+    {
+      "id": "ux-social",
+      "titulo": "Prova social visível",
+      "status": "pendente de revisão",
+      "situacao": "ok",
+      "o_que_vimos": "[RASCUNHO] Encontramos sinais de prova social, como depoimentos, avaliações ou clientes atendidos.",
+      "o_que_significa": "[RASCUNHO] Mostrar quem já confia na empresa ajuda o visitante a decidir. Vale conferir se esses elementos aparecem logo na página inicial.",
+      "o_que_fazer": "",
+      "prioridade": "",
+      "esforco": "",
+      "sinais_coletados": "/: “Health Sciences and Pharmacy READ MORE CASE STUDIES READ MORE TESTIMONIALS As Seen”; /contact/: “tailored for various industries and use cases. Schedule a demo to see Timely in actio”"
+    },
+    {
+      "id": "ux-proposta",
+      "titulo": "Clareza da proposta de valor no título principal",
+      "status": "pendente de revisão",
+      "situacao": "ok",
+      "o_que_vimos": "[RASCUNHO] O título principal é “COMMUNITY MANAGEMENT SOFTWARE”.",
+      "o_que_significa": "[RASCUNHO] Parece descrever a oferta. Vale confirmar se deixa claro para quem é e qual o diferencial.",
+      "o_que_fazer": "",
+      "prioridade": "",
+      "esforco": "",
+      "sinais_coletados": "Leia o título e decida se a proposta de valor está clara. Ajuste o texto do relatório se discordar."
+    }
+  ],
+  "plano": {
+    "status": "pendente de revisão",
+    "itens": [
+      {
+        "fase": "Fazer primeiro",
+        "acao": "Transformar o número em link de WhatsApp e adicionar um botão fixo no canto da tela.",
+        "area": "Conversão",
+        "esforco": "rápido (horas)"
+      },
+      {
+        "fase": "Quando possível",
+        "acao": "Transformar telefone e e-mail em links clicáveis no rodapé e na página de contato.",
+        "area": "Conversão",
+        "esforco": "rápido (horas)"
+      },
+      {
+        "fase": "Quando possível",
+        "acao": "Aumentar a área de toque de ícones e links para pelo menos 44 px.",
+        "area": "Experiência",
+        "esforco": "rápido (horas)"
+      },
+      {
+        "fase": "Quando possível",
+        "acao": "Remover estilos sem uso, comuns em temas e construtores de página.",
+        "area": "Performance",
+        "esforco": "médio (dias)"
+      },
+      {
+        "fase": "Quando possível",
+        "acao": "Adiar ou carregar de forma assíncrona os arquivos que não são essenciais para a primeira tela.",
+        "area": "Performance",
+        "esforco": "médio (dias)"
+      }
+    ]
+  }
+}
