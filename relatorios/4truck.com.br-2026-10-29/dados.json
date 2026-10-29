@@ -1,0 +1,2999 @@
+{
+  "versao": "1.0.0",
+  "gerado_em": "2026-10-29T17:07:54",
+  "empresa": "4truck.com.br",
+  "url_informada": "https://4truck.com.br/",
+  "url_final": "https://4truck.com.br/",
+  "data": "2026-10-29",
+  "data_extenso": "29 de outubro de 2026",
+  "pasta": "/home/runner/work/workdigital-diagnosticos/workdigital-diagnosticos/dados/relatorios/4truck.com.br-2026-10-29",
+  "avisos": [],
+  "achados": [
+    {
+      "id": "perf-lcp",
+      "categoria": "performance",
+      "titulo": "O site leva 8,0 s para mostrar o conteúdo principal no celular",
+      "tipo": "medido",
+      "situacao": "problema",
+      "o_que_vimos": "O conteúdo principal da página inicial só fica visível depois de 8,0 s. O recomendado pelo Google é até 2,5 s.",
+      "evidencia": "",
+      "significado": "",
+      "correcao": "Reduzir o peso da primeira tela (imagens, scripts e fontes).",
+      "impacto": "parte dos visitantes que chegam pelo Google ou por anúncios desiste antes de ver o que você oferece.",
+      "prioridade": "alta",
+      "esforco": "médio (dias)",
+      "peso": 0,
+      "area": "Performance",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": false
+    },
+    {
+      "id": "perf-op-unused-javascript",
+      "categoria": "performance",
+      "titulo": "Código que é baixado mas não é usado",
+      "tipo": "medido",
+      "situacao": "problema",
+      "o_que_vimos": "A ferramenta de medição apontou este item na versão para celular.",
+      "evidencia": "economia estimada de <code>0,9 s</code>; redução estimada de <code>0,8 MB</code>.",
+      "significado": "O visitante baixa programação que a página não utiliza, geralmente de plugins e ferramentas externas.",
+      "correcao": "Remover plugins sem uso e carregar scripts só nas páginas que precisam deles.",
+      "impacto": "",
+      "prioridade": "media",
+      "esforco": "médio (dias)",
+      "peso": 0,
+      "area": "Performance",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "perf-op-unused-css-rules",
+      "categoria": "performance",
+      "titulo": "Estilos que são baixados mas não são usados",
+      "tipo": "medido",
+      "situacao": "problema",
+      "o_que_vimos": "A ferramenta de medição apontou este item na versão para celular.",
+      "evidencia": "economia estimada de <code>0,5 s</code>; redução estimada de <code>0,1 MB</code>.",
+      "significado": "Arquivos de estilo maiores que o necessário atrasam a exibição.",
+      "correcao": "Remover estilos sem uso, comuns em temas e construtores de página.",
+      "impacto": "",
+      "prioridade": "media",
+      "esforco": "médio (dias)",
+      "peso": 0,
+      "area": "Performance",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "perf-op-unminified-javascript",
+      "categoria": "performance",
+      "titulo": "Scripts sem minificação",
+      "tipo": "medido",
+      "situacao": "problema",
+      "o_que_vimos": "A ferramenta de medição apontou este item na versão para celular.",
+      "evidencia": "economia estimada de <code>0,1 s</code>; redução estimada de <code>0,0 MB</code>.",
+      "significado": "Arquivos maiores que o necessário.",
+      "correcao": "Minificar os scripts.",
+      "impacto": "",
+      "prioridade": "baixa",
+      "esforco": "rápido (horas)",
+      "peso": 0,
+      "area": "Performance",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-cta-mobile",
+      "categoria": "ux",
+      "titulo": "Chamada para ação na primeira tela (celular)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Há um botão de ação visível sem precisar rolar a página no celular.",
+      "evidencia": "<code>Abrir WhatsApp</code> a 763 px do topo, <code>SOLICITE UM ORÇAMENTO</code> a 469 px do topo; a tela tem 844 px de altura.",
+      "significado": "O visitante recebe um convite claro para dar o próximo passo.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 3,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-cta-desktop",
+      "categoria": "ux",
+      "titulo": "Chamada para ação na primeira tela (computador)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Há um botão de ação visível sem precisar rolar a página no computador.",
+      "evidencia": "<code>Abrir WhatsApp</code> a 687 px do topo, <code>SOLICITE UM ORÇAMENTO</code> a 604 px do topo; a tela tem 768 px de altura.",
+      "significado": "O visitante recebe um convite claro para dar o próximo passo.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 2,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-whatsapp",
+      "categoria": "ux",
+      "titulo": "Link de WhatsApp",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "A página inicial no celular tem link de WhatsApp visível já na primeira tela.",
+      "evidencia": "<code>https://api.whatsapp.com/send?phone=551124465000</code> a 469 px do topo; a tela tem 844 px; presente em 5 páginas das 5 analisadas.",
+      "significado": "Um toque abre a conversa, sem precisar copiar o número.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 3,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-tel-email",
+      "categoria": "ux",
+      "titulo": "Telefone e e-mail clicáveis",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O site tem telefone e e-mail clicáveis.",
+      "evidencia": "encontrados: telefone <code>tel:+551124465000</code>; e-mail <code>mailto:%204truck@4truck.com.br</code>.",
+      "significado": "Um toque liga ou abre o e-mail, sem copiar nada.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-form",
+      "categoria": "ux",
+      "titulo": "Formulário de contato",
+      "tipo": "medido",
+      "situacao": "atencao",
+      "o_que_vimos": "O formulário principal 3 campos sem rótulo (só com texto de exemplo dentro do campo, que some ao digitar).",
+      "evidencia": "encontrado na página <code>/orcamento/</code> (formulário de RD Station): 3 campos, 0 com rótulo identificável.",
+      "significado": "Rótulos claros e poucos campos facilitam o preenchimento, inclusive para leitores de tela.",
+      "correcao": "Manter até 6 campos e colocar um rótulo visível acima de cada um.",
+      "impacto": "",
+      "prioridade": "baixa",
+      "esforco": "rápido (horas)",
+      "peso": 2,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-viewport",
+      "categoria": "ux",
+      "titulo": "Site adaptado ao celular",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "A página se ajusta à largura do celular, sem rolagem lateral.",
+      "evidencia": "meta viewport <code>width=device-width, initial-scale=1.0, viewport-fit=cover</code>; conteúdo com 390 px em tela de 390 px.",
+      "significado": "",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 2,
+      "area": "Experiência",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-toque",
+      "categoria": "ux",
+      "titulo": "Botões e links fáceis de tocar",
+      "tipo": "medido",
+      "situacao": "problema",
+      "o_que_vimos": "47% dos botões e links da página inicial são pequenos demais para tocar com o dedo.",
+      "evidencia": "15 de 32 elementos clicáveis com menos de <code>24×24 px</code>, por exemplo <code>Baús de Alumínio,</code>, <code>Dicas,</code>, <code>Implementos Rodoviários,</code>.",
+      "significado": "Alvos pequenos causam toques errados, principalmente para pessoas com mais idade.",
+      "correcao": "Aumentar a área de toque de ícones e links para pelo menos 44 px.",
+      "impacto": "",
+      "prioridade": "media",
+      "esforco": "rápido (horas)",
+      "peso": 1,
+      "area": "Experiência",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-leitura",
+      "categoria": "ux",
+      "titulo": "Leitura confortável no celular",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "0% do texto da página inicial no celular está com letra menor que 12 px.",
+      "evidencia": "0 de 1.557 caracteres visíveis abaixo de <code>12px</code>.",
+      "significado": "O tamanho do texto é confortável para leitura no celular.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "Experiência",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "ux-social",
+      "categoria": "ux",
+      "titulo": "Prova social visível",
+      "tipo": "avaliacao",
+      "situacao": "ok",
+      "o_que_vimos": "Encontramos sinais de prova social, como depoimentos, avaliações ou clientes atendidos.",
+      "evidencia": "<code>/sobre-nos/</code>: “e caminhão do mercado”. NOSSOS CLIENTES DEPOIMENTOS CLIQUE AQUI E CONFIRA MAIS DEPOIMENTOS”; <code>/sobre-nos/</code>: “manutenção das frotas de implementos de nossos clientes e também multimarcas. Nossa empres”",
+      "significado": "Mostrar quem já confia na empresa ajuda o visitante a decidir. Vale conferir se esses elementos aparecem logo na página inicial.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "Sinal detectado por palavras-chave. Confira se é prova social de fato (e não só a palavra 'clientes' num menu).",
+      "secao": true
+    },
+    {
+      "id": "ux-proposta",
+      "categoria": "ux",
+      "titulo": "Clareza da proposta de valor no título principal",
+      "tipo": "avaliacao",
+      "situacao": "ok",
+      "o_que_vimos": "O título principal é “O NOSSO NEGÓCIO É TRANSPORTAR O SEU!”.",
+      "evidencia": "",
+      "significado": "Parece descrever a oferta. Vale confirmar se deixa claro para quem é e qual o diferencial.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0,
+      "area": "Conversão",
+      "confianca": "alta",
+      "nota_interna": "Leia o título e decida se a proposta de valor está clara. Ajuste o texto do relatório se discordar.",
+      "secao": true
+    },
+    {
+      "id": "seo-noindex",
+      "categoria": "seo",
+      "titulo": "Páginas liberadas para o Google",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Nenhuma página analisada pede ao Google para não aparecer nas buscas.",
+      "evidencia": "",
+      "significado": "",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 3,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-title",
+      "categoria": "seo",
+      "titulo": "Título das páginas no Google",
+      "tipo": "medido",
+      "situacao": "atencao",
+      "o_que_vimos": "2 páginas com título curto ou longo demais para o Google.",
+      "evidencia": "<code>/servicos/</code>: <code>Serviços</code> (8 caracteres); <code>/sobre-nos/</code>: <code>Sobre Nós</code> (9 caracteres)",
+      "significado": "O título é o texto azul que aparece no Google. Ele precisa dizer o que a página oferece em até cerca de 60 caracteres.",
+      "correcao": "Escrever um título para cada página com o serviço principal e, se fizer sentido, a cidade.",
+      "impacto": "o Google mostra um texto pouco atrativo e você perde cliques para concorrentes.",
+      "prioridade": "baixa",
+      "esforco": "rápido (horas)",
+      "peso": 2,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-title-dup",
+      "categoria": "seo",
+      "titulo": "Títulos repetidos entre páginas",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Cada uma das 5 páginas tem um título diferente.",
+      "evidencia": "",
+      "significado": "",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-desc",
+      "categoria": "seo",
+      "titulo": "Descrição das páginas (meta description)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Todas as páginas analisadas têm descrição própria e de tamanho adequado.",
+      "evidencia": "",
+      "significado": "É o texto que costuma aparecer abaixo do título no Google. Sem ela, o Google escolhe um trecho qualquer da página.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-h1",
+      "categoria": "seo",
+      "titulo": "Título principal único em cada página (H1)",
+      "tipo": "medido",
+      "situacao": "problema",
+      "o_que_vimos": "3 páginas sem título principal (H1); 1 página com mais de um H1.",
+      "evidencia": "<code>/</code>: 0 H1; <code>/orcamento/</code>: 0 H1; <code>/sobre-nos/</code>: 0 H1; <code>/servicos/servicos-reformas/</code>: 2 H1",
+      "significado": "O H1 é o título de destaque dentro da página. O Google usa esse título para entender o assunto principal.",
+      "correcao": "Garantir um único H1 por página, com o tema principal dela.",
+      "impacto": "",
+      "prioridade": "media",
+      "esforco": "rápido (horas)",
+      "peso": 1.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-hierarquia",
+      "categoria": "seo",
+      "titulo": "Hierarquia de títulos",
+      "tipo": "medido",
+      "situacao": "atencao",
+      "o_que_vimos": "1 página pula níveis de subtítulo (por exemplo, de H2 direto para H4).",
+      "evidencia": "<code>/servicos/</code>: h1→h4",
+      "significado": "Uma estrutura de títulos organizada ajuda o Google, as IAs e leitores de tela a entender o conteúdo.",
+      "correcao": "Ajustar os níveis de título para seguir a ordem H1, H2, H3.",
+      "impacto": "",
+      "prioridade": "baixa",
+      "esforco": "rápido (horas)",
+      "peso": 0.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-canonical",
+      "categoria": "seo",
+      "titulo": "Endereço oficial das páginas (canonical)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Todas as páginas indicam o próprio endereço oficial (canonical).",
+      "evidencia": "",
+      "significado": "A marcação canonical evita que o Google veja versões repetidas da mesma página como conteúdo duplicado.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-https",
+      "categoria": "seo",
+      "titulo": "Endereço seguro (HTTPS)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O site usa HTTPS e redireciona a versão sem segurança para a segura.",
+      "evidencia": "<code>http://4truck.com.br/</code> → <code>https://4truck.com.br/</code>.",
+      "significado": "O navegador mostra o cadeado e não exibe alerta de site inseguro.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 2,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-redirect",
+      "categoria": "seo",
+      "titulo": "Redirecionamentos até a página inicial",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O endereço informado abre direto, sem redirecionamentos.",
+      "evidencia": "",
+      "significado": "Cada redirecionamento adiciona espera antes de a página começar a carregar.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-robots",
+      "categoria": "seo",
+      "titulo": "Arquivo de instruções para buscadores (robots.txt)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O arquivo robots.txt existe e permite o acesso dos buscadores.",
+      "evidencia": "<code>https://4truck.com.br/robots.txt</code>.",
+      "significado": "",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-sitemap",
+      "categoria": "seo",
+      "titulo": "Mapa do site (sitemap.xml)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O mapa do site existe e lista 601 endereços.",
+      "evidencia": "<code>https://4truck.com.br/sitemap_index.xml</code>.",
+      "significado": "Ajuda o Google a encontrar todas as páginas.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-urls",
+      "categoria": "seo",
+      "titulo": "Endereços das páginas legíveis",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "Os endereços das páginas são curtos e legíveis.",
+      "evidencia": "",
+      "significado": "Endereços legíveis (como /servicos/consultoria) ajudam o Google e passam confiança no compartilhamento.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-alt",
+      "categoria": "seo",
+      "titulo": "Imagens com texto alternativo",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "5 de 117 imagens não têm texto alternativo.",
+      "evidencia": "exemplos: <code>br.svg?t=1560538149</code>, <code>br.svg?t=1560538149</code>, <code>br.svg?t=1560538149</code> e mais 2.",
+      "significado": "O texto alternativo descreve a imagem para o Google e para pessoas com deficiência visual que usam leitores de tela.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-links",
+      "categoria": "seo",
+      "titulo": "Links internos quebrados",
+      "tipo": "medido",
+      "situacao": "atencao",
+      "o_que_vimos": "1 link interno de 31 verificados leva a uma página que não existe (erro 404).",
+      "evidencia": "<code>/site_novo/</code>.",
+      "significado": "Links quebrados frustram o visitante e desperdiçam a atenção do Google.",
+      "correcao": "Corrigir ou remover os links listados.",
+      "impacto": "",
+      "prioridade": "baixa",
+      "esforco": "rápido (horas)",
+      "peso": 1.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-og",
+      "categoria": "seo",
+      "titulo": "Prévia ao compartilhar o link (Open Graph)",
+      "tipo": "medido",
+      "situacao": "atencao",
+      "o_que_vimos": "A página inicial não tem og:image para a prévia de compartilhamento.",
+      "evidencia": "ausentes: <code>og:image</code>.",
+      "significado": "As marcações Open Graph definem o título, o texto e a imagem que aparecem quando alguém compartilha o link do site no WhatsApp, Instagram ou LinkedIn. Sem elas, a prévia pode sair sem imagem ou com um texto aleatório.",
+      "correcao": "Configurar título, descrição e uma imagem de 1200×630 px para a prévia de compartilhamento.",
+      "impacto": "",
+      "prioridade": "baixa",
+      "esforco": "rápido (horas)",
+      "peso": 0.5,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "seo-schema",
+      "categoria": "seo",
+      "titulo": "Dados estruturados (schema.org)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O site usa dados estruturados: Article, BreadcrumbList, ImageObject, Organization, Person, WebPage.",
+      "evidencia": "",
+      "significado": "Dados estruturados ajudam o Google a entender informações como empresa, endereço e produtos.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "SEO",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "geo-org",
+      "categoria": "seo",
+      "titulo": "Identificação da empresa para buscas com IA",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "A empresa está identificada com dados estruturados do tipo Organization.",
+      "evidencia": "",
+      "significado": "Assistentes como ChatGPT, Gemini e a busca com IA do Google usam essas informações para citar e recomendar empresas.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 1,
+      "area": "SEO e IA",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "geo-faq",
+      "categoria": "seo",
+      "titulo": "Conteúdo que responde perguntas diretas",
+      "tipo": "medido",
+      "situacao": "atencao",
+      "o_que_vimos": "Encontramos 2 subtítulos em formato de pergunta, mas não há seção de perguntas frequentes.",
+      "evidencia": "exemplos: <code>O que oferecemos ?</code>, <code>Por que escolher as Reformas e Serviços da 4truck ?</code>.",
+      "significado": "Buscas com IA priorizam conteúdo que responde perguntas de forma direta, como \"quanto custa\" ou \"como funciona\".",
+      "correcao": "Criar uma seção de perguntas frequentes com as dúvidas reais dos clientes.",
+      "impacto": "",
+      "prioridade": "baixa",
+      "esforco": "rápido (horas)",
+      "peso": 0.5,
+      "area": "SEO e IA",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    },
+    {
+      "id": "geo-llms",
+      "categoria": "seo",
+      "titulo": "Arquivo de orientação para IAs (llms.txt)",
+      "tipo": "medido",
+      "situacao": "ok",
+      "o_que_vimos": "O site tem arquivo llms.txt.",
+      "evidencia": "<code>https://4truck.com.br/llms.txt</code>.",
+      "significado": "O llms.txt é um padrão recente que resume o site para assistentes de IA. Ainda é pouco adotado, por isso tem peso baixo.",
+      "correcao": "",
+      "impacto": "",
+      "prioridade": "",
+      "esforco": "",
+      "peso": 0.25,
+      "area": "SEO e IA",
+      "confianca": "alta",
+      "nota_interna": "",
+      "secao": true
+    }
+  ],
+  "notas": {
+    "performance": {
+      "categoria": "Performance",
+      "nota": 53,
+      "criterios_medidos": 2,
+      "criterios_total": 2,
+      "detalhe": [
+        {
+          "criterio": "Nota Lighthouse (Celular)",
+          "valor": 47,
+          "peso": 0.7
+        },
+        {
+          "criterio": "Nota Lighthouse (Computador)",
+          "valor": 68,
+          "peso": 0.3
+        }
+      ]
+    },
+    "ux": {
+      "categoria": "Experiência e conversão",
+      "nota": 87,
+      "criterios_medidos": 8,
+      "criterios_total": 8,
+      "detalhe": [
+        {
+          "criterio": "Chamada para ação na primeira tela (celular)",
+          "situacao": "ok",
+          "peso": 3,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Chamada para ação na primeira tela (computador)",
+          "situacao": "ok",
+          "peso": 2,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Link de WhatsApp",
+          "situacao": "ok",
+          "peso": 3,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Telefone e e-mail clicáveis",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Formulário de contato",
+          "situacao": "atencao",
+          "peso": 2,
+          "pontos": 0.5
+        },
+        {
+          "criterio": "Site adaptado ao celular",
+          "situacao": "ok",
+          "peso": 2,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Botões e links fáceis de tocar",
+          "situacao": "problema",
+          "peso": 1,
+          "pontos": 0.0
+        },
+        {
+          "criterio": "Leitura confortável no celular",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        }
+      ]
+    },
+    "seo": {
+      "categoria": "SEO e visibilidade",
+      "nota": 82,
+      "criterios_medidos": 19,
+      "criterios_total": 19,
+      "detalhe": [
+        {
+          "criterio": "Páginas liberadas para o Google",
+          "situacao": "ok",
+          "peso": 3,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Título das páginas no Google",
+          "situacao": "atencao",
+          "peso": 2,
+          "pontos": 0.5
+        },
+        {
+          "criterio": "Títulos repetidos entre páginas",
+          "situacao": "ok",
+          "peso": 1.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Descrição das páginas (meta description)",
+          "situacao": "ok",
+          "peso": 1.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Título principal único em cada página (H1)",
+          "situacao": "problema",
+          "peso": 1.5,
+          "pontos": 0.0
+        },
+        {
+          "criterio": "Hierarquia de títulos",
+          "situacao": "atencao",
+          "peso": 0.5,
+          "pontos": 0.5
+        },
+        {
+          "criterio": "Endereço oficial das páginas (canonical)",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Endereço seguro (HTTPS)",
+          "situacao": "ok",
+          "peso": 2,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Redirecionamentos até a página inicial",
+          "situacao": "ok",
+          "peso": 0.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Arquivo de instruções para buscadores (robots.txt)",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Mapa do site (sitemap.xml)",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Endereços das páginas legíveis",
+          "situacao": "ok",
+          "peso": 0.5,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Imagens com texto alternativo",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Links internos quebrados",
+          "situacao": "atencao",
+          "peso": 1.5,
+          "pontos": 0.5
+        },
+        {
+          "criterio": "Prévia ao compartilhar o link (Open Graph)",
+          "situacao": "atencao",
+          "peso": 0.5,
+          "pontos": 0.5
+        },
+        {
+          "criterio": "Dados estruturados (schema.org)",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Identificação da empresa para buscas com IA",
+          "situacao": "ok",
+          "peso": 1,
+          "pontos": 1.0
+        },
+        {
+          "criterio": "Conteúdo que responde perguntas diretas",
+          "situacao": "atencao",
+          "peso": 0.5,
+          "pontos": 0.5
+        },
+        {
+          "criterio": "Arquivo de orientação para IAs (llms.txt)",
+          "situacao": "ok",
+          "peso": 0.25,
+          "pontos": 1.0
+        }
+      ]
+    }
+  },
+  "metricas": [
+    {
+      "id": "lcp",
+      "nome": "Tempo até o conteúdo principal aparecer",
+      "explicacao": "Maior elemento visível carregado (LCP)",
+      "valor": "8,0",
+      "unidade": "s",
+      "status": "ruim",
+      "tipo": "medido",
+      "referencia": "Bom: até 2,5 s · Ruim: acima de 4 s",
+      "frase": "No celular: O visitante olha para uma tela incompleta por tempo demais. Muita gente desiste e volta para a busca antes de ver a sua oferta.",
+      "valor_bruto": 7951.044327116935
+    },
+    {
+      "id": "cls",
+      "nome": "Estabilidade da página enquanto carrega",
+      "explicacao": "Mudança inesperada de layout (CLS)",
+      "valor": "0,02",
+      "unidade": "",
+      "status": "bom",
+      "tipo": "medido",
+      "referencia": "Bom: até 0,1 · Ruim: acima de 0,25",
+      "frase": "Os elementos ficam no lugar enquanto a página carrega. Ponto positivo.",
+      "valor_bruto": 0.021592534850751636
+    },
+    {
+      "id": "inp",
+      "nome": "Resposta ao toque e ao clique",
+      "explicacao": "Interação até a próxima pintura (INP), dado de visitantes reais",
+      "valor": "226",
+      "unidade": "ms",
+      "status": "medio",
+      "tipo": "medido",
+      "referencia": "Bom: até 200 ms · Ruim: acima de 500 ms",
+      "frase": "Há um pequeno atraso entre o toque e a resposta da página.",
+      "valor_bruto": 226
+    },
+    {
+      "id": "bytes",
+      "nome": "Peso da página inicial",
+      "explicacao": "Total transferido para abrir a página",
+      "valor": "2,6",
+      "unidade": "MB",
+      "status": "medio",
+      "tipo": "medido",
+      "referencia": "Referência: até 2 MB",
+      "frase": "Página um pouco pesada para conexões móveis.",
+      "valor_bruto": 2726040
+    }
+  ],
+  "tecnologias": [
+    {
+      "nome": "WordPress",
+      "categoria": "Gerenciador de conteúdo",
+      "evidencia": "/wp-content/"
+    },
+    {
+      "nome": "Elementor",
+      "categoria": "Construtor de páginas",
+      "evidencia": "/plugins/elementor/"
+    },
+    {
+      "nome": "Google Analytics 4",
+      "categoria": "Análise de visitas",
+      "evidencia": "googletagmanager.com/gtag/js?id=G-"
+    },
+    {
+      "nome": "Google Tag Manager",
+      "categoria": "Gerenciador de tags",
+      "evidencia": "googletagmanager.com/gtm.js"
+    },
+    {
+      "nome": "Google Ads (conversões)",
+      "categoria": "Anúncios",
+      "evidencia": "gtag/js?id=AW-"
+    },
+    {
+      "nome": "Meta Pixel",
+      "categoria": "Anúncios",
+      "evidencia": "connect.facebook.net/en_US/fbevents.js"
+    },
+    {
+      "nome": "RD Station",
+      "categoria": "Automação de marketing",
+      "evidencia": "<script type=\"text/javascript\" async=\"null\" src=\"https://d335luupugsy2.cloudfron"
+    },
+    {
+      "nome": "Rank Math",
+      "categoria": "Plugin de SEO",
+      "evidencia": "class=\"rank-math"
+    }
+  ],
+  "performance": {
+    "mobile": {
+      "ok": true,
+      "fonte": "pagespeed",
+      "estrategia": "mobile",
+      "versao_lighthouse": "13.5.0",
+      "data": "2026-10-29T17:07:00.842Z",
+      "url_final": "https://4truck.com.br/",
+      "nota": 47,
+      "lcp_ms": 7951.044327116935,
+      "fcp_ms": 1690.0078224324,
+      "cls": 0.021592534850751636,
+      "tbt_ms": 899,
+      "bytes_total": 2726040,
+      "inp_ms_campo": 226,
+      "lcp_ms_campo": 3251,
+      "cls_campo": 0.0,
+      "tem_dados_campo": true,
+      "oportunidades": [
+        {
+          "id": "unused-javascript",
+          "titulo": "Reduce unused JavaScript",
+          "economia_ms": 900,
+          "economia_bytes": 829256
+        },
+        {
+          "id": "unused-css-rules",
+          "titulo": "Reduce unused CSS",
+          "economia_ms": 450,
+          "economia_bytes": 63608
+        },
+        {
+          "id": "unminified-javascript",
+          "titulo": "Minify JavaScript",
+          "economia_ms": 150,
+          "economia_bytes": 3203
+        }
+      ],
+      "tentativas": [
+        {
+          "fonte": "pagespeed",
+          "erro": null
+        }
+      ]
+    },
+    "desktop": {
+      "ok": true,
+      "fonte": "pagespeed",
+      "estrategia": "desktop",
+      "versao_lighthouse": "13.5.0",
+      "data": "2026-10-29T17:07:31.035Z",
+      "url_final": "https://4truck.com.br/",
+      "nota": 68,
+      "lcp_ms": 1601.034845459762,
+      "fcp_ms": 411.00733588626554,
+      "cls": 0.008606399910831168,
+      "tbt_ms": 596.5,
+      "bytes_total": 3108725,
+      "inp_ms_campo": 60,
+      "lcp_ms_campo": 2146,
+      "cls_campo": 0.02,
+      "tem_dados_campo": true,
+      "oportunidades": [
+        {
+          "id": "unused-javascript",
+          "titulo": "Reduce unused JavaScript",
+          "economia_ms": 120,
+          "economia_bytes": 959034
+        },
+        {
+          "id": "unused-css-rules",
+          "titulo": "Reduce unused CSS",
+          "economia_ms": 80,
+          "economia_bytes": 63602
+        }
+      ],
+      "tentativas": [
+        {
+          "fonte": "pagespeed",
+          "erro": null
+        }
+      ]
+    },
+    "fonte_texto": "Fonte: Google PageSpeed Insights, em 29/10/2026. Condições simuladas: celular com conexão 4G lenta."
+  },
+  "paginas_resumo": [
+    {
+      "url": "https://4truck.com.br/",
+      "origem": "página inicial",
+      "situacao": "aberta (código 200)"
+    },
+    {
+      "url": "https://4truck.com.br/orcamento/",
+      "origem": "menu",
+      "situacao": "aberta (código 200)"
+    },
+    {
+      "url": "https://4truck.com.br/servicos/",
+      "origem": "menu",
+      "situacao": "aberta (código 200)"
+    },
+    {
+      "url": "https://4truck.com.br/servicos/servicos-reformas/",
+      "origem": "menu",
+      "situacao": "aberta (código 200)"
+    },
+    {
+      "url": "https://4truck.com.br/sobre-nos/",
+      "origem": "menu",
+      "situacao": "aberta (código 200)"
+    }
+  ],
+  "captura_mobile": "/home/runner/work/workdigital-diagnosticos/workdigital-diagnosticos/dados/relatorios/4truck.com.br-2026-10-29/capturas/home-celular.jpg",
+  "coleta": {
+    "requisicao_inicial": {
+      "status": 200,
+      "erro": null,
+      "redirecionamentos": [],
+      "cabecalhos": {
+        "server": "nginx",
+        "date": "Thu, 29 Oct 2026 17:05:28 GMT",
+        "content-type": "text/html; charset=UTF-8",
+        "content-length": "27193",
+        "connection": "keep-alive",
+        "x-content-type-options": "nosniff",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "x-frame-options": "SAMEORIGIN",
+        "permissions-policy": "geolocation=(), camera=(), microphone=()",
+        "link": "<https://4truck.com.br/wp-json/>; rel=\"https://api.w.org/\", <https://4truck.com.br/wp-json/wp/v2/pages/965>; rel=\"alternate\"; title=\"JSON\"; type=\"application/json\", <https://4truck.com.br/>; rel=shortlink",
+        "vary": "Accept-Encoding",
+        "content-encoding": "gzip",
+        "strict-transport-security": "max-age=15768000;includeSubdomains, max-age=31536000;",
+        "content-security-policy": "object-src 'none'",
+        "x-xss-protection": "1; mode=block"
+      }
+    },
+    "robots": {
+      "url": "https://4truck.com.br/robots.txt",
+      "status": 200,
+      "erro": null,
+      "existe": true,
+      "sitemaps_declarados": [
+        "https://4truck.com.br/sitemap_index.xml"
+      ],
+      "bloqueia_buscadores": false,
+      "permite_home": true,
+      "conteudo": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: https://4truck.com.br/sitemap_index.xml\n"
+    },
+    "sitemap": {
+      "existe": true,
+      "url": "https://4truck.com.br/sitemap_index.xml",
+      "total_urls": 601,
+      "urls": [
+        "https://4truck.com.br/blog/",
+        "https://4truck.com.br/bau-para-e-commerce/",
+        "https://4truck.com.br/como-escolher-implemento-rodoviario/",
+        "https://4truck.com.br/carroceria-metalica-aberta-quando-escolher/",
+        "https://4truck.com.br/kit-para-bau-de-caminhao/",
+        "https://4truck.com.br/bau-de-aluminio-vs-bau-de-aco/",
+        "https://4truck.com.br/bau-lonado-sider-guia-completo/",
+        "https://4truck.com.br/como-financiar-implementos-rodoviarios/",
+        "https://4truck.com.br/reforma-de-implemento-rodoviario/",
+        "https://4truck.com.br/fabrica-de-implementos-rodoviarios/",
+        "https://4truck.com.br/assoalho-de-caminhao/",
+        "https://4truck.com.br/logistica-last-mile/",
+        "https://4truck.com.br/manutencao-de-caminhoes/",
+        "https://4truck.com.br/implementos-para-caminhoes-eletricos/",
+        "https://4truck.com.br/carroceria-metalicas-basculantes/",
+        "https://4truck.com.br/alongamento-de-chassi-de-caminhao/",
+        "https://4truck.com.br/carga-paletizada/",
+        "https://4truck.com.br/o-brasil-avanca-no-renovacao-da-frota-de-caminhoes/",
+        "https://4truck.com.br/caminhao-vuc/",
+        "https://4truck.com.br/cabine-suplementar-2/",
+        "https://4truck.com.br/cargas-sensiveis/",
+        "https://4truck.com.br/bau-isotermico-transporte/",
+        "https://4truck.com.br/carroceria-aberta-varricao/",
+        "https://4truck.com.br/entregas-urbanas-vw-express/",
+        "https://4truck.com.br/manutencao-de-frotas/",
+        "https://4truck.com.br/bau-de-aluminio-beneficios/",
+        "https://4truck.com.br/bau-basculante-beneficios/",
+        "https://4truck.com.br/bau-lonado-sider/",
+        "https://4truck.com.br/implementos-rodoviarios-solucoes/",
+        "https://4truck.com.br/jovens-caminhoneiros/",
+        "https://4truck.com.br/carrocerias-de-carga-seca-saneamento/",
+        "https://4truck.com.br/cabine-suplementar-para-caminhao/",
+        "https://4truck.com.br/o-que-e-bau-carga-seca/",
+        "https://4truck.com.br/bau-para-caminhao/",
+        "https://4truck.com.br/bau-isotermico/",
+        "https://4truck.com.br/estradas-eletrificadas-saem-do-papel-e-prometem-revolucionar-o-transporte-sustentavel-no-mundo/",
+        "https://4truck.com.br/descarbonizacao-da-frota-de-caminhoes-no-brasil-avancos-desafios-e-perspectivas/",
+        "https://4truck.com.br/caminhoneiro-podera-cobrar-combustivel-direto-do-cliente/",
+        "https://4truck.com.br/dispositivos-tag-conheca-os-beneficios-de-usar-tags-eletronicas/",
+        "https://4truck.com.br/no-ultimo-dia-16-a-petrobras-anunciou-uma-modificacao-consideravel-na-sua-politica-de-precos-a-estatal-nao-utilizara-mais-a-politica-de-preco-de-paridade-de-importacao-conhecido-como-ppi-optando-por-u/",
+        "https://4truck.com.br/locacao-de-caminhoes-comerciais-5-razoes-para-considerar-esta-opcao-para-o-seu-negocio/",
+        "https://4truck.com.br/atencao-caminhoneiro-voce-sabe-qual-e-a-diferenca-entre-o-frete-cif-e-frete-fob/",
+        "https://4truck.com.br/bem-estar-confira-6-dicas-para-manter-a-saude-do-caminhoneiro/",
+        "https://4truck.com.br/entenda-como-funciona-o-sistema-de-multas-no-brasil/",
+        "https://4truck.com.br/voce-sabe-como-recorrer-de-uma-multa-indevida/",
+        "https://4truck.com.br/conheca-as-10-estradas-mais-movimentadas-do-brasil/",
+        "https://4truck.com.br/conheca-7-aplicativos-para-ajudar-no-dia-a-dia-do-caminhoneiro/",
+        "https://4truck.com.br/rodovias-do-litoral-de-sao-paulo-terao-15-novos-pedagios/",
+        "https://4truck.com.br/sao-paulo-contara-com-649-novos-radares-em-suas-rodovias-ate-2025/",
+        "https://4truck.com.br/logistica-entenda-como-a-protecao-de-dados-e-necessaria-no-setor-rodoviario/"
+      ],
+      "erro": null
+    },
+    "llms": {
+      "url": "https://4truck.com.br/llms.txt",
+      "existe": true,
+      "status": 200,
+      "erro": null
+    },
+    "https": {
+      "url_testada": "http://4truck.com.br/",
+      "redireciona_para_https": true,
+      "destino": "https://4truck.com.br/",
+      "redirecionamentos": [
+        [
+          301,
+          "http://4truck.com.br/",
+          "https://4truck.com.br/"
+        ]
+      ],
+      "erro": null
+    },
+    "links": {
+      "total_encontrados": 31,
+      "verificados": 31,
+      "quebrados": [
+        {
+          "url": "https://4truck.com.br/site_novo/",
+          "status": 404
+        }
+      ],
+      "falhas": []
+    },
+    "paginas": [
+      {
+        "url": "https://4truck.com.br/",
+        "dispositivo": "desktop",
+        "erro": null,
+        "status": 200,
+        "url_final": "https://4truck.com.br/",
+        "tempo_carregamento_ms": 7714,
+        "titulo": "4TRUCK - Implementos Rodoviários",
+        "medidas": {
+          "viewport": {
+            "largura": 1366,
+            "altura": 768
+          },
+          "meta_viewport": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+          "largura_documento": 1375,
+          "altura_documento": 4581,
+          "ctas_total": 11,
+          "ctas_dobra": [
+            {
+              "texto": "Abrir WhatsApp",
+              "href": "",
+              "topo": 687,
+              "largura": 60,
+              "altura": 61,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "Facebook",
+              "href": "https://www.facebook.com/4truckbr?fref=ts",
+              "topo": 90,
+              "largura": 40,
+              "altura": 40,
+              "botao": false,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": false
+            },
+            {
+              "texto": "Phone-alt",
+              "href": "tel:+551124465000",
+              "topo": 90,
+              "largura": 40,
+              "altura": 40,
+              "botao": false,
+              "palavra_chave": true,
+              "contato": true,
+              "fixo": false
+            },
+            {
+              "texto": "SOLICITE UM ORÇAMENTO",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "topo": 604,
+              "largura": 240,
+              "altura": 39,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": true,
+              "fixo": false
+            }
+          ],
+          "ctas_fortes_dobra": [
+            {
+              "texto": "Abrir WhatsApp",
+              "href": "",
+              "topo": 687,
+              "largura": 60,
+              "altura": 61,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "SOLICITE UM ORÇAMENTO",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "topo": 604,
+              "largura": 240,
+              "altura": 39,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": true,
+              "fixo": false
+            }
+          ],
+          "primeiro_cta": {
+            "texto": "Facebook",
+            "href": "https://www.facebook.com/4truckbr?fref=ts",
+            "topo": 90,
+            "largura": 40,
+            "altura": 40,
+            "botao": false,
+            "palavra_chave": true,
+            "contato": false,
+            "fixo": false
+          },
+          "contato_direto": [
+            {
+              "tipo": "telefone",
+              "href": "tel:+551124465000",
+              "visivel": false,
+              "fixo": false,
+              "topo": null,
+              "texto": "Phone-alt"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://wa.me/551124465000",
+              "visivel": false,
+              "fixo": false,
+              "topo": null,
+              "texto": "Whatsapp"
+            },
+            {
+              "tipo": "telefone",
+              "href": "tel:+551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 90,
+              "texto": "Phone-alt"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 604,
+              "texto": "SOLICITE UM ORÇAMENTO"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 1632,
+              "texto": "SOLICITE UM ORÇAMENTO"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send/?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 4327,
+              "texto": ""
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 4331,
+              "texto": "(11) 2446-5000"
+            },
+            {
+              "tipo": "email",
+              "href": "mailto:%204truck@4truck.com.br",
+              "visivel": true,
+              "fixo": false,
+              "topo": 4374,
+              "texto": ""
+            },
+            {
+              "tipo": "email",
+              "href": "mailto:vendas@4truck.com.br",
+              "visivel": true,
+              "fixo": false,
+              "topo": 4378,
+              "texto": "vendas@4truck.com.br"
+            }
+          ],
+          "formularios": [],
+          "formularios_externos": [],
+          "botoes_modal": [
+            "Fale Conosco"
+          ],
+          "texto_total_chars": 1634,
+          "texto_pequeno_chars": 0,
+          "alvos_total": 44,
+          "alvos_pequenos": [
+            {
+              "texto": "Baús de Alumínio,",
+              "largura": 97,
+              "altura": 18
+            },
+            {
+              "texto": "Dicas,",
+              "largura": 32,
+              "altura": 18
+            },
+            {
+              "texto": "Implementos Rodoviários,",
+              "largura": 140,
+              "altura": 18
+            },
+            {
+              "texto": "Novidades",
+              "largura": 58,
+              "altura": 18
+            },
+            {
+              "texto": "Implementos Rodoviários",
+              "largura": 138,
+              "altura": 18
+            },
+            {
+              "texto": "Carrocerias Metálicas,",
+              "largura": 119,
+              "altura": 18
+            },
+            {
+              "texto": "Implementos Rodoviários",
+              "largura": 138,
+              "altura": 18
+            },
+            {
+              "texto": "Implementos Rodoviários",
+              "largura": 138,
+              "altura": 18
+            },
+            {
+              "texto": "Baús de Alumínio,",
+              "largura": 97,
+              "altura": 18
+            },
+            {
+              "texto": "Implementos Rodoviários",
+              "largura": 138,
+              "altura": 18
+            },
+            {
+              "texto": "",
+              "largura": 23,
+              "altura": 27
+            },
+            {
+              "texto": "(11) 2446-5000",
+              "largura": 97,
+              "altura": 19
+            },
+            {
+              "texto": "",
+              "largura": 23,
+              "altura": 27
+            },
+            {
+              "texto": "vendas@4truck.com.br",
+              "largura": 154,
+              "altura": 19
+            },
+            {
+              "texto": "Desenvolvido por Agência Explorer - 2026",
+              "largura": 278,
+              "altura": 19
+            }
+          ],
+          "alvos_pequenos_total": 15,
+          "h1s": [],
+          "primeiro_titulo": {
+            "tag": "h2",
+            "texto": "O NOSSO NEGÓCIO É TRANSPORTAR O SEU!",
+            "topo": 316
+          },
+          "sinais_prova_social": [],
+          "widgets_prova_social": 0
+        },
+        "captura": "/home/runner/work/workdigital-diagnosticos/workdigital-diagnosticos/dados/relatorios/4truck.com.br-2026-10-29/capturas/home-computador.jpg"
+      },
+      {
+        "url": "https://4truck.com.br/orcamento/",
+        "dispositivo": "desktop",
+        "erro": null,
+        "status": 200,
+        "url_final": "https://4truck.com.br/orcamento/",
+        "tempo_carregamento_ms": 6670,
+        "titulo": "Orçamento - 4TRUCK",
+        "medidas": {
+          "viewport": {
+            "largura": 1366,
+            "altura": 768
+          },
+          "meta_viewport": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+          "largura_documento": 1375,
+          "altura_documento": 1308,
+          "ctas_total": 8,
+          "ctas_dobra": [
+            {
+              "texto": "Abrir WhatsApp",
+              "href": "",
+              "topo": 687,
+              "largura": 60,
+              "altura": 61,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "Facebook",
+              "href": "https://www.facebook.com/4truckbr?fref=ts",
+              "topo": 90,
+              "largura": 40,
+              "altura": 40,
+              "botao": false,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": false
+            },
+            {
+              "texto": "Phone-alt",
+              "href": "tel:+551124465000",
+              "topo": 90,
+              "largura": 40,
+              "altura": 40,
+              "botao": false,
+              "palavra_chave": true,
+              "contato": true,
+              "fixo": false
+            },
+            {
+              "texto": "Enviar",
+              "href": "",
+              "topo": 473,
+              "largura": 411,
+              "altura": 45,
+              "botao": true,
+              "palavra_chave": false,
+              "contato": false,
+              "fixo": false
+            }
+          ],
+          "ctas_fortes_dobra": [
+            {
+              "texto": "Abrir WhatsApp",
+              "href": "",
+              "topo": 687,
+              "largura": 60,
+              "altura": 61,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            }
+          ],
+          "primeiro_cta": {
+            "texto": "Facebook",
+            "href": "https://www.facebook.com/4truckbr?fref=ts",
+            "topo": 90,
+            "largura": 40,
+            "altura": 40,
+            "botao": false,
+            "palavra_chave": true,
+            "contato": false,
+            "fixo": false
+          },
+          "contato_direto": [
+            {
+              "tipo": "telefone",
+              "href": "tel:+551124465000",
+              "visivel": false,
+              "fixo": false,
+              "topo": null,
+              "texto": "Phone-alt"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://wa.me/551124465000",
+              "visivel": false,
+              "fixo": false,
+              "topo": null,
+              "texto": "Whatsapp"
+            },
+            {
+              "tipo": "telefone",
+              "href": "tel:+551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 90,
+              "texto": "Phone-alt"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send/?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 1054,
+              "texto": ""
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 1058,
+              "texto": "(11) 2446-5000"
+            },
+            {
+              "tipo": "email",
+              "href": "mailto:%204truck@4truck.com.br",
+              "visivel": true,
+              "fixo": false,
+              "topo": 1101,
+              "texto": ""
+            },
+            {
+              "tipo": "email",
+              "href": "mailto:vendas@4truck.com.br",
+              "visivel": true,
+              "fixo": false,
+              "topo": 1105,
+              "texto": "vendas@4truck.com.br"
+            }
+          ],
+          "formularios": [
+            {
+              "campos": 3,
+              "com_rotulo": 0,
+              "com_placeholder": 3,
+              "busca": false,
+              "login": false,
+              "visivel": true,
+              "topo": 375,
+              "nomes": [
+                "form_fields[nome-sobrenome]",
+                "form_fields[email]",
+                "form_fields[empresa]"
+              ]
+            }
+          ],
+          "formularios_externos": [],
+          "botoes_modal": [
+            "Fale Conosco"
+          ],
+          "texto_total_chars": 570,
+          "texto_pequeno_chars": 0,
+          "alvos_total": 27,
+          "alvos_pequenos": [
+            {
+              "texto": "",
+              "largura": 23,
+              "altura": 27
+            },
+            {
+              "texto": "(11) 2446-5000",
+              "largura": 97,
+              "altura": 19
+            },
+            {
+              "texto": "",
+              "largura": 23,
+              "altura": 27
+            },
+            {
+              "texto": "vendas@4truck.com.br",
+              "largura": 154,
+              "altura": 19
+            },
+            {
+              "texto": "Desenvolvido por Agência Explorer - 2026",
+              "largura": 278,
+              "altura": 19
+            }
+          ],
+          "alvos_pequenos_total": 5,
+          "h1s": [],
+          "primeiro_titulo": {
+            "tag": "h2",
+            "texto": "ORÇAMENTO",
+            "topo": 180
+          },
+          "sinais_prova_social": [],
+          "widgets_prova_social": 0
+        }
+      },
+      {
+        "url": "https://4truck.com.br/servicos/",
+        "dispositivo": "desktop",
+        "erro": null,
+        "status": 200,
+        "url_final": "https://4truck.com.br/servicos/",
+        "tempo_carregamento_ms": 7118,
+        "titulo": "Serviços",
+        "medidas": {
+          "viewport": {
+            "largura": 1366,
+            "altura": 768
+          },
+          "meta_viewport": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+          "largura_documento": 1375,
+          "altura_documento": 2069,
+          "ctas_total": 7,
+          "ctas_dobra": [
+            {
+              "texto": "Abrir WhatsApp",
+              "href": "",
+              "topo": 687,
+              "largura": 60,
+              "altura": 61,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "Facebook",
+              "href": "https://www.facebook.com/4truckbr?fref=ts",
+              "topo": 90,
+              "largura": 40,
+              "altura": 40,
+              "botao": false,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": false
+            },
+            {
+              "texto": "Phone-alt",
+              "href": "tel:+551124465000",
+              "topo": 90,
+              "largura": 40,
+              "altura": 40,
+              "botao": false,
+              "palavra_chave": true,
+              "contato": true,
+              "fixo": false
+            }
+          ],
+          "ctas_fortes_dobra": [
+            {
+              "texto": "Abrir WhatsApp",
+              "href": "",
+              "topo": 687,
+              "largura": 60,
+              "altura": 61,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            }
+          ],
+          "primeiro_cta": {
+            "texto": "Facebook",
+            "href": "https://www.facebook.com/4truckbr?fref=ts",
+            "topo": 90,
+            "largura": 40,
+            "altura": 40,
+            "botao": false,
+            "palavra_chave": true,
+            "contato": false,
+            "fixo": false
+          },
+          "contato_direto": [
+            {
+              "tipo": "telefone",
+              "href": "tel:+551124465000",
+              "visivel": false,
+              "fixo": false,
+              "topo": null,
+              "texto": "Phone-alt"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://wa.me/551124465000",
+              "visivel": false,
+              "fixo": false,
+              "topo": null,
+              "texto": "Whatsapp"
+            },
+            {
+              "tipo": "telefone",
+              "href": "tel:+551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 90,
+              "texto": "Phone-alt"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send/?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 1814,
+              "texto": ""
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 1818,
+              "texto": "(11) 2446-5000"
+            },
+            {
+              "tipo": "email",
+              "href": "mailto:%204truck@4truck.com.br",
+              "visivel": true,
+              "fixo": false,
+              "topo": 1861,
+              "texto": ""
+            },
+            {
+              "tipo": "email",
+              "href": "mailto:vendas@4truck.com.br",
+              "visivel": true,
+              "fixo": false,
+              "topo": 1865,
+              "texto": "vendas@4truck.com.br"
+            }
+          ],
+          "formularios": [],
+          "formularios_externos": [],
+          "botoes_modal": [
+            "Fale Conosco"
+          ],
+          "texto_total_chars": 1150,
+          "texto_pequeno_chars": 0,
+          "alvos_total": 26,
+          "alvos_pequenos": [
+            {
+              "texto": "",
+              "largura": 23,
+              "altura": 27
+            },
+            {
+              "texto": "(11) 2446-5000",
+              "largura": 97,
+              "altura": 19
+            },
+            {
+              "texto": "",
+              "largura": 23,
+              "altura": 27
+            },
+            {
+              "texto": "vendas@4truck.com.br",
+              "largura": 154,
+              "altura": 19
+            },
+            {
+              "texto": "Desenvolvido por Agência Explorer - 2026",
+              "largura": 278,
+              "altura": 19
+            }
+          ],
+          "alvos_pequenos_total": 5,
+          "h1s": [
+            {
+              "texto": "Serviços",
+              "visivel": true,
+              "topo": 210
+            }
+          ],
+          "primeiro_titulo": {
+            "tag": "h1",
+            "texto": "Serviços",
+            "topo": 210
+          },
+          "sinais_prova_social": [],
+          "widgets_prova_social": 0
+        }
+      },
+      {
+        "url": "https://4truck.com.br/servicos/servicos-reformas/",
+        "dispositivo": "desktop",
+        "erro": null,
+        "status": 200,
+        "url_final": "https://4truck.com.br/servicos/servicos-reformas/",
+        "tempo_carregamento_ms": 7432,
+        "titulo": "Reformas e Serviços, Manutenção de Frotas Multimarcas | 4TRUCK",
+        "medidas": {
+          "viewport": {
+            "largura": 1366,
+            "altura": 768
+          },
+          "meta_viewport": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+          "largura_documento": 1375,
+          "altura_documento": 8161,
+          "ctas_total": 21,
+          "ctas_dobra": [
+            {
+              "texto": "Abrir WhatsApp",
+              "href": "",
+              "topo": 687,
+              "largura": 60,
+              "altura": 61,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "Facebook",
+              "href": "https://www.facebook.com/4truckbr?fref=ts",
+              "topo": 90,
+              "largura": 40,
+              "altura": 40,
+              "botao": false,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": false
+            },
+            {
+              "texto": "Phone-alt",
+              "href": "tel:+551124465000",
+              "topo": 90,
+              "largura": 40,
+              "altura": 40,
+              "botao": false,
+              "palavra_chave": true,
+              "contato": true,
+              "fixo": false
+            },
+            {
+              "texto": "SOLICITE UM ORÇAMENTO",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "topo": 711,
+              "largura": 240,
+              "altura": 39,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": true,
+              "fixo": false
+            }
+          ],
+          "ctas_fortes_dobra": [
+            {
+              "texto": "Abrir WhatsApp",
+              "href": "",
+              "topo": 687,
+              "largura": 60,
+              "altura": 61,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "SOLICITE UM ORÇAMENTO",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "topo": 711,
+              "largura": 240,
+              "altura": 39,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": true,
+              "fixo": false
+            }
+          ],
+          "primeiro_cta": {
+            "texto": "Facebook",
+            "href": "https://www.facebook.com/4truckbr?fref=ts",
+            "topo": 90,
+            "largura": 40,
+            "altura": 40,
+            "botao": false,
+            "palavra_chave": true,
+            "contato": false,
+            "fixo": false
+          },
+          "contato_direto": [
+            {
+              "tipo": "telefone",
+              "href": "tel:+551124465000",
+              "visivel": false,
+              "fixo": false,
+              "topo": null,
+              "texto": "Phone-alt"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://wa.me/551124465000",
+              "visivel": false,
+              "fixo": false,
+              "topo": null,
+              "texto": "Whatsapp"
+            },
+            {
+              "tipo": "telefone",
+              "href": "tel:+551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 90,
+              "texto": "Phone-alt"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 711,
+              "texto": "SOLICITE UM ORÇAMENTO"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": false,
+              "fixo": false,
+              "topo": null,
+              "texto": "Solicite um orçamento"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 1134,
+              "texto": "SOLICITE UM ORÇAMENTO"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 1496,
+              "texto": "SOLICITE UM ORÇAMENTO"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 1854,
+              "texto": "SOLICITE UM ORÇAMENTO"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 2308,
+              "texto": "SOLICITE UM ORÇAMENTO"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 2762,
+              "texto": "SOLICITE UM ORÇAMENTO"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 3128,
+              "texto": "SOLICITE UM ORÇAMENTO"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 3494,
+              "texto": "SOLICITE UM ORÇAMENTO"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 3855,
+              "texto": "SOLICITE UM ORÇAMENTO"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 4210,
+              "texto": "SOLICITE UM ORÇAMENTO"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 4777,
+              "texto": "SOLICITE UM ORÇAMENTO"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 5476,
+              "texto": "FALE COM NOSSOS ESPECIALISTAS"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 6414,
+              "texto": "SOLICITE UM ORÇAMENTO"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send/?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 7907,
+              "texto": ""
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 7911,
+              "texto": "(11) 2446-5000"
+            },
+            {
+              "tipo": "email",
+              "href": "mailto:%204truck@4truck.com.br",
+              "visivel": true,
+              "fixo": false,
+              "topo": 7954,
+              "texto": ""
+            }
+          ],
+          "formularios": [
+            {
+              "campos": 3,
+              "com_rotulo": 0,
+              "com_placeholder": 3,
+              "busca": false,
+              "login": false,
+              "visivel": true,
+              "topo": 7201,
+              "nomes": [
+                "form_fields[nome-sobrenome]",
+                "form_fields[email]",
+                "form_fields[empresa]"
+              ]
+            }
+          ],
+          "formularios_externos": [],
+          "botoes_modal": [
+            "Fale Conosco"
+          ],
+          "texto_total_chars": 4898,
+          "texto_pequeno_chars": 0,
+          "alvos_total": 40,
+          "alvos_pequenos": [
+            {
+              "texto": "",
+              "largura": 23,
+              "altura": 27
+            },
+            {
+              "texto": "(11) 2446-5000",
+              "largura": 97,
+              "altura": 19
+            },
+            {
+              "texto": "",
+              "largura": 23,
+              "altura": 27
+            },
+            {
+              "texto": "vendas@4truck.com.br",
+              "largura": 154,
+              "altura": 19
+            },
+            {
+              "texto": "Desenvolvido por Agência Explorer - 2026",
+              "largura": 278,
+              "altura": 19
+            }
+          ],
+          "alvos_pequenos_total": 5,
+          "h1s": [
+            {
+              "texto": "REFORMAS E SERVIÇOS",
+              "visivel": true,
+              "topo": 210
+            },
+            {
+              "texto": "Reformas e Serviços",
+              "visivel": false,
+              "topo": 0
+            }
+          ],
+          "primeiro_titulo": {
+            "tag": "h1",
+            "texto": "REFORMAS E SERVIÇOS",
+            "topo": 210
+          },
+          "sinais_prova_social": [],
+          "widgets_prova_social": 0
+        }
+      },
+      {
+        "url": "https://4truck.com.br/sobre-nos/",
+        "dispositivo": "desktop",
+        "erro": null,
+        "status": 200,
+        "url_final": "https://4truck.com.br/sobre-nos/",
+        "tempo_carregamento_ms": 6569,
+        "titulo": "Sobre Nós",
+        "medidas": {
+          "viewport": {
+            "largura": 1366,
+            "altura": 768
+          },
+          "meta_viewport": "width=device-width, initial-scale=1.0, viewport-fit=cover",
+          "largura_documento": 1375,
+          "altura_documento": 2737,
+          "ctas_total": 12,
+          "ctas_dobra": [
+            {
+              "texto": "Abrir WhatsApp",
+              "href": "",
+              "topo": 687,
+              "largura": 60,
+              "altura": 61,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            },
+            {
+              "texto": "Facebook",
+              "href": "https://www.facebook.com/4truckbr?fref=ts",
+              "topo": 90,
+              "largura": 40,
+              "altura": 40,
+              "botao": false,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": false
+            },
+            {
+              "texto": "Phone-alt",
+              "href": "tel:+551124465000",
+              "topo": 90,
+              "largura": 40,
+              "altura": 40,
+              "botao": false,
+              "palavra_chave": true,
+              "contato": true,
+              "fixo": false
+            }
+          ],
+          "ctas_fortes_dobra": [
+            {
+              "texto": "Abrir WhatsApp",
+              "href": "",
+              "topo": 687,
+              "largura": 60,
+              "altura": 61,
+              "botao": true,
+              "palavra_chave": true,
+              "contato": false,
+              "fixo": true
+            }
+          ],
+          "primeiro_cta": {
+            "texto": "Facebook",
+            "href": "https://www.facebook.com/4truckbr?fref=ts",
+            "topo": 90,
+            "largura": 40,
+            "altura": 40,
+            "botao": false,
+            "palavra_chave": true,
+            "contato": false,
+            "fixo": false
+          },
+          "contato_direto": [
+            {
+              "tipo": "telefone",
+              "href": "tel:+551124465000",
+              "visivel": false,
+              "fixo": false,
+              "topo": null,
+              "texto": "Phone-alt"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://wa.me/551124465000",
+              "visivel": false,
+              "fixo": false,
+              "topo": null,
+              "texto": "Whatsapp"
+            },
+            {
+              "tipo": "telefone",
+              "href": "tel:+551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 90,
+              "texto": "Phone-alt"
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send/?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 2482,
+              "texto": ""
+            },
+            {
+              "tipo": "whatsapp",
+              "href": "https://api.whatsapp.com/send?phone=551124465000",
+              "visivel": true,
+              "fixo": false,
+              "topo": 2486,
+              "texto": "(11) 2446-5000"
+            },
+            {
+              "tipo": "email",
+              "href": "mailto:%204truck@4truck.com.br",
+              "visivel": true,
+              "fixo": false,
+              "topo": 2529,
+              "texto": ""
+            },
+            {
+              "tipo": "email",
+              "href": "mailto:vendas@4truck.com.br",
+              "visivel": true,
+              "fixo": false,
+              "topo": 2533,
+              "texto": "vendas@4truck.com.br"
+            }
+          ],
+          "formularios": [],
+          "formularios_externos": [],
+          "botoes_modal": [
+            "Fale Conosco"
+          ],
+          "texto_total_chars": 1899,
+          "texto_pequeno_chars": 0,
+          "alvos_total": 42,
+          "alvos_pequenos": [
+            {
+              "texto": "Ir para o slide 1",
+              "largura": 6,
+              "altura": 6
+            },
+            {
+              "texto": "Ir para o slide 2",
+              "largura": 6,
+              "altura": 6
+            },
+            {
+              "texto": "Ir para o slide 3",
+              "largura": 6,
+              "altura": 6
+            },
+            {
+              "texto": "Ir para o slide 4",
+              "largura": 6,
+              "altura": 6
+            },
+            {
+              "texto": "Ir para o slide 5",
+              "largura": 6,
+              "altura": 6
+            },
+            {
+              "texto": "Ir para o slide 6",
+              "largura": 6,
+              "altura": 6
+            },
+            {
+              "texto": "Ir para o slide 7",
+              "largura": 6,
+              "altura": 6
+            },
+            {
+              "texto": "Ir para o slide 8",
+              "largura": 6,
+              "altura": 6
+            },
+            {
+              "texto": "Ir para o slide 9",
+              "largura": 6,
+              "altura": 6
+            },
+            {
+              "texto": "Ir para o slide 10",
+              "largura": 6,
+              "altura": 6
+            },
+            {
+              "texto": "Ir para o slide 11",
+              "largura": 6,
+              "altura": 6
+            },
+            {
+              "texto": "",
+              "largura": 23,
+              "altura": 27
+            },
+            {
+              "texto": "(11) 2446-5000",
+              "largura": 97,
+              "altura": 19
+            },
+            {
+              "texto": "",
+              "largura": 23,
+              "altura": 27
+            },
+            {
+              "texto": "vendas@4truck.com.br",
+              "largura": 154,
+              "altura": 19
+            },
+            {
+              "texto": "Desenvolvido por Agência Explorer - 2026",
+              "largura": 278,
+              "altura": 19
+            }
+          ],
+          "alvos_pequenos_total": 16,
+          "h1s": [],
+          "primeiro_titulo": {
+            "tag": "h2",
+            "texto": "SOBRE NÓS",
+            "topo": 210
+          },
+          "sinais_prova_social": [
+            "e caminhão do mercado”. NOSSOS CLIENTES DEPOIMENTOS CLIQUE AQUI E CONFIRA MAIS DEPOIMENTOS",
+            "manutenção das frotas de implementos de nossos clientes e também multimarcas. Nossa empresa est"
+          ],
+          "widgets_prova_social": 0
+        }
+      }
+    ],
+    "seo_paginas": [
+      {
+        "url": "https://4truck.com.br/",
+        "titulo": "4TRUCK - Implementos Rodoviários",
+        "descricao": "Somos a 4Truck, fabricante de implementos rodoviários líder na entrega mais rápida do Brasil. Clique e confira!",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://4truck.com.br/",
+        "h1": [],
+        "saltos_hierarquia": [],
+        "imagens": 47,
+        "imagens_sem_alt": [
+          "https://dk9suync0k2va.cloudfront.net/js/rd/stable/flags/4x3/br.svg?t=1560538149"
+        ],
+        "schema_tipos": [
+          "Article",
+          "ImageObject",
+          "Organization",
+          "Person",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_invalido": 0,
+        "links_internos": [
+          "https://4truck.com.br/",
+          "https://4truck.com.br/bau-de-aluminio-vs-bau-de-aco/",
+          "https://4truck.com.br/bau-para-e-commerce/",
+          "https://4truck.com.br/blog/",
+          "https://4truck.com.br/carroceria-metalica-aberta-quando-escolher/",
+          "https://4truck.com.br/category/bausdealuminio/",
+          "https://4truck.com.br/category/carrocerias-metalicas/",
+          "https://4truck.com.br/category/dicas/",
+          "https://4truck.com.br/category/implementos-rodoviarios/",
+          "https://4truck.com.br/category/novidades/",
+          "https://4truck.com.br/como-escolher-implemento-rodoviario/",
+          "https://4truck.com.br/diferenciais/",
+          "https://4truck.com.br/duvidas-sugestoes-e-outros/",
+          "https://4truck.com.br/empresa/",
+          "https://4truck.com.br/financiamento/",
+          "https://4truck.com.br/implementos-rodoviarios/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-basculante/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-de-aluminio/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-isotermico-2/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-lonado-sider/",
+          "https://4truck.com.br/implementos-rodoviarios/cabine-suplementar-2/",
+          "https://4truck.com.br/implementos-rodoviarios/carroceria-metalica-aberta/",
+          "https://4truck.com.br/implementos-rodoviarios/kits-para-bau/",
+          "https://4truck.com.br/implementos-rodoviarios/projetos-customizados/",
+          "https://4truck.com.br/kit-para-bau-de-caminhao/",
+          "https://4truck.com.br/orcamento/",
+          "https://4truck.com.br/seja-nosso-fornecedor/",
+          "https://4truck.com.br/servicos/",
+          "https://4truck.com.br/servicos/servicos-reformas/",
+          "https://4truck.com.br/site_novo/",
+          "https://4truck.com.br/site_novo/implementos-rodoviarios/",
+          "https://4truck.com.br/site_novo/servicos/",
+          "https://4truck.com.br/site_novo/unidades-moveis/",
+          "https://4truck.com.br/sobre-nos/",
+          "https://4truck.com.br/trabalhe-conosco/",
+          "https://4truck.com.br/unidades-moveis/"
+        ],
+        "perguntas_em_titulos": [],
+        "open_graph": {
+          "og:title": "4TRUCK - Implementos Rodoviários",
+          "og:description": "Somos a 4Truck, fabricante de implementos rodoviários líder na entrega mais rápida do Brasil. Clique e confira!"
+        }
+      },
+      {
+        "url": "https://4truck.com.br/orcamento/",
+        "titulo": "Orçamento - 4TRUCK",
+        "descricao": "Solicite um orçamento sem compromisso preenchendo o formulário a seguir.Pedimos que preencha o formulário com atenção. Todas as informações são importantes",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://4truck.com.br/orcamento/",
+        "h1": [],
+        "saltos_hierarquia": [],
+        "imagens": 5,
+        "imagens_sem_alt": [
+          "https://dk9suync0k2va.cloudfront.net/js/rd/stable/flags/4x3/br.svg?t=1560538149"
+        ],
+        "schema_tipos": [
+          "Article",
+          "BreadcrumbList",
+          "ImageObject",
+          "Organization",
+          "Person",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_invalido": 0,
+        "links_internos": [
+          "https://4truck.com.br/",
+          "https://4truck.com.br/blog/",
+          "https://4truck.com.br/diferenciais/",
+          "https://4truck.com.br/duvidas-sugestoes-e-outros/",
+          "https://4truck.com.br/empresa/",
+          "https://4truck.com.br/financiamento/",
+          "https://4truck.com.br/implementos-rodoviarios/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-basculante/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-de-aluminio/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-isotermico-2/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-lonado-sider/",
+          "https://4truck.com.br/implementos-rodoviarios/cabine-suplementar-2/",
+          "https://4truck.com.br/implementos-rodoviarios/carroceria-metalica-aberta/",
+          "https://4truck.com.br/implementos-rodoviarios/kits-para-bau/",
+          "https://4truck.com.br/implementos-rodoviarios/projetos-customizados/",
+          "https://4truck.com.br/orcamento/",
+          "https://4truck.com.br/seja-nosso-fornecedor/",
+          "https://4truck.com.br/servicos/",
+          "https://4truck.com.br/servicos/servicos-reformas/",
+          "https://4truck.com.br/site_novo/",
+          "https://4truck.com.br/sobre-nos/",
+          "https://4truck.com.br/trabalhe-conosco/",
+          "https://4truck.com.br/unidades-moveis/"
+        ],
+        "perguntas_em_titulos": [],
+        "open_graph": {
+          "og:title": "Orçamento - 4TRUCK",
+          "og:description": "Solicite um orçamento sem compromisso preenchendo o formulário a seguir.Pedimos que preencha o formulário com atenção. Todas as informações são importantes"
+        }
+      },
+      {
+        "url": "https://4truck.com.br/servicos/",
+        "titulo": "Serviços",
+        "descricao": "Aqui na 4TRUCK nós cuidamos da manutenção da sua frota, porque o seu negócio não pode parar. Realizamos reformas e serviços em frotas multimarcas , projetos",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://4truck.com.br/servicos/",
+        "h1": [
+          "Serviços"
+        ],
+        "saltos_hierarquia": [
+          "h1→h4"
+        ],
+        "imagens": 14,
+        "imagens_sem_alt": [
+          "https://dk9suync0k2va.cloudfront.net/js/rd/stable/flags/4x3/br.svg?t=1560538149"
+        ],
+        "schema_tipos": [
+          "Article",
+          "BreadcrumbList",
+          "ImageObject",
+          "Organization",
+          "Person",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_invalido": 0,
+        "links_internos": [
+          "https://4truck.com.br/",
+          "https://4truck.com.br/blog/",
+          "https://4truck.com.br/diferenciais/",
+          "https://4truck.com.br/duvidas-sugestoes-e-outros/",
+          "https://4truck.com.br/empresa/",
+          "https://4truck.com.br/financiamento/",
+          "https://4truck.com.br/implementos-rodoviarios/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-basculante/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-de-aluminio/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-isotermico-2/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-lonado-sider/",
+          "https://4truck.com.br/implementos-rodoviarios/cabine-suplementar-2/",
+          "https://4truck.com.br/implementos-rodoviarios/carroceria-metalica-aberta/",
+          "https://4truck.com.br/implementos-rodoviarios/kits-para-bau/",
+          "https://4truck.com.br/implementos-rodoviarios/projetos-customizados/",
+          "https://4truck.com.br/orcamento/",
+          "https://4truck.com.br/seja-nosso-fornecedor/",
+          "https://4truck.com.br/servicos/",
+          "https://4truck.com.br/servicos/servicos-reformas/",
+          "https://4truck.com.br/site_novo/",
+          "https://4truck.com.br/sobre-nos/",
+          "https://4truck.com.br/trabalhe-conosco/",
+          "https://4truck.com.br/unidades-moveis/"
+        ],
+        "perguntas_em_titulos": [],
+        "open_graph": {
+          "og:title": "Serviços",
+          "og:description": "Aqui na 4TRUCK nós cuidamos da manutenção da sua frota, porque o seu negócio não pode parar. Realizamos reformas e serviços em frotas multimarcas , projetos",
+          "og:image": "https://4truck.com.br/wp-content/uploads/2024/07/ALONGAMENTO-E-ENCURTAMENTO-DE-CHASSI-1024x592.png"
+        }
+      },
+      {
+        "url": "https://4truck.com.br/servicos/servicos-reformas/",
+        "titulo": "Reformas e Serviços, Manutenção de Frotas Multimarcas | 4TRUCK",
+        "descricao": "A 4TRUCK oferece reformas e serviços completos para sua frota multimarcas, com garantia de 6 meses, rapidez e qualidade. Solicite seu orçamento agora!",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://4truck.com.br/servicos/servicos-reformas/",
+        "h1": [
+          "Reformas e Serviços",
+          "Reformas e Serviços"
+        ],
+        "saltos_hierarquia": [],
+        "imagens": 17,
+        "imagens_sem_alt": [
+          "https://dk9suync0k2va.cloudfront.net/js/rd/stable/flags/4x3/br.svg?t=1560538149"
+        ],
+        "schema_tipos": [
+          "Article",
+          "BreadcrumbList",
+          "ImageObject",
+          "Organization",
+          "Person",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_invalido": 0,
+        "links_internos": [
+          "https://4truck.com.br/",
+          "https://4truck.com.br/blog/",
+          "https://4truck.com.br/diferenciais/",
+          "https://4truck.com.br/duvidas-sugestoes-e-outros/",
+          "https://4truck.com.br/empresa/",
+          "https://4truck.com.br/financiamento/",
+          "https://4truck.com.br/implementos-rodoviarios/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-basculante/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-de-aluminio/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-isotermico-2/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-lonado-sider/",
+          "https://4truck.com.br/implementos-rodoviarios/cabine-suplementar-2/",
+          "https://4truck.com.br/implementos-rodoviarios/carroceria-metalica-aberta/",
+          "https://4truck.com.br/implementos-rodoviarios/kits-para-bau/",
+          "https://4truck.com.br/implementos-rodoviarios/projetos-customizados/",
+          "https://4truck.com.br/orcamento/",
+          "https://4truck.com.br/seja-nosso-fornecedor/",
+          "https://4truck.com.br/servicos/",
+          "https://4truck.com.br/servicos/servicos-reformas/",
+          "https://4truck.com.br/site_novo/",
+          "https://4truck.com.br/sobre-nos/",
+          "https://4truck.com.br/trabalhe-conosco/",
+          "https://4truck.com.br/unidades-moveis/"
+        ],
+        "perguntas_em_titulos": [
+          "O que oferecemos ?",
+          "Por que escolher as Reformas e Serviços da 4truck ?"
+        ],
+        "open_graph": {
+          "og:title": "Reformas e Serviços, Manutenção de Frotas Multimarcas | 4TRUCK",
+          "og:description": "A 4TRUCK oferece reformas e serviços completos para sua frota multimarcas, com garantia de 6 meses, rapidez e qualidade. Solicite seu orçamento agora!",
+          "og:image": "https://4truck.com.br/wp-content/uploads/2025/12/servicos-768x1024.png"
+        }
+      },
+      {
+        "url": "https://4truck.com.br/sobre-nos/",
+        "titulo": "Sobre Nós",
+        "descricao": "Fundada em 2012, a 4TRUCK é uma indústria fornecedora de soluções sobre rodas para o transporte de carga em caminhões e vans da linha leve sobre chassi. Nosso",
+        "meta_robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+        "canonical": "https://4truck.com.br/sobre-nos/",
+        "h1": [],
+        "saltos_hierarquia": [],
+        "imagens": 34,
+        "imagens_sem_alt": [
+          "https://dk9suync0k2va.cloudfront.net/js/rd/stable/flags/4x3/br.svg?t=1560538149"
+        ],
+        "schema_tipos": [
+          "Article",
+          "BreadcrumbList",
+          "ImageObject",
+          "Organization",
+          "Person",
+          "WebPage",
+          "WebSite"
+        ],
+        "jsonld_invalido": 0,
+        "links_internos": [
+          "https://4truck.com.br/",
+          "https://4truck.com.br/blog/",
+          "https://4truck.com.br/diferenciais/",
+          "https://4truck.com.br/duvidas-sugestoes-e-outros/",
+          "https://4truck.com.br/empresa/",
+          "https://4truck.com.br/financiamento/",
+          "https://4truck.com.br/implementos-rodoviarios/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-basculante/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-de-aluminio/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-isotermico-2/",
+          "https://4truck.com.br/implementos-rodoviarios/bau-lonado-sider/",
+          "https://4truck.com.br/implementos-rodoviarios/cabine-suplementar-2/",
+          "https://4truck.com.br/implementos-rodoviarios/carroceria-metalica-aberta/",
+          "https://4truck.com.br/implementos-rodoviarios/kits-para-bau/",
+          "https://4truck.com.br/implementos-rodoviarios/projetos-customizados/",
+          "https://4truck.com.br/orcamento/",
+          "https://4truck.com.br/seja-nosso-fornecedor/",
+          "https://4truck.com.br/servicos/",
+          "https://4truck.com.br/servicos/servicos-reformas/",
+          "https://4truck.com.br/site_novo/",
+          "https://4truck.com.br/sobre-nos/",
+          "https://4truck.com.br/trabalhe-conosco/",
+          "https://4truck.com.br/unidades-moveis/"
+        ],
+        "perguntas_em_titulos": [],
+        "open_graph": {
+          "og:title": "Sobre Nós",
+          "og:description": "Fundada em 2012, a 4TRUCK é uma indústria fornecedora de soluções sobre rodas para o transporte de carga em caminhões e vans da linha leve sobre chassi. Nosso",
+          "og:image": "https://4truck.com.br/wp-content/uploads/2024/06/sobre-4truck-02.png"
+        }
+      }
+    ],
+    "requisicoes_bloqueadas": [],
+    "busca_contato": {
+      "url": "https://4truck.com.br/orcamento/",
+      "tentativas": [
+        "/contato/",
+        "/fale-conosco/",
+        "/contact/"
+      ],
+      "erro": null
+    },
+    "log_http": [
+      {
+        "url": "https://4truck.com.br/",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 1872
+      },
+      {
+        "url": "https://4truck.com.br/robots.txt",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 450
+      },
+      {
+        "url": "https://4truck.com.br/sitemap_index.xml",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 524
+      },
+      {
+        "url": "https://4truck.com.br/post-sitemap1.xml",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 907
+      },
+      {
+        "url": "https://4truck.com.br/post-sitemap2.xml",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 994
+      },
+      {
+        "url": "https://4truck.com.br/post-sitemap3.xml",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 999
+      },
+      {
+        "url": "https://4truck.com.br/contato/",
+        "metodo": "GET",
+        "status": 404,
+        "erro": null,
+        "ms": 1461
+      },
+      {
+        "url": "https://4truck.com.br/fale-conosco/",
+        "metodo": "GET",
+        "status": 404,
+        "erro": null,
+        "ms": 1020
+      },
+      {
+        "url": "https://4truck.com.br/contact/",
+        "metodo": "GET",
+        "status": 404,
+        "erro": null,
+        "ms": 1079
+      },
+      {
+        "url": "https://4truck.com.br/llms.txt",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 119
+      },
+      {
+        "url": "http://4truck.com.br/",
+        "metodo": "GET",
+        "status": 200,
+        "erro": null,
+        "ms": 3092
+      },
+      {
+        "url": "https://4truck.com.br/bau-de-aluminio-vs-bau-de-aco/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 548
+      },
+      {
+        "url": "https://4truck.com.br/bau-para-e-commerce/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1511
+      },
+      {
+        "url": "https://4truck.com.br/blog/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1080
+      },
+      {
+        "url": "https://4truck.com.br/carroceria-metalica-aberta-quando-escolher/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 948
+      },
+      {
+        "url": "https://4truck.com.br/category/bausdealuminio/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 858
+      },
+      {
+        "url": "https://4truck.com.br/category/carrocerias-metalicas/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1110
+      },
+      {
+        "url": "https://4truck.com.br/category/dicas/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 991
+      },
+      {
+        "url": "https://4truck.com.br/category/implementos-rodoviarios/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1079
+      },
+      {
+        "url": "https://4truck.com.br/category/novidades/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 915
+      },
+      {
+        "url": "https://4truck.com.br/como-escolher-implemento-rodoviario/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1067
+      },
+      {
+        "url": "https://4truck.com.br/diferenciais/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1032
+      },
+      {
+        "url": "https://4truck.com.br/duvidas-sugestoes-e-outros/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 692
+      },
+      {
+        "url": "https://4truck.com.br/empresa/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1225
+      },
+      {
+        "url": "https://4truck.com.br/financiamento/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 865
+      },
+      {
+        "url": "https://4truck.com.br/implementos-rodoviarios/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1179
+      },
+      {
+        "url": "https://4truck.com.br/implementos-rodoviarios/bau-basculante/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 741
+      },
+      {
+        "url": "https://4truck.com.br/implementos-rodoviarios/bau-de-aluminio/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1262
+      },
+      {
+        "url": "https://4truck.com.br/implementos-rodoviarios/bau-isotermico-2/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1029
+      },
+      {
+        "url": "https://4truck.com.br/implementos-rodoviarios/bau-lonado-sider/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 735
+      },
+      {
+        "url": "https://4truck.com.br/implementos-rodoviarios/cabine-suplementar-2/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1304
+      },
+      {
+        "url": "https://4truck.com.br/implementos-rodoviarios/carroceria-metalica-aberta/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1063
+      },
+      {
+        "url": "https://4truck.com.br/implementos-rodoviarios/kits-para-bau/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 955
+      },
+      {
+        "url": "https://4truck.com.br/implementos-rodoviarios/projetos-customizados/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 952
+      },
+      {
+        "url": "https://4truck.com.br/kit-para-bau-de-caminhao/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 805
+      },
+      {
+        "url": "https://4truck.com.br/seja-nosso-fornecedor/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 975
+      },
+      {
+        "url": "https://4truck.com.br/site_novo/",
+        "metodo": "HEAD",
+        "status": 404,
+        "erro": null,
+        "ms": 1024
+      },
+      {
+        "url": "https://4truck.com.br/site_novo/implementos-rodoviarios/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1790
+      },
+      {
+        "url": "https://4truck.com.br/site_novo/servicos/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 2035
+      },
+      {
+        "url": "https://4truck.com.br/site_novo/unidades-moveis/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1890
+      },
+      {
+        "url": "https://4truck.com.br/trabalhe-conosco/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 1534
+      },
+      {
+        "url": "https://4truck.com.br/unidades-moveis/",
+        "metodo": "HEAD",
+        "status": 200,
+        "erro": null,
+        "ms": 725
+      }
+    ]
+  },
+  "revisao_rascunho_criado": true
+}
